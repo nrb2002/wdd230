@@ -1,10 +1,20 @@
-*, body{
+@charset "UTF-8";/*!
+ *   Author: Baron Tshibasu
+ *   URL: https://nrb2002.github.io/wdd230/
+ *   License: Open source - MIT <http://opensource.org/licenses/MIT>
+ */
+
+body{
     padding: 0;
-    width: 90%;
+    margin: 0;
+}
+
+header, nav, footer{
+    text-align: center;
+}
+
+main{
+    width: 60%;
     margin: 0 auto;
 }
 
-
-main{
-    width: inherit;
-}
