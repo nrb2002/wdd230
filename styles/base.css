@@ -19,9 +19,9 @@
 
 
 
-body{
+*{
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     font-family: 'monteserrat', sans-serif;
     box-sizing: border-box;
 }
@@ -60,30 +60,29 @@ header img{
 }
 
 nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;    
+    line-height: 60px;  
     min-height: 8vh;
     background-color: var(--nav-background-color);
-    
+    padding: 0 auto;
     
 }
 
-nav li{
+nav ul li{
     list-style: none;    
 }
 
 nav a{
-    display: flex;
-    justify-content: space-around;
+    float: left;
     text-decoration: none;
-    color: var(--nav-link-color);
-    text-align: center;
+    color: var(--nav-link-color);    
     padding: 14px 16px;
+    letter-spacing: 1.6px;
+    
     
 }
 
-nav a:hover:not(.active){
+nav a:hover{
     background-color:var(--primary-color);  
   }
 
