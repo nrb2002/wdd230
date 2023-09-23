@@ -1,20 +1,97 @@
-@charset "UTF-8";/*!
- *   Author: Baron Tshibasu
- *   URL: https://nrb2002.github.io/wdd230/
- *   License: Open source - MIT <http://opensource.org/licenses/MIT>
- */
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Open+Sans?stroke=Sans+Serif');
+@import url('https://fonts.google.com/specimen/Bonheur+Royale?query=royal');
+
+/* CSS HEX */
+:root{
+    --primary-color: #007cbeff;
+    --secondary-color: #ffa3afff;
+    --tertiary-color: #00af54ff;
+
+    --nav-background-color: #00af54ff;
+    --nav-link-color: white;
+    
+    
+    --link-hover-color: #fbaf00ff;
+    --link-visited-color: #ffd639ff;
+}
+
+
+
 
 body{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    font-family: 'monteserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-header, nav, footer{
+h1, h2, h3{
+    font-family: 'open sans', sans-serif;
+}
+
+header{
     text-align: center;
+    background-color: var(--primary-color);
+    padding: 1em;
+}
+
+header div{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2;
+}
+
+header img{
+    border-radius: 20px;
+}
+
+.profilePhoto{
+    grid-column: 1/2;
+    
+}
+
+.authorName{
+    color:var(--secondary-color);
+    grid-column: 2/3;
+    margin-left: 50px;
+    align-self: center;
+    font-size: 1.2em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--nav-background-color);
+    
+    
+}
+
+nav li{
+    list-style: none;    
+}
+
+nav a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+
+nav a:hover:not(.active){
+    background-color:var(--primary-color);  
+  }
+
+nav a.active {
+    background-color:var(--primary-color);  
 }
 
 main{
-    width: 60%;
-    margin: 0 auto;
+    width: 70%;
 }
 
