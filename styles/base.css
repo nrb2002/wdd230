@@ -1,154 +1,224 @@
-@import url('https://fonts.google.com/specimen/Montserrat');
-@import url('https://fonts.google.com/specimen/Open+Sans?stroke=Sans+Serif');
-@import url('https://fonts.google.com/specimen/Bonheur+Royale?query=royal');
-
-/* CSS HEX */
-:root{
-    --primary-color: #007cbeff;
-    --secondary-color: #ffa3afff;
-    --tertiary-color: #00af54ff;
-
-    --nav-background-color: #00af54ff;
-    --nav-link-color: white;
-    --title-color:#ffa3afff;
-    
-    
-    --link-hover-color: #fbaf00ff;
-    --link-visited-color: #ffd639ff;
-}
-
-
-
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'monteserrat', sans-serif;
-    box-sizing: border-box;
-}
-
-h1, h2, h3{
-    font-family: 'open sans', sans-serif;
-}
-
-header{
-    text-align: center;
-    background-color: var(--primary-color);
-    padding: 1em;
-}
-
-header div{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 2;
-}
-
-header img{
-    border-radius: 20px;
-}
-
-.profilePhoto{
-    grid-column: 1/2;
-    
-}
-
-.authorName{
-    color:var(--secondary-color);
-    grid-column: 2/3;
-    margin-left: 50px;
-    align-self: center;
-    font-size: 1.2em;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    width: 100%;    
-    line-height: 60px;  
-    min-height: 8vh;
-    background-color: var(--nav-background-color);  
-}
-
-nav ul li{
-    list-style-type: none;  
-    display: inline-block; 
-    padding: 10px 20px; 
-}
-
-nav ul li a{    
-    text-decoration: none;
-    color: var(--nav-link-color); 
-    font-weight: bold;
-    letter-spacing: 1.6px;
-    
-}
-
-nav ul li a:hover{    
-    background-color: var(--primary-color); 
-    padding: 35px 50px;
-}
-
-nav ul li a:active{    
-    background-color: var(--primary-color); 
-}
-
-main{
-    width: 70%;
-    display: grid;
-    grid-template-rows: 3;
-    padding: 2%;
-    margin: 0 auto;
-}
-
-main .main_title{
-    grid-column: 1/2;
-    width: 100%;
-    text-align: center;
-    font-size: 1.2em;
-    text-align: center;
-}
-
-.card{
-    display: grid;
-    grid-template-rows: 2;
-    border: solid 1px;    
-    margin: 1%;
-}
-
-.card-title{
-    grid-row: 1/2;
-    background-color: var(--primary-color);
-    padding:2%;
-    font-weight: bold;
-    color: var(--title-color);
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.card-detail{
-    padding:2% 4%;
-}
-
-.card-detail ul li{
-    list-style: none;
-}
-
-footer{
-    text-align: center;
-    padding-bottom: 0;
-    background-color: var(--primary-color);
-    padding: 2%;
-    margin-bottom: 0;
-    margin-top: auto;
-    color: azure;
-    line-height: 2em;   
-    
-}
-
-@media screen and (max-width:1200px) {
-    main{
-        width: 85%;
+@font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 400;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YobMucsih5flDH6MAwhSdTPjIUuA.ttf) format('truetype');
     }
-    
-}
+    @font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 500;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YodMucsih5flDH6MAwhRVTPjIUuA.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 500;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YobMucsih5flDH6MAwhRVTPjIUuA.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans Mono';
+    font-style : normal;
+    font-weight : 400;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesansmono/v15/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH4RE8-pZ5gQ1abT53wVQGrw.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans Mono';
+    font-style : normal;
+    font-weight : 700;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesansmono/v15/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH4RE8-pZ5gQ1abQe2AVQGrw.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 400;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YobMucsih5flDH6MAwhSdTPjIUuA.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 500;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YodMucsih5flDH6MAwhRVTPjIUuA.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 500;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YobMucsih5flDH6MAwhRVTPjIUuA.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans Mono';
+    font-style : normal;
+    font-weight : 400;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesansmono/v15/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH4RE8-pZ5gQ1abT53wVQGrw.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans Mono';
+    font-style : normal;
+    font-weight : 700;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesansmono/v15/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH4RE8-pZ5gQ1abQe2AVQGrw.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 400;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YobMucsih5flDH6MAwhSdTPjIUuA.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 500;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YodMucsih5flDH6MAwhRVTPjIUuA.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans';
+    font-style : normal;
+    font-weight : 500;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesans/v29/4UasrENHsxJlGDuGo1OIlJfC6mGS6vhAK1YobMucsih5flDH6MAwhRVTPjIUuA.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans Mono';
+    font-style : normal;
+    font-weight : 400;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesansmono/v15/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH4RE8-pZ5gQ1abT53wVQGrw.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Google Sans Mono';
+    font-style : normal;
+    font-weight : 700;
+    font-display : block;
+    src : url(//fonts.gstatic.com/s/googlesansmono/v15/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH4RE8-pZ5gQ1abQe2AVQGrw.ttf) format('truetype');
+    }
+    @import url('https://fonts.google.com/specimen/Montserrat') ;
+    @import url('https://fonts.google.com/specimen/Open+Sans?stroke=Sans+Serif') ;
+    @import url('https://fonts.google.com/specimen/Bonheur+Royale?query=royal') ;
+    :root {
+    --primary-color : #007cbeff;
+    --secondary-color : #ffa3afff;
+    --tertiary-color : #00af54ff;
+    --nav-background-color : #00af54ff;
+    --nav-link-color : white;
+    --title-color : #ffa3afff;
+    --link-hover-color : #fbaf00ff;
+    --link-visited-color : #ffd639ff;
+    }
+    * {
+    padding : 0;
+    margin : 0;
+    font-family : 'monteserrat', sans-serif;
+    box-sizing : border-box;
+    }
+    h1, h2, h3 {
+    font-family : 'open sans', sans-serif;
+    }
+    header {
+    text-align : center;
+    background-color : #007cbeff;
+    padding : 1em;
+    }
+    header div {
+    display : grid;
+    justify-content : center;
+    }
+    header img {
+    border-radius : 20px;
+    }
+    .profilePhoto {
+    grid-column : 1 / 2;
+    }
+    .authorName {
+    color : var(--secondary-color);
+    grid-column : 2 / 3;
+    margin-left : 50px;
+    align-self : center;
+    font-size : 1.2em;
+    }
+    nav {
+    display : flex;
+    justify-content : center;
+    width : 100%;
+    line-height : 60px;
+    min-height : 8vh;
+    background-color : #00af54ff;
+    }
+    nav ul li {
+    list-style-type : none;
+    display : inline-block;
+    padding : 10px 20px;
+    }
+    nav ul li a {
+    text-decoration : none;
+    color : var(--nav-link-color);
+    font-weight : bold;
+    letter-spacing : 1.6px;
+    }
+    nav ul li a:hover {
+    background-color : #007cbeff;
+    padding : 35px 50px;
+    }
+    nav ul li a:active {
+    background-color : #007cbeff;
+    }
+    main {
+    width : 70%;
+    display : grid;
+    padding : 2%;
+    margin : 0 auto;
+    }
+    main .main_title {
+    grid-column : 1 / 2;
+    width : 100%;
+    text-align : center;
+    font-size : 1.2em;
+    text-align : center;
+    }
+    .card {
+    display : grid;
+    border : solid 1px;
+    margin : 1%;
+    }
+    .card-title {
+    grid-row : 1 / 2;
+    background-color : #007cbeff;
+    padding : 2%;
+    font-weight : bold;
+    color : var(--title-color);
+    font-size : 1.5em;
+    text-align : center;
+    }
+    .card-detail {
+    padding : 2% 4%;
+    }
+    .card-detail ul li {
+    list-style : none;
+    }
+    footer {
+    text-align : center;
+    padding-bottom : 0;
+    background-color : #007cbeff;
+    padding : 2%;
+    margin-bottom : 0;
+    margin-top : auto;
+    color : azure;
+    line-height : 2em;
+    }
 
+    @media screen and (max-width: 1200px) {
+        main {
+        width : 85%;
+        }
+    }
