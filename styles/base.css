@@ -10,6 +10,7 @@
 
     --nav-background-color: #00af54ff;
     --nav-link-color: white;
+    --title-color:#ffa3afff;
     
     
     --link-hover-color: #fbaf00ff;
@@ -60,37 +61,81 @@ header img{
 }
 
 nav{
+    display: flex;
+    justify-content: center;
     width: 100%;    
     line-height: 60px;  
     min-height: 8vh;
-    background-color: var(--nav-background-color);
-    padding: 0 auto;
-    
+    background-color: var(--nav-background-color);  
 }
 
 nav ul li{
-    list-style: none;    
+    list-style-type: none;  
+    display: inline-block; 
+    padding: 10px 20px; 
 }
 
-nav a{
-    float: left;
+nav ul li a{    
     text-decoration: none;
-    color: var(--nav-link-color);    
-    padding: 14px 16px;
+    color: var(--nav-link-color); 
+    font-weight: bold;
     letter-spacing: 1.6px;
     
-    
 }
 
-nav a:hover{
-    background-color:var(--primary-color);  
-  }
+nav ul li a:hover{    
+    background-color: var(--primary-color); 
+    padding: 35px 50px;
+}
 
-nav a.active {
-    background-color:var(--primary-color);  
+nav ul li a:active{    
+    background-color: var(--primary-color); 
 }
 
 main{
     width: 70%;
+    display: grid;
+    grid-template-rows: 3;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+main .main_title{
+    grid-column: 1/2;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 2;
+    border: solid 1px;    
+    margin: 1%;
+}
+
+.card-title{
+    grid-row: 1/2;
+    background-color: var(--primary-color);
+    padding:2%;
+    font-weight: bold;
+    color: var(--title-color);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card-detail{
+    padding:2% 4%;
+}
+
+.card-detail ul li{
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 0;
+    
 }
 
