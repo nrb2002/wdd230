@@ -194,7 +194,7 @@ margin : 1%;
 }
 .card-title {
 grid-row : 1 / 2;
-background-color : #007cbeff;
+background-color : #2b98d3;
 padding : 2%;
 font-weight : bold;
 color : var(--title-color);
