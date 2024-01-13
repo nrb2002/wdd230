@@ -108,7 +108,7 @@ src : url(//fonts.gstatic.com/s/googlesansmono/v15/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH
 
 :root {
     --primary-color : rgb(67, 155, 202);
-    --secondary-color : #ffa3afff;
+    --secondary-color : rgb(245, 208, 212);
     --tertiary-color : #00af54ff;   
     --nav-link-color : white;
     --title-color : #efe6e6;
