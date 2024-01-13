@@ -107,29 +107,33 @@ src : url(//fonts.gstatic.com/s/googlesansmono/v15/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH
 }
 
 :root {
---primary-color : #007cbeff;
---secondary-color : #ffa3afff;
---tertiary-color : #00af54ff;
---nav-background-color : #00af54ff;
---nav-link-color : white;
---title-color : #ffa3afff;
---link-hover-color : #fbaf00ff;
---link-visited-color : #ffd639ff;
+    --primary-color : rgb(67, 155, 202);
+    --secondary-color : #ffa3afff;
+    --tertiary-color : #00af54ff;   
+    --nav-link-color : white;
+    --title-color : #efe6e6;
+    --link-hover-color : #fbaf00ff;
+    --link-visited-color : #ffd639ff;
+    --paragraph-background-color:#efe6e6;
 }
 
-* {
-padding : 0;
-margin : 0;
-font-family : 'monteserrat', sans-serif;
-box-sizing : border-box;
+*{
+    padding : 0;
+    margin : 0;
+    font-family : 'monteserrat', sans-serif;
+    box-sizing : border-box;
 }
+
+h1, h2{
+    color: var(--primary-color);
+}
+
 h1, h2, h3 {
-font-family : 'open sans', sans-serif;
+    font-family : 'open sans', sans-serif;
 }
 header {
-text-align : center;
-background-color : #007cbeff;
-padding : 1em;
+    text-align : center;
+    padding : 1em;
 }
 header div {
 display : grid;
@@ -141,81 +145,103 @@ border-radius : 20px;
 .profilePhoto {
 grid-column : 1 / 2;
 }
+
 .authorName {
-color : var(--secondary-color);
-grid-column : 2 / 3;
-margin-left : 50px;
-align-self : center;
-font-size : 1.2em;
+    color : var(--primary-color);
+    grid-column : 2 / 3;
+    margin-left : 50px;
+    align-self : center;
+    font-size : 1.2em;
 }
+
 nav {
-display : flex;
-justify-content : center;
-width : 100%;
-line-height : 60px;
-min-height : 8vh;
-background-color : #00af54ff;
+    display : flex;
+    justify-content : center;
+    width : 100%;
+    line-height : 40px;
+    min-height : 6vh;
+    background-color : var(--primary-color);    
 }
+
 nav ul li {
-list-style-type : none;
-display : inline-block;
-padding : 10px 20px;
+    list-style-type : none;
+    display : inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;    
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;    
 }
+
 nav ul li a {
-text-decoration : none;
-color : var(--nav-link-color);
-font-weight : bold;
-letter-spacing : 1.6px;
+    text-decoration : none;
+    color : var(--nav-link-color);
+    font-weight : bold;
+    letter-spacing : 1.6px;
 }
-nav ul li a:hover {
-background-color : #007cbeff;
-padding : 35px 50px;
-}
+
+nav ul li a:hover,
 nav ul li a:active {
-background-color : #007cbeff;
+    border-bottom: 4px solid var(--secondary-color); 
+    opacity: 1;   
 }
+
+
+
+
+
 main {
-width : 70%;
-display : grid;
-padding : 2%;
-margin : 0 auto;
+    width : 60%;
+    display : grid;
+    padding : 2%;
+    margin : 0 auto;
 }
-main .main_title {
-grid-column : 1 / 2;
-width : 100%;
-text-align : center;
-font-size : 1.2em;
-text-align : center;
+main h2 {
+    grid-column : 1 / 2;
+    width : 100%;
+    text-align : center;
+    font-size : 1.7em;
+    text-align : center;
+    margin-bottom: 3%;
 }
 .card {
-display : grid;
-border : solid 1px;
-margin : 1%;
+    display : grid;
+    border: solid 1px var(--primary-color) ;
+    margin : 0 25px 25px;
+    box-shadow: var(--paragraph-background-color);
+    
 }
-.card-title {
-grid-row : 1 / 2;
-background-color : #2b98d3;
-padding : 2%;
-font-weight : bold;
-color : var(--title-color);
-font-size : 1.5em;
-text-align : center;
+.card h3 {
+    grid-row : 1 / 2;
+    background-color : var(--primary-color);
+    padding : 2%;
+    font-weight : bold;
+    color : var(--secondary-color);
+    font-size : 1.5em;
+    text-align : center;
+    
 }
-.card-detail {
-padding : 2% 4%;
+.card ul,
+.card label {
+    padding : 2% 4%;
+    line-height: 1.8em;
+    list-style: none;
 }
-.card-detail ul li {
-list-style : none;
-}
+
+
 footer {
 text-align : center;
 padding-bottom : 0;
-background-color : #007cbeff;
+background-color : #01070b;
 padding : 2%;
 margin-bottom : 0;
 margin-top : auto;
 color : azure;
 line-height : 2em;
+font-size: .9em;
+
 }
 
 @media screen and (max-width: 1200px) {
