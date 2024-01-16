@@ -190,9 +190,9 @@
     margin-bottom : 3%;
     }
     .card {
-    display : grid;
-    border : var(--primary-color) solid 1px;
-    margin : 0 25px 25px;
+        display : grid;
+        border : var(--primary-color) solid 1px;
+        margin : 0 25px 25px;
     }
     .card h3 {
     grid-row : 1 / 2;
