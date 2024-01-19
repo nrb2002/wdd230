@@ -1,0 +1,24 @@
+@media screen and (min-width: 1201px){
+    nav{
+        display: block;
+    }
+    
+    nav ul li{
+       display: inline-block;
+    }
+
+    main{
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card #activities{
+        grid-column: 1/2;
+    }
+
+    .card #information{
+        grid-column: 2/3;
+    }
+    
+}
