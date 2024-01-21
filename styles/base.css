@@ -1,5 +1,5 @@
 :root {
-    --primary-color : hwb(201 11% 46%);
+    --primary-color : #1A587A;
     --secondary-color : rgb(245, 208, 212);
     --tertiary-color : #00af54ff;
     --nav-link-color : white;
@@ -16,17 +16,11 @@
     box-sizing : border-box;
 }
 
-img{
-    max-width: 100%;;
+img{    
+    max-width: 100%;
 }
 
-h1, h2 {
-    color : var(--primary-color);
-}
 
-h1, h2, h3 {
-    font-family : 'noto sans', sans-serif;
-}
 header {
     text-align : center;
     padding : 1em;
@@ -49,6 +43,20 @@ grid-column : 2 / 3;
 margin-left : 50px;
 align-self : center;
 font-size : 1.2em;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+
+
+h1, h2 {
+    color : var(--primary-color);
+}
+
+h1, h2, h3 {
+    font-family : 'noto sans', sans-serif;
 }
 
 nav {    
@@ -81,20 +89,20 @@ nav ul li a:hover, nav ul li a:active {
     border-bottom : 4px solid var(--secondary-color);    
 }
     
-    main {
-        width : 60%;
-        display : grid;
-        padding : 2%;
-        margin : 0 auto;
-    }
-    main h2 {
-        grid-column : 1 / 2;
-        width : 100%;
-        text-align : center;
-        font-size : 1.7em;
-        text-align : center;
-        margin-bottom : 3%;
-    }
+main {
+    width : 100%;
+    display : grid;
+    padding : 2%;
+    margin : 0 auto;
+}
+main h2 {
+    grid-column : 1 / 2;
+    width : 100%;
+    text-align : center;
+    font-size : 1.7em;
+    text-align : center;
+    margin-bottom : 3%;
+}
     .card {
         display : grid;
         border : var(--primary-color) solid 1px;

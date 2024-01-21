@@ -16,7 +16,7 @@ footer{
 
     /*include a faint border and appropriate padding*/
     /*have a blueish background color of your choice*/
-    border: 1px solid rgb(82, 159, 159);
+    border : #529f9f solid 1px;
 }
 
 /*set the main element to be a CSS grid with a grid template of only one column, and a equal gap of 1rem */
