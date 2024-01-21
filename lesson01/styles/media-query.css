@@ -1,0 +1,33 @@
+/*do not include a media query*/
+
+/*use the Google Font - Roboto in the body rule,*/
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+/*the header, main, and footer each have a maximum width of 640 pixels and are centered on the page using margin: 1rem auto*/
+header,
+main,
+footer{
+    max-width: 640px;
+    margin:1rem auto;
+    padding: 1rem;
+    background-color: #ceecee;
+
+    /*include a faint border and appropriate padding*/
+    /*have a blueish background color of your choice*/
+    border: 1px solid rgb(82, 159, 159);
+}
+
+/*set the main element to be a CSS grid with a grid template of only one column, and a equal gap of 1rem */
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+/* set the section elements to also have padding and a white background.*/
+section{
+    padding: 1rem;
+    background-color: white;
+}
