@@ -11,6 +11,13 @@ footer {
 	margin: 0 auto;
 }
 
+.card img{
+	border: #702963 solid 2px;
+	height: 750px;
+	width: 95%;
+	
+}
+
 .banner {
 	padding: .5rem;
 	background-color: #eee;
