@@ -1,0 +1,59 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+    
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+    min-width: 290px;
+}
+
+.banner {
+	padding: 1rem;
+	background-color: #eee;
+}
+
+h1 {
+	
+	text-align: center;
+	margin: 30px auto;
+	font-family: Kaushan Script, helvetica, sans-serif;
+	font-size: 2.5rem;
+	color: #1C5B3F;
+}
+
+main {
+	display: grid;
+    grid-template-columns: 1fr;	
+    	
+}
+
+h2 {
+	color: #1C5B3F;
+    grid-column: 1/2;
+}
+
+h2, img{
+    margin: 2rem auto;
+}
+
+.card {
+	color: black;
+	background-color: whitesmoke;    
+	border-radius: 1rem;
+	font-size: 1rem;
+	box-shadow: 5px 5px 5px lightgray;
+	text-align: center;	
+}
+
+
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left;
+}
