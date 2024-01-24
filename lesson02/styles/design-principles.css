@@ -71,9 +71,31 @@ footer {
 	text-align: left;
 }
 
+@media screen and (max-width: 768px) {
+	header,
+	main,
+	footer {
+		width: 95%;	
+		
+	} 
 
+	main {		
+		grid-template-columns: 1fr;
+	}
 
-@media screen and (max-width: 1024px) {
+	.card{
+		grid-column: 1 / 2 ;
+		
+		
+	}
+	.card-content img{
+		height: 500px;
+			
+	}
+	
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 	
 	header,
 	main,
@@ -101,23 +123,4 @@ footer {
 	
 }
 
-@media screen and (max-width: 965px) {
-	header,
-	main,
-	footer {
-		width: 95%;	
-	} 
 
-	main {		
-		grid-template-columns: 1fr;
-	}
-
-	.card{
-		grid-column: 1 / 2 ;
-	}
-	.card-content img{
-		height: 500px;
-			
-	}
-	
-}
