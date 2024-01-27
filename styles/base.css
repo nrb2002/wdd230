@@ -39,8 +39,10 @@ align-self : center;
 font-size : 1.2em;
 }
 h1 {
-font-size : 1.5rem;
+    font-size : 1.5rem;
 }
+
+
 h1, h2 {
 color : var(--primary-color);
 }
@@ -56,76 +58,76 @@ min-height : 6vh;
 background-color : #1A587A;
 }
 nav ul li {
-list-style-type : none;
-display : block;
-font-weight : bold;
-font-size : 14px;
-text-transform : uppercase;
-text-decoration : none;
-padding : 1rem;
-margin : 0 20px;
-text-align : center;
+    list-style-type : none;
+    display : block;
+    font-size : .8rem;
+    text-transform : uppercase;
+    text-decoration : none;
+    padding : 1rem;
+    margin : 0 20px;
+    text-align : center;
 }
 nav ul li a {
-text-decoration : none;
-color : var(--nav-link-color);
-font-weight : bold;
-letter-spacing : 1.6px;
+    text-decoration : none;
+    color : var(--nav-link-color);
+    font-weight : bold;
+    letter-spacing : 1.6px;
 }
+
 nav ul li a:hover, nav ul li a:active {
 border-bottom : 4px solid var(--secondary-color);
 }
 .dropdown-content {
-display : none;
-position : absolute;
-background-color : #f1f1f1;
-min-width : 160px;
-box-shadow : 0 8px 16px 0 rgb(0, 0, 0, 0.2);
-z-index : 1;
+    display : none;
+    position : absolute;
+    background-color : #f1f1f1;
+    min-width : 160px;
+    box-shadow : 0 8px 16px 0 rgb(0, 0, 0, 0.2);
+    z-index : 1;
 }
 .dropdown-content a {
-color : black;
-padding : 0.5rem;
-display : block;
+    color : black;
+    padding : 0.5rem;
+    display : block;
 }
 .dropdown-content a:hover {
 background-color : #ddd;
 }
 .dropdown:hover .dropdown-content {
-display : block;
+    display : block;
 }
 main {
-width : 90%;
-display : grid;
-padding : 2%;
-margin : 0 auto;
-}
+    width : 90%;
+    display : grid;
+    padding : 2%;
+    margin : 0 auto;
+    }
 main h2 {
-grid-column : 1 / 2;
-width : 100%;
-text-align : center;
-font-size : 1.7em;
-text-align : center;
-margin-bottom : 3%;
+    grid-column : 1 / 2;
+    width : 100%;
+    text-align : center;
+    font-size : 1.3rem;
+    text-align : center;
+    margin: 2% auto;
 }
 .card {
-display : grid;
-border : var(--primary-color) solid 1px;
-margin : 2% 1%;
+    display : grid;
+    border : var(--primary-color) solid 1px;
+    margin : 2% 1%;
+    font-size : .9em;
 }
 .card h3 {
-grid-row : 1 / 2;
-background-color : #1A587A;
-padding : 2%;
-font-weight : bold;
-color : var(--title-color);
-font-size : 1.5em;
-text-align : center;
+    grid-row : 1 / 2;
+    background-color : #1A587A;
+    padding : 2%;
+    font-weight : bold;
+    color : var(--title-color);    
+    text-align : center;
 }
 .card ul, .card label {
-padding : 2% 4%;
-line-height : 1.8em;
-list-style : none;
+    padding : 2% 4%;
+    line-height : 1.8em;
+    list-style : none;
 }
 
 #activities ul li{
@@ -133,13 +135,13 @@ list-style : none;
 }
 
 footer {
-text-align : center;
-padding-bottom : 0;
-background-color : #1A587A;
-padding : 2%;
-margin-bottom : 0;
-margin-top : auto;
-color : white;
-line-height : 2em;
-font-size : 0.9em;
+    text-align : center;
+    padding-bottom : 0;
+    background-color : #1A587A;
+    padding : 2%;
+    margin-bottom : 0;
+    margin-top : auto;
+    color : white;
+    line-height : 2rem;
+    font-size : 0.85rem;
 }
