@@ -2,9 +2,19 @@
     
     h1 {
         font-size : 2rem;
+    }    
+    
+    h1, h2 {
+        color : var(--primary-color);
     }
+
+    header {
+        background: white;
+    }
+
     nav {
-    display : flex;
+        display : flex;
+        background-color : #1A587A;
     }
     nav ul li {
     display : inline-block;
