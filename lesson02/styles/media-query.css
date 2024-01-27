@@ -9,14 +9,15 @@ body{
 header,
 main,
 footer{
+    /*have a maximum width of 640 pixels*/
     max-width: 640px;
+    /*are centered on the page using margin: 1rem auto*/
     margin:1rem auto;
-    padding: 1rem;
-    background-color: #ceecee;
-
     /*include a faint border and appropriate padding*/
-    /*have a blueish background color of your choice*/
     border : #529f9f solid 1px;
+    padding: 1rem;
+    /*have a blueish background color of your choice*/
+    background-color: #ceecee;    
 }
 
 /*set the main element to be a CSS grid with a grid template of only one column, and a equal gap of 1rem */
