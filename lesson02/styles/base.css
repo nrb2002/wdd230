@@ -57,10 +57,11 @@ main p{
 	text-align: center;	
 }
 
-.card-content img{
-	height: auto;
-	width: 80%;
-	margin: 1rem auto;	
+.card-content img{        
+	height: 35rem;
+	width: 95%;  
+	margin: 1rem auto;    
+	border: solid 1px #702963;  
 }
 
 footer {

@@ -5,13 +5,10 @@
     }
 
     main{
-        width: 60%;
+        width: 70%;
     }
 
-    .card-content img{        
-        height: 30%;
-        width: 95%;        
-    }
+   
 
     .banner {
         background-color: #eee;
