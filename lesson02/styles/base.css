@@ -8,20 +8,13 @@ body {
 header,
 main,
 footer {
-	width: 80%;
-	margin: 0 auto;
-}
-
-.card-content img{
-	border: #702963 solid 2px;
-	height: 700px;
 	width: 95%;
-	
+	margin: 0 auto;
 }
 
 .banner {
 	padding: .5rem;
-	background-color: #eee;
+	background-color: #702963;
 	text-align: center;
 	margin: 1rem auto;
 	width: 100%;
@@ -30,20 +23,20 @@ footer {
 h1 {
 	border-bottom: 1px solid navy;
 	text-align: center;
-	margin: 30px auto;
+	margin: 28px auto;
 	font-family: Kaushan Script, helvetica, sans-serif;
-	font-size: 2.5rem;
-	color: #702963;
+	font-size: 2.4rem;
+	color: #eee;
 }
 
 main {
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+	display: grid;    
 	grid-gap: 1rem;	
 }
 
+
 main p{
-	line-height: 1.5rem;
+	line-height: 1.4rem;
 	padding: 0 2rem;
 	text-align: left;
 }
@@ -64,6 +57,12 @@ main p{
 	text-align: center;	
 }
 
+.card-content img{
+	height: auto;
+	width: 80%;
+	margin: 1rem auto;	
+}
+
 footer {
 	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -71,61 +70,8 @@ footer {
 	text-align: left;
 }
 
-@media screen and (max-width: 768px) {
-	header,
-	main,
-	footer {
-		width: 95%;
-	} 
 
-	main {		
-		grid-template-columns: 1fr;
-	}
 
-	.card{
-		grid-column: 1 / 2 ;
-	}
 
-	.card-content img{
-		height: auto;
-		width: 80%;
-		margin: 1rem auto;
-		
-	}
-	
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-	
-	header,
-	main,
-	footer {
-		width: 97%;		
-	}
-
-	main {		
-		grid-template-columns: 1fr 1fr;		
-	}
-
-	#white-space{
-		grid-column: 1 / 3;
-	}
-
-	#white-space img{
-		width: 60%;
-		margin: 1rem auto;
-	}
-	
-	.card-content img{
-		height: 500px;
-			
-	}
-
-	#white-space img{
-		height: 700px;
-		
-	}
-	
-}
 
 
