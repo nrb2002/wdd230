@@ -12,6 +12,12 @@
         background: white;
     }
 
+    /*Hamburger Menu style*/
+    /* small view navigation */
+    #menuToggler {        
+        display: none;        
+    }
+
     nav {
         display : flex;
         background-color : #1A587A;
@@ -20,6 +26,11 @@
     display : inline-block;
     font-size: .9rem;
     }
+
+    nav ul li a {
+        display: block;
+    }
+
     main {
         max-width : 80%;
         display : grid;
