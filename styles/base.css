@@ -57,14 +57,15 @@ font-family : 'noto sans', sans-serif;
 /*Hamburger Menu style*/
 /* small view navigation */
 #menuToggler {
-	font-size: 2.2rem;
+	font-size: 2rem;
 	border: 0;
-	background: none;
+	background: black;
 	color: white;
  	position: absolute;
 	display: block;
-    top: 25%;
-	right: 5%;
+    top: 0;
+	right: 0;
+    padding:.8rem;
 }
 
 #menuToggler::before {
@@ -92,6 +93,7 @@ nav {
     justify-content : center;
     line-height : 30px;
     background-color : black; 
+    
 }
 
 nav ul li {
@@ -100,7 +102,7 @@ nav ul li {
     font-size : .85rem;
     text-transform : uppercase;
     text-decoration : none;
-    padding : 1rem;
+    
     margin : 0 20px;
     text-align : center;
 }
@@ -111,6 +113,7 @@ nav ul li a {
     font-weight : bold;
     letter-spacing : 1.6px;
     display: none;
+    padding : .6rem;
 }
 
 nav ul li a:hover{
