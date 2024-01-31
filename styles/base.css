@@ -43,6 +43,7 @@ header img {
 h1 {
     font-size : 1.5rem;
     color: var(--title-color);
+    
 }
 
 
@@ -57,7 +58,7 @@ font-family : 'noto sans', sans-serif;
 /*Hamburger Menu style*/
 /* small view navigation */
 #menuToggler {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	border: 0;
 	background: black;
 	color: white;
@@ -65,7 +66,7 @@ font-family : 'noto sans', sans-serif;
 	display: block;
     top: 0;
 	right: 0;
-    padding:.8rem;
+    padding:.5rem;
 }
 
 #menuToggler::before {
