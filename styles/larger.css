@@ -23,12 +23,14 @@
         background-color : #1A587A;
     }
     nav ul li {
-    display : inline-block;
-    font-size: .9rem;
+        display : inline-block;
+        font-size: .9rem;
+        padding : 1rem;
     }
 
     nav ul li a {
         display: block;
+        padding : 0;
     }
 
     main {
