@@ -102,8 +102,7 @@ nav ul li {
     display : block;
     font-size : .85rem;
     text-transform : uppercase;
-    text-decoration : none;
-    
+    text-decoration : none;    
     margin : 0 20px;
     text-align : center;
 }
@@ -180,6 +179,8 @@ main h2 {
 #activities ul li{
     font-size: 1.2em;
 }
+
+
 
 footer {
     text-align : center;
