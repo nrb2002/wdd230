@@ -1,12 +1,12 @@
 :root {
     --primary-color : #1A587A;
     --secondary-color : rgb(245, 208, 212);
-    --tertiary-color : #00af54ff;
+    --tertiary-color : rgb(79, 171, 123);
     --nav-link-color : white;
     --title-color : white;
     --link-hover-color : #fbaf00ff;
     --link-visited-color : #ffd639ff;
-    --paragraph-background-color : white;
+    --paragraph-background-color : whitesmoke;
 }
 * {
     padding : 0;
@@ -14,6 +14,7 @@
     font-family : 'open sans', sans-serif;
     box-sizing : border-box;
 }
+
 img {
 max-width : 100%;
 }
@@ -120,7 +121,6 @@ nav ul li a:hover{
     border-bottom : 4px solid var(--secondary-color);
 }
 
-
 .dropdown-content {
     display : none;
     position : absolute;
@@ -157,9 +157,13 @@ main h2 {
 }
 .card {
     display : grid;
-    border : var(--primary-color) solid 1px;
+    border : lightgray solid 1px;
     margin : 2% 1%;
     font-size : .95em;
+    border-radius: 0 0 1rem 1rem ;
+    background-color: var(--paragraph-background-color);
+    box-shadow : 0 8px 16px 0 #00000033;
+    
 }
 .card h3 {
     grid-row : 1 / 2;
@@ -172,8 +176,7 @@ main h2 {
 .card ul, .card label {
     padding : 2% 4%;
     line-height : 1.8em;
-    list-style : none;
-    
+    list-style : none;    
 }
 
 #activities ul li{
