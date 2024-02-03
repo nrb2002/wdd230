@@ -46,7 +46,7 @@ body{
 }
 
 .active {
-    border-bottom : 4px solid var(--secondary-color);
+    border-bottom : 4px solid var(--accent2);
 }
 
 .active::before {
