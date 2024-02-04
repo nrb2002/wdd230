@@ -1,0 +1,164 @@
+:root{
+    --primary-color : #233b58;
+    --secondary-color : #365681;
+    --accent1 : #f5f4f4;
+    --accent2: #554E4E;
+    --paragraph-text-color: var(--accent1);
+    --paragraph-background-color: var(--accent2);
+    --title-color : var(--primary-color);
+    --subtitle-color : var(--secondary-color);
+    
+}
+
+
+body{
+    width: 85%;
+    margin: 0 auto;
+    background-color: var(--accent1); 
+    font-family:'roboto', sans-serif
+}
+
+/*Hamburger Menu style*/
+/* small view navigation */
+#menuToggler {
+	font-size: 1.5rem;
+	border: 0;
+	background: black;
+	color: white;
+ 	position: absolute;
+	display: block;
+    top: 0;
+	right: 0;
+    padding:.5rem;
+}
+
+#menuToggler::before {
+	content: "☰";
+}
+
+#menuToggler.open::before {
+  content: "X";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active {
+    border-bottom : 4px solid var(--accent2);
+}
+
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+nav {
+    justify-content : center;
+    line-height : 30px;
+    background-color : black; 
+    
+}
+
+nav ul li {
+    list-style-type : none;
+    display : block;
+    font-size : .85rem;
+    text-transform : uppercase;
+    text-decoration : none;    
+    margin : 0 20px;
+    text-align : center;
+}
+
+nav ul li a {
+    text-decoration : none;
+    color : var(--nav-link-color);
+    font-weight : bold;
+    letter-spacing : 1.6px;
+    display: none;
+    padding : .6rem;
+}
+
+nav ul li a:hover{
+    border-bottom : 4px solid var(--secondary-color);
+}
+
+h1{
+    color: var(--title-color);
+}
+
+h2, h3{
+    color: var(--subtitle-color);
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+th, tbody{     
+    padding: .5rem;
+}
+
+.table{
+    border: var(--primary-color) solid 1px;
+    width: 100%;
+    text-align: center;  
+}
+
+.primary{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.accent1{
+    background-color: var(--accent1);
+    color: var(--primary-color);
+}
+.accent2{
+    background-color: var(--accent2);
+    color: white;
+}
+
+/*Style for accordion menu*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion-wrapper{    
+    border: solid .5px;    
+    margin-top: .1rem;
+}
+.accordion {
+    background-color: var(--accent1);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border: none;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: var(--accent2);
+    color: var(--accent1);    
+  }
+  
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: var(--accent1);
+    display: none;
+    overflow: hidden;
+  }
+
+  /*End Style for accordion menu*/
