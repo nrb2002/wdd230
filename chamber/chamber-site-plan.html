@@ -21,7 +21,7 @@
             
             <nav >
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="./" class="active">Home</a></li>
                     <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
                     <li><a href="chamber/">Chamber</a></li>
                     <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
@@ -54,17 +54,17 @@
                 prosperity" - carlsbad.org site description
             -->
             <h2>Site purpose</h2>
-            <p>We promote entrepreneurship and defend the rights of micro, small, and medium-sized enterprises operating in Kinshasa. 
-                We also advocate for an improved business environment while contributing to the local economy's health by increasing GDP and reducing 
-                unemployment through job creation.. 
-            </p>
+            <div>
+                <p>We promote entrepreneurship and defend the rights of micro, small, and medium-sized enterprises operating in Kinshasa. 
+                    We also advocate for an improved business environment while contributing to the local economy's health by increasing GDP and 
+                    reducing unemployment through job creation.. 
+                </p>
 
-            <p>We are therefore the platform par excellence that not only connects, leads, inspires, and advocates for communities of local entrepreneurs, but also 
-                helps them meet the challenges of innovation.
-            </p>
+                <p>We are therefore the platform par excellence that not only connects, leads, inspires, and advocates for communities of local entrepreneurs, but also 
+                    helps them meet the challenges of innovation.
+                </p>
+            </div>
 
-
-            
             <!--   
                 Scenarios: Scenarios are questions that are asked by a site visitor who represents the target audience of the organization or company.
                 The questions will drive the content of the website as it provides answers to the questions. 
@@ -78,10 +78,28 @@
                 • What has been the population growth in the area?            
             -->
             <h2>Scenarios</h2>
-            <p>What should I expect from the Chamber when I become a member? </p>
-            <p>What are the steps to start a business in Kinshasa. </p>       
-            <p>What business financing opportunities are available in Kinshasa?</p>
-            <p>Is the Kinshasa Chamber of Commerce a government department? </p>
+            <div>
+                <div class="accordion-wrapper">
+                    <button class="accordion"><strong>What should I expect from the Chamber when I become a member? </strong></br></button>
+                    <div class="panel">
+                        <p>Once you become a member, you'll benefit from seamless sponsorship from our association. We advocate on behalf of our members with legal and state institutions to safeguard their business rights. Additionally, we'll pass on to you the unique business opportunities offered by our network of experienced entrepreneurs. </p>
+                    </div>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <button class="accordion"><strong>What business financing opportunities are available in Kinshasa?</strong></button>
+                    <div class="panel">
+                        <p>There are many sources of funding: our members, our association, the Fond de Promotion de l'Industrie (FPI), the Agence National de la Promotion de l'Industrie (ANAPI), the Fond de Garantie de l'Entrepreneuriat au Congo (FOGEC), the World Bank, the European Union, the African Development Bank (ADB), and many others. </p>
+                    </div>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <button class="accordion"><strong>Is the Kinshasa Chamber of Commerce a government department? </strong></button>
+                    <div class="panel">
+                        <p>We are not and do not represent any government agency. However, we work closely with the government to take part in the major decisions affecting the business climate in the Democratic Republic of Congo. </p>
+                    </div>
+                </div>
+            </div>
             
             <!--
                 Color Schema: The color schema refers to the carefully selected site colors that reflect the organization's purpose and trademark. 
@@ -137,16 +155,11 @@
                     <td class="color-schema">Josefin Sans</td>                    
                 </tr>
             </table>
-
-            
-
-
-                
+   
             <!--
                 Wireframe: Provide a rough sketch of the design of the chamber home page layout. Wireframe diagrams can be simple and do not need to have actual content, just representations of content and their layout relationship. Provide a sketch for the mobile view and for an larger, such as desktop, view for the home page.
-
-
             -->
+            
 
         </main>
 
@@ -156,5 +169,27 @@
         </footer>
         
         <script src="../scripts/main.js"></script>
+        
+        <!--Script for accordion menu-->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
     </body>
 </html>
