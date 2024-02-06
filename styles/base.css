@@ -161,10 +161,13 @@ main h2 {
     margin : 2% 1%;
     font-size : .95em;
     border-radius: 0 0 1rem 1rem ;
-    background-color: var(--paragraph-background-color);
-    box-shadow : 0 8px 16px 0 #00000033;
-    
+    background-color: var(--paragraph-background-color);    
 }
+
+.card:hover{
+    box-shadow : 0 8px 16px 0 #00000033;
+}
+
 .card h3 {
     grid-row : 1 / 2;
     background-color : #1A587A;
