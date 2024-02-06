@@ -18,6 +18,10 @@ body{
     font-family:'roboto', sans-serif
 }
 
+h1, h2, h3{
+    font-size: 1.8rem;
+}
+
 /*Hamburger Menu style*/
 /* small view navigation */
 #menuToggler {
