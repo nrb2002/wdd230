@@ -2,8 +2,17 @@
 
     header,
     main{
-        width: 60%;
+        width: 80%;
         margin:0 auto;
     }
+
+    #mobile{
+        width:40%;
+      }
+    
+      #desktop{
+        width:80%;
+        border:solid 1px;
+      }
     
 }

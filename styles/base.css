@@ -83,14 +83,6 @@ font-family : 'noto sans', sans-serif;
 	display: block;
 }
 
-.active {
-    border-bottom : 4px solid var(--secondary-color);
-}
-
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
-
 nav {
     justify-content : center;
     line-height : 30px;
@@ -104,7 +96,7 @@ nav ul li {
     font-size : .85rem;
     text-transform : uppercase;
     text-decoration : none;    
-    margin : 0 20px;
+    
     text-align : center;
 }
 
@@ -117,9 +109,15 @@ nav ul li a {
     padding : .6rem;
 }
 
-nav ul li a:hover{
-    border-bottom : 4px solid var(--secondary-color);
+nav ul li:hover, .active{
+    background-color : var(--secondary-color);    
+    color: black;
 }
+
+/*
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user
+}*/
 
 .dropdown-content {
     display : none;
@@ -185,8 +183,6 @@ main h2 {
 #activities ul li{
     font-size: 1.2em;
 }
-
-
 
 footer {
     text-align : center;

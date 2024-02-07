@@ -6,7 +6,7 @@
     --paragraph-text-color: var(--accent1);
     --paragraph-background-color: var(--accent2);
     --title-color : var(--primary-color);
-    --subtitle-color : var(--secondary-color);
+    --subtitle-color : var(--accent2);
     
 }
 
@@ -18,8 +18,20 @@ body{
     font-family:'roboto', sans-serif
 }
 
-h1, h2, h3{
-    font-size: 1.8rem;
+h1{
+    font-size: 2.5rem;
+}
+
+h1, h2{
+    color: var(--title-color);
+}
+
+h3{
+    color: var(--subtitle-color);
+}
+
+h2{
+    font-size: 2rem;
 }
 
 /*Hamburger Menu style*/
@@ -85,18 +97,6 @@ nav ul li a {
 
 nav ul li a:hover{
     border-bottom : 4px solid var(--secondary-color);
-}
-
-h1{
-    color: var(--title-color);
-}
-
-h2, h3{
-    color: var(--subtitle-color);
-}
-
-h1, h2, h3{
-    font-family: 'Playfair Display', 'Times New Roman', serif;
 }
 
 p{
@@ -166,3 +166,12 @@ th, tbody{
   }
 
   /*End Style for accordion menu*/
+
+  #mobile{
+    width:60%;
+  }
+
+  #desktop{
+    width:100%;
+    border:solid 1px;
+  }
