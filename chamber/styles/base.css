@@ -6,16 +6,22 @@
     --paragraph-text-color: var(--accent1);
     --paragraph-background-color: var(--accent2);
     --title-color : var(--primary-color);
-    --subtitle-color : var(--accent2);
-    
+    --subtitle-color : var(--accent2);    
 }
 
 
-body{
-    width: 85%;
-    margin: 0 auto;
+html, body{
+    width: 100%;
+    padding: 0;
     background-color: var(--accent1); 
     font-family:'roboto', sans-serif
+}
+
+header{
+    height: 100vh;
+    background: url(../../images/profile.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -32,6 +38,63 @@ h3{
 
 h2{
     font-size: 2rem;
+}
+
+nav {
+    position: fixed;
+    width: 100%;    
+}
+
+nav ul{
+    list-style: none;
+    background: var(--primary-color);
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.accent ul{
+    background: var(--accent2);
+}
+
+nav ul li {
+    display : inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration : none;
+    color : var(--nav-link-color);
+    font-size : .85rem;
+    text-transform : uppercase;
+    font-weight : bold;
+    letter-spacing : 1.6px;
+    display: none;
+    padding : .6rem;
+}
+
+nav ul li a:hover{
+    border-bottom : 4px solid var(--secondary-color);
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.content{
+    width: 100%;
+    margin: 2rem auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
 }
 
 /*Hamburger Menu style*/
@@ -69,35 +132,7 @@ h2{
 	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
-nav {
-    justify-content : center;
-    line-height : 30px;
-    background-color : black; 
-    
-}
 
-nav ul li {
-    list-style-type : none;
-    display : block;
-    font-size : .85rem;
-    text-transform : uppercase;
-    text-decoration : none;    
-    margin : 0 20px;
-    text-align : center;
-}
-
-nav ul li a {
-    text-decoration : none;
-    color : var(--nav-link-color);
-    font-weight : bold;
-    letter-spacing : 1.6px;
-    display: none;
-    padding : .6rem;
-}
-
-nav ul li a:hover{
-    border-bottom : 4px solid var(--secondary-color);
-}
 
 p{
     text-align: justify;
@@ -153,7 +188,7 @@ th, tbody{
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: var(--accent2);
-    color: var(--accent1);    
+    color: black;    
   }
   
   
