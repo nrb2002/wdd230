@@ -32,6 +32,22 @@ button {
 
 button {
 	margin: 0.5rem;
+    background-color: darkgray;
+}
+
+button:hover{
+    background-color: whitesmoke;
+}
+
+#addChapter{    
+    border-radius: 1rem;
+    border:  .5px;
+    box-shadow : 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    width: 70%;
+    margin: 4% auto;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: bold;
 }
 
 .delete {
@@ -56,6 +72,24 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+    border-radius: .5rem;
+    background-color: lightcyan;
+    padding: .5% 6%;
+    margin-bottom: 2%;
+    width: 90%;
+    
+}
+
+li:hover,
+#addChapter:hover{
+    box-shadow : 0 8px 16px 0 rgb(0, 0, 0, 0.2);
+}
+
+div.chapter{
+    padding: 2rem;
+    background-color: darkolivegreen;
+    border-radius: 2px;
+    border: solid .5px;
 }
 
 @media only screen and (min-width: 32.5em) {
