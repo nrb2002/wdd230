@@ -1,5 +1,5 @@
 :root{
-    --primary-color : #233b58;
+    --primary-color : #0a2341;
     --secondary-color : #365681;
     --accent1 : #f5f4f4;
     --accent2: #554E4E;
@@ -19,96 +19,108 @@ html, body{
 
 header{
     height: 100vh;
-    background: url(../../images/profile.jpg) no-repeat 50% 50%;
+    background: url(../images/kinshasa-financial-center.jpg) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
+    
+    
 }
 
-h1{
-    font-size: 2.5rem;
-}
+/* NAV BAR */
 
-h1, h2{
-    color: var(--title-color);
-}
-
-h3{
-    color: var(--subtitle-color);
-}
-
-h2{
-    font-size: 2rem;
-}
-
-nav {
+nav{
     position: fixed;
-    width: 100%;    
-}
-
-nav ul{
-    list-style: none;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: var(--primary-color);
-    overflow: hidden;
-    color: white;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    transition: 1s;
-}
-
-nav.accent ul{
-    background: var(--accent2);
-}
-
-nav ul li {
-    display : inline-block;
-    padding: 20px;
-}
-
-nav ul li a {
-    text-decoration : none;
-    color : var(--nav-link-color);
-    font-size : .85rem;
-    text-transform : uppercase;
-    font-weight : bold;
-    letter-spacing : 1.6px;
-    display: none;
-    padding : .6rem;
-}
-
-nav ul li a:hover{
-    border-bottom : 4px solid var(--secondary-color);
+    color: var(--accent1);   
+    opacity: .8;
 }
 
 .logo{
-    position: fixed;
-    float: left;
-    margin: 16px 36px;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
+    display: flex;
+    gap: .5rem;
+    padding: .5% 2%;
+    font-size: 1rem; 
+    font-weight: 700; 
 }
 
-.content{
-    width: 100%;
-    margin: 2rem auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
+.logo img{
+    width: 50px;
 }
+
+.logo a{
+    text-decoration: none;
+    color: var(--accent1); 
+    line-height: 1.8rem;
+}
+
+.logo a:hover{
+    color: var(--secondary-color);
+}
+
+.navlist{
+    display: none;
+} 
+
+.navlist li {
+    list-style-type : none;
+    text-transform : uppercase;
+}
+
+.navlist a{
+    text-decoration: none;
+    margin: 0 4rem;
+    font-size: .8rem;
+    font-weight: 600;
+    border-bottom: solid 2px transparent;
+    transition: all .3s ease;    
+    color: var(--accent1); 
+}
+
+.navlist a:hover, .active{
+    border-bottom: 4px solid var(--accent1);
+    padding-bottom: 1.8rem;
+}
+
+.action_button{
+    text-decoration: none;
+    margin-right: 15%;
+    background-color: var(--accent1);
+    padding: .6rem;
+    border: solid 1px var(--primary-color);
+    border-radius: 10rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.action_button:hover{
+    background-color: var(--secondary-color);
+    color: var(--accent1);
+}
+
+/* NAV BAR */
+
 
 /*Hamburger Menu style*/
 /* small view navigation */
-#menuToggler {
-	font-size: 1.5rem;
+#menuToggler {    
+	display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
 	border: 0;
 	background: black;
 	color: white;
- 	position: absolute;
-	display: block;
-    top: 0;
-	right: 0;
     padding:.5rem;
+    text-align: center;
+    z-index: 101;
+    font-size: 3rem;
 }
 
 #menuToggler::before {
@@ -124,13 +136,91 @@ nav ul li a:hover{
 	display: block;
 }
 
-.active {
-    border-bottom : 4px solid var(--accent2);
+h1{
+    font-size: 3rem;
+    color: var(--accent1);
 }
 
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+h2{
+    color: var(--title-color);
 }
+
+h3{
+    color: var(--subtitle-color);
+}
+
+h2{
+    font-size: 2rem;
+}
+
+section{
+    padding: 0 18%;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-text{
+    grid-column: 1/2;
+}
+
+.hero-text p{
+    color: var(--accent1);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.hero-text a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--primary-color);
+    background-color: var(--accent1);
+    padding: 4%;
+    margin: 1%;
+    line-height: 1.4;
+    font-weight: bold;
+    border: solid 2px;
+    border-radius: 2rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .55s ease; 
+}
+
+.hero-text a:hover{
+    background: transparent;
+    color: var(--accent1);
+    transform: translateX(8px);
+}
+
+.hero-text a.cta{
+    background: transparent;
+    color: var(--accent1);
+}
+
+.hero-text a.cta:hover{
+    background: var(--accent1);
+    color: var(--primary-color);
+}
+
+
+.content{
+    width: 100%;
+    margin: 2rem auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
 
 
 
@@ -186,7 +276,7 @@ th, tbody{
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+  .accordion:hover {
     background-color: var(--accent2);
     color: black;    
   }

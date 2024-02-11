@@ -20,7 +20,7 @@ b.addEventListener("click", () => {
         li.textContent = input.value;
         
         // populate the button textContent with a ❌
-        del.textContent = "❌";
+        del.textContent = "❌"; 
         // append the li element with the delete button
         li.append(del);
         // append the li element to the unordered list in your HTML

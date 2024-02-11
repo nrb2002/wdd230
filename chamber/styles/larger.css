@@ -1,6 +1,11 @@
-@media only screen and (min-width: 769px) {
-    main{
-        width: 70%;
+@media only screen and (min-width: 1024px) {
+  h1{
+    font-size: 4rem;
+    
+  }  
+  
+  main{
+        width: 60%;
         margin:0 auto;
     }
 
@@ -8,9 +13,38 @@
         width:40%;
       }
     
-      #desktop{
-        width:80%;
-        border:solid 1px;
-      }
+    #desktop{
+      width:80%;
+      border:solid 1px;
+    }
+
+    #menuToggler {    
+      display: none;
+      
+    }
+
+  .navlist{
+    display: flex;
+  }
+
+  .logo{
+    font-size:small;
+  }
+
+  .action_button{
+    width: 100px;
+    
+  }
+
+  .hero{
+    grid-template-columns: repeat(2, 1fr);
+   
+  }
+
+  .hero-text a{
+    width: 10rem;
+    margin: .5%;
+    padding: 2%; 
+}
     
 }

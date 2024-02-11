@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Home - Kinshasa Chamber of Commerce</title>
+
         <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu Chamber of Commerce Site">
         <meta name="author" content="Baron Tshibasu">        
 
@@ -15,12 +18,12 @@
         <meta property="og:description" content="WDD 230 - Web Frontend Development Baron Tshibasu Course Assignment Portal">
         <meta name="twitter:card" content="summary_large_image">
 
-        <title>Home - Kinshasa Chamber of Commerce</title>
+        
 
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display">
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">        
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans/about">
-
+        
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css">
@@ -29,29 +32,51 @@
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">        
-</head>
-<body>
-    <header class="wrapper">
-        <nav>
-            <div class="logo">LOGO</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="">EVENTS</a></li>
-                    <li><a href="">RESOURCES</a></li>
-                    <li><a href="">REGISTER</a></li>
+        <link rel="manifest" href="/site.webmanifest">   
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo-chamber-of-commerce.png" alt="KCC Logo">
+                    <a href="#">THE KINSHASA CHAMBER OF <br>COMMERCE</a>
+                </div>                
+
+                <ul class="navlist">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header>
-    
-    <main class="content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad sapiente quia est tenetur dolorem nulla atque placeat aspernatur iure, molestias beatae explicabo labore maiores autem aperiam deleniti, expedita deserunt recusandae vel minus distinctio pariatur cum sunt. Repudiandae, illum. Quaerat nam consequuntur quas perferendis adipisci at, odit sed totam tempora distinctio assumenda, veniam veritatis ad. Repudiandae sapiente maiores iure id assumenda aliquam tenetur excepturi, numquam fugiat pariatur at dicta quis, suscipit inventore ipsam laboriosam laudantium voluptatibus libero fugit, doloremque veniam minus exercitationem. Architecto at sed exercitationem recusandae dolores quam magnam! Non voluptate laboriosam repudiandae ex. Facere facilis ab laudantium maxime!</p>
+
+                <a href="#" class="action_button">Sign in</a>
+            </nav>
+            <!--Hamburger menu-->
+            <button id="menuToggler"></button>
+
+            <!-- Hero section -->
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>We preserve our member's <br>prosperity</h1>
+                    <p><i>Feel free to join this huge community of entrepreneurs operating in the beautiful city of Kinshasa</i></p>
+                    <a href="#" >Register</a>
+                    <a href="#" class="cta">Donate</a>
+                </div>
+            </section>
+            <!-- ./ Hero section -->
+        </header>
+
+
+        <main>
+            
+        </main>
+
 
         
-    </main>
+        <!-- Scripts links -->
+        <script src="scripts/main.js"></script>
 
-    
-</body>
+        <!-- Scripts links -->
+    </body>
 </html>
