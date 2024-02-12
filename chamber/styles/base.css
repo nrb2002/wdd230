@@ -92,7 +92,7 @@ nav a{
     color: var(--accent1);
 }
 
-nav a:hover{
+nav a:hover, .active{
     background-color: var(--secondary-color);
   }
 
