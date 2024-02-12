@@ -1,12 +1,42 @@
 @media only screen and (min-width: 1024px) {
   h1{
     font-size: 4rem;
-    
-  }  
+  } 
   
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  nav ul,
+  #primaryMenu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow:none;
+    backdrop-filter: none;
+}
+
+  /*Display the home menu in mobile view*/
+  nav ul li:first-child{
+    display: block;
+  }
+
+  nav a:hover, .active{
+    background-color: var(--secondary-color);
+  }
+
+  #menuToggler,
+  #closeButton{
+    display: none;
+  }
+
+
   main{
-        width: 60%;
-        margin:0 auto;
+      width: 60%;
+      margin:0 auto;
     }
 
     #mobile{
@@ -18,33 +48,46 @@
       border:solid 1px;
     }
 
-    #menuToggler {    
-      display: none;
-      
+    
+
+    .logo{
+      font-size: 1rem; 
+      font-weight: 700; 
     }
 
-  .navlist{
-    display: flex;
-  }
+    .action_button{
+      width: 100px;      
+    }
 
-  .logo{
-    font-size:small;
-  }
+    section{
+      padding: 0 18%;
+    }
 
-  .action_button{
-    width: 100px;
+    .hero{
+      padding-top: 20%;
     
+    }
+
+    .hero-text a{
+      width: 10rem;
+      margin: .5%;
+      padding: 2%; 
+    }
+
+    .hero-text h1{
+      margin-top: 0;
+    }
+
+    .hero-text p{
+      margin-bottom: 3rem;
+    }
+
+    section#mission h2{
+      grid-column: 1/4;
+      grid-row: 1/2;
+      text-align: center;
+      
   }
 
-  .hero{
-    grid-template-columns: repeat(2, 1fr);
-   
-  }
-
-  .hero-text a{
-    width: 10rem;
-    margin: .5%;
-    padding: 2%; 
-}
-    
+        
 }

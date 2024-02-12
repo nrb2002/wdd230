@@ -185,6 +185,8 @@ main h2 {
 }
 
 footer {
+    display: grid;
+}
     text-align : center;
     padding-bottom : 0;
     background-color : #1A587A;

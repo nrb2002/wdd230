@@ -14,17 +14,26 @@ html, body{
     width: 100%;
     padding: 0;
     background-color: var(--accent1); 
-    font-family:'roboto', sans-serif
+    font-family:'roboto', sans-serif;
+    margin:0 auto;
+    min-height: 100vh;
 }
 
-header{
+header, #page-header{
     height: 100vh;
-    background: url(../images/kinshasa-financial-center.jpg) no-repeat 50% 50%;
+    background: url(../images/kinshasa-financial-center.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    
-    
+    z-index: -1;    
 }
+
+#page-header{
+    height: 50vh;   
+}
+
+
 
 /* NAV BAR */
 
@@ -34,69 +43,89 @@ nav{
     top: 0;
     z-index: 100;
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: var(--accent1);   
-    opacity: .8;
+    opacity: .9;
 }
+
+nav ul{
+    display: none;    
+    list-style: none;    
+    text-align: left;
+    justify-content: flex-start;
+    box-shadow: -10px 0 10px var(--accent2);
+    backdrop-filter: blur(10px);
+    padding: 0 2%;
+    left: -100%;
+    transition: all .5s ease;
+}
+
+/*Hide the home menu in mobile view*/
+nav ul li:first-child{
+    display: none;
+}
+
+nav ul.show{
+    display: block;
+    
+}
+
+nav li{
+    height: 50px;
+    text-transform : uppercase;
+    margin-right: 2%;
+    width: 100%;
+}
+
+nav a{
+    height: 100%;
+    padding:0 2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--accent1);
+    font-size: .8rem;
+    font-weight: 600;
+    transition: all .5s ease;    
+    color: var(--accent1);
+}
+
+nav a:hover{
+    background-color: var(--secondary-color);
+  }
 
 .logo{
     display: flex;
     gap: .5rem;
     padding: .5% 2%;
-    font-size: 1rem; 
-    font-weight: 700; 
+    font-size: .8rem; 
+    font-weight: 600; 
+    width: 500px;
 }
 
 .logo img{
     width: 50px;
+    margin-right: .5rem;
 }
 
 .logo a{
-    text-decoration: none;
-    color: var(--accent1); 
     line-height: 1.8rem;
+    color: var(--accent1);
 }
 
 .logo a:hover{
     color: var(--secondary-color);
+    background: none;
 }
-
-.navlist{
-    display: none;
-} 
-
-.navlist li {
-    list-style-type : none;
-    text-transform : uppercase;
-}
-
-.navlist a{
-    text-decoration: none;
-    margin: 0 4rem;
-    font-size: .8rem;
-    font-weight: 600;
-    border-bottom: solid 2px transparent;
-    transition: all .3s ease;    
-    color: var(--accent1); 
-}
-
-.navlist a:hover, .active{
-    border-bottom: 4px solid var(--accent1);
-    padding-bottom: 1.8rem;
-}
-
+ 
 .action_button{
-    text-decoration: none;
-    margin-right: 15%;
     background-color: var(--accent1);
-    padding: .6rem;
     border: solid 1px var(--primary-color);
     border-radius: 10rem;
-    text-align: center;
     color: var(--primary-color);
+    padding: 0 auto;
 }
 
 .action_button:hover{
@@ -109,36 +138,38 @@ nav{
 
 /*Hamburger Menu style*/
 /* small view navigation */
-#menuToggler {    
-	display: block;
+#menuToggler,
+#closeMenu {    
+    display: block;
     position: fixed;
     right: 0;
     top: 0;
-	border: 0;
-	background: black;
-	color: white;
-    padding:.5rem;
+    border: 0;
+    background:var(--accent1);
+    padding:.5% 4%;
     text-align: center;
     z-index: 101;
     font-size: 3rem;
+    cursor: pointer;
 }
 
-#menuToggler::before {
-	content: "☰";
+#closeMenu{
+    display: none;
+    margin-top: -80px;
+    
 }
 
-#menuToggler.open::before {
-  content: "X";
-}
-
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
-}
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--accent1);
+    font-weight: 300;
+}
+
+#page-title{
+    text-align: center;
+    padding-top: 20%;
+    margin-top: 0;
 }
 
 h2{
@@ -154,28 +185,26 @@ h2{
 }
 
 section{
-    padding: 0 18%;
+    padding: 0 7%;
 }
 
 .hero{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     height: 100vh;
-    width: 100%;
     position: relative;
     align-items: center;
     gap: 2rem;
+    padding-top: 40%;
 }
 
-.hero-text{
-    grid-column: 1/2;
-}
+
+
 
 .hero-text p{
     color: var(--accent1);
     font-size: 1.5rem;
-    line-height: 1.5;
-    margin-bottom: 3rem;
+    line-height: 1.2;
+    margin-bottom: 15rem;
+    text-align: left;
 }
 
 .hero-text a{
@@ -185,11 +214,11 @@ section{
     background-color: var(--accent1);
     padding: 4%;
     margin: 1%;
+    width: 30%;
     line-height: 1.4;
     font-weight: bold;
     border: solid 2px;
     border-radius: 2rem;
-    width: 100%;
     text-align: center;
     text-transform: uppercase;
     transition: all .55s ease; 
@@ -211,6 +240,9 @@ section{
     color: var(--primary-color);
 }
 
+main{
+    padding: 2% 4%;
+}
 
 .content{
     width: 100%;
@@ -219,10 +251,6 @@ section{
     line-height: 30px;
     text-align: justify;
 }
-
-
-
-
 
 p{
     text-align: justify;
@@ -300,3 +328,46 @@ th, tbody{
     width:100%;
     border:solid 1px;
   }
+
+
+
+section #mission{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: space-between;
+}
+
+footer {
+    display: grid;
+    text-align : center;
+    padding-bottom : 0;
+    background-color : var(--primary-color);
+    margin-bottom : 0;
+    color: var(--accent1);
+    font-size : 0.85rem;
+    width: 100%;
+}
+
+footer .secondary-menu{
+    padding: 2%;
+}
+
+footer a{
+    color: var(--accent1);
+    margin: 2%;
+}
+
+footer a:hover{
+    color: var(--secondary-color);
+}
+
+footer .legal-mention{
+    background-color: var(--secondary-color);
+    width: inherit;
+    padding : 1%;
+    margin: 0 auto;
+    line-height: 1.2rem;
+    font-size: 1rem;
+}
+
+

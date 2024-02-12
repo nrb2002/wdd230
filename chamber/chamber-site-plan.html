@@ -36,12 +36,28 @@
     </head>
     <body>
         
-        <header class="wrapper">
-            
+        <header id="page-header">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo-chamber-of-commerce.png" alt="KCC Logo">
+                    <a href="./">THE KINSHASA CHAMBER OF <br>COMMERCE</a>                   
+                </div>                
 
+                <ul class="navlist">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
 
-            
-            <h1>Site Plan</h1>
+                <a href="#" class="action_button">Sign in</a>
+            </nav>
+            <!--Hamburger menu-->
+            <button id="menuToggler"></button>
+
+            <h1 id="page-title">Site Plan</h1>
+
+           
         </header>
        
 
@@ -187,32 +203,23 @@
         </main>
 
         <footer>
-            <hr>
-            <small>Baron Tshibasu</small>
+            <div class="secondary-menu">
+               <span><a href="index.html"><img src="images/logo-chamber-of-commerce.png" alt="Logo" width="30px"></a></span> |<a href="#">About</a> | <a href="#">Events</a> | <a href="#">Resources</a> | <a href="#">Latest news</a> | <a href="#">Contact</a> | <a href="chamber-site-plan.html">Site plan</a>
+            </div>
+
+            <div class="legal-mention">
+                <small>Copyright © <span id="currentYear"></span> | WDD230 - The Kinshasa Chamber of Commerce | All rights reserved.</small><br>
+                <small>Baron Tshibasu | Democratic Republic of Congo | <img src="images/drc_flag.png" alt="[Flag]" width="25"></small><br>
+                <small><i><strong>Last modified: <span id="lastUpdate"></span></strong></i></small><br>
+                
+            </div>            
         </footer>
-        
-        <script src="../scripts/main.js"></script>
-        
-        <!--Script for accordion menu-->
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
 
-            for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
+        
+        <!-- Scripts links -->
+        <script src="scripts/chamber.js"></script>
+        <script src="scripts/getdates.js"></script>
 
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                panel.style.display = "none";
-                } else {
-                panel.style.display = "block";
-                }
-            });
-            }
-        </script>
+        <!-- Scripts links -->
     </body>
 </html>
