@@ -24,10 +24,6 @@
     display: block;
   }
 
-  nav a:hover, .active{
-    background-color: var(--secondary-color);
-  }
-
   #menuToggler,
   #closeButton{
     display: none;
