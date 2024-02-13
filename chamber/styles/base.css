@@ -69,10 +69,9 @@ nav ul li:first-child{
     display: none;
 }
 
-nav ul.show{
-    display: block;
-    
-}
+
+
+
 
 nav li{
     height: 50px;
@@ -151,16 +150,22 @@ nav a:hover, .active{
     background:var(--accent1);
     padding:.5% 4%;
     text-align: center;
-    z-index: 101;
+    z-index: 100;
     font-size: 3rem;
     cursor: pointer;
 }
 
-#closeMenu{
-    display: none;
-    margin-top: -80px;
-    
+#closeMenu, 
+#closeMenu.hide,
+#menuToggler.hide {
+    display: none;  
 }
+
+nav ul.show,
+#closeMenu.show {
+    display: block;    
+}
+
 
 
 h1{

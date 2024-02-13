@@ -1,17 +1,18 @@
-const openButton = document.querySelector('#menuToggler');
-const closeButton = document.querySelector('#closeMenu');
+const open = document.querySelector('#menuToggler');
+const close = document.querySelector('#closeMenu');
 const menu = document.querySelector('#primaryMenu');
 
+
 //Open toggler
-openButton.addEventListener('click', () => {	
+open.addEventListener('click', () => {	
 	menu.classList.toggle("show");
-	openButton.style.display = 'none';
-	closeButton.style.display = 'block';
+	open.classList.toggle("hide");
+	close.classList.toggle("show");
 });
 
 //Close toggler
-closeButton.addEventListener('click', () => {	
+close.addEventListener('click', () => {	
 	menu.classList.toggle("show");
-	openButton.style.display = 'block';	
-	location.reload();
+	open.classList.toggle("hide");
+	close.classList.toggle("show");
 });
