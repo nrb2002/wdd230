@@ -1,371 +1,320 @@
-:root{
+:root {
     --primary-color : #0a2341;
     --secondary-color : #365681;
     --accent1 : #f5f4f4;
-    --accent2: #554E4E;
-    --paragraph-text-color: var(--accent1);
-    --paragraph-background-color: var(--accent2);
+    --accent2 : #554E4E;
+    --paragraph-text-color : var(--accent1);
+    --paragraph-background-color : var(--accent2);
     --title-color : var(--primary-color);
-    --subtitle-color : var(--accent2);    
+    --subtitle-color : var(--accent2);
 }
 
-
-html, body{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-    background-color: var(--accent1); 
-    font-family:'Roboto', sans-serif;
-    margin:0 auto;
-    min-height: 100vh;
+html, body {
+    width : 100%;
+    padding : 0;
+    margin : 0;
+    overflow-x : hidden;
+    background-color : #f5f4f4;
+    font-family : 'Roboto', sans-serif;
+    margin : 0 auto;
+    min-height : 100vh;
 }
-
-header, #page-header{
-    height: 100vh;
-    background: url(../images/kinshasa-financial-center.jpg); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;    
-}
-
-#page-header{
-    height: 50vh;   
-}
-
-
-
-/* NAV BAR */
-
-nav{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--primary-color);
-    color: var(--accent1);   
-    opacity: .9;
-}
-
-nav ul{
-    display: none;    
-    list-style: none;    
-    text-align: left;
-    justify-content: flex-start;
-    box-shadow: -10px 0 10px var(--accent2);
-    backdrop-filter: blur(10px);
-    padding: 0 2%;
-    left: -100%;
-    transition: all .5s ease;
-}
-
-/*Hide the home menu in mobile view*/
-nav ul li:first-child{
-    display: none;
-}
-
-
-
-
-
-nav li{
-    height: 50px;
+    header, #page-header {
+    height : 100vh;
+    background : url(../images/kinshasa-financial-center.webp);
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+    background-attachment : fixed;
+    z-index : -1;
+    }
+    #page-header {
+    height : 50vh;
+    }
+    nav {
+    position : fixed;
+    right : 0;
+    top : 0;
+    z-index : 100;
+    width : 100%;
+    align-items : center;
+    justify-content : space-between;
+    background-color : #0a2341;
+    color : var(--accent1);
+    opacity : 0.9;
+    }
+    nav ul {
+    display : none;
+    list-style : none;
+    text-align : left;
+    justify-content : flex-start;
+    box-shadow : -10px 0 10px #554E4E;
+    backdrop-filter : blur(10px);
+    padding : 0 2%;
+    left : -100%;
+    transition : all 0.5s ease;
+    }
+    nav ul li:first-child {
+    display : none;
+    }
+    nav li {
+    height : 50px;
     text-transform : uppercase;
-    margin-right: 2%;
-    width: 100%;
+    margin-right : 2%;
+    width : 100%;
+    }
+    nav a {
+    height : 100%;
+    padding : 0 2rem;
+    text-decoration : none;
+    display : flex;
+    align-items : center;
+    color : var(--accent1);
+    font-size : 0.8rem;
+    font-weight : 600;
+    transition : all 0.5s ease;
+    color : var(--accent1);
+    }
+    nav a:hover, .active {
+    background-color : #f5f4f4;
+    color : var(--primary-color);
+    }
+    .logo {
+    display : flex;
+    gap : 0.5rem;
+    padding : 0.5% 2%;
+    font-size : 0.8rem;
+    font-weight : 600;
+    width : 500px;
+    }
+    .logo img {
+    width : 50px;
+    margin-right : 0.5rem;
+    }
+    .logo a {
+    line-height : 1.8rem;
+    color : var(--accent1);
+    }
+    .logo a:hover {
+    color : var(--secondary-color);
+    background : none;
+    }
+    .action_button {
+    background-color : #f5f4f4;
+    border : var(--primary-color) solid 1px;
+    border-radius : 10rem;
+    color : var(--primary-color);
+    }
+    .action_button:hover {
+    background-color : #365681;
+    color : var(--accent1);
+    }
+    #menuToggler, #closeMenu {
+    display : block;
+    position : fixed;
+    right : 0;
+    top : 0;
+    border : 0;
+    background : #f5f4f4;
+    padding : 0.5% 4%;
+    text-align : center;
+    z-index : 100;
+    font-size : 3rem;
+    cursor : pointer;
+    }
+    #closeMenu, #closeMenu.hide, #menuToggler.hide {
+    display : none;
+    }
+    nav ul.show, #closeMenu.show {
+    display : block;
+    }
+    h1 {
+    font-size : 2.5rem;
+    color : var(--accent1);
+    font-weight : 300;
+    }
+    #page-title {
+    text-align : center;
+    padding-top : 20%;
+    margin-top : 0;
+    }
+    h2 {
+    color : var(--title-color);
+    }
+    h3 {
+    color : var(--subtitle-color);
+    }
+    h2 {
+    font-size : 2rem;
+    }
+    section {
+    padding : 0 7%;
+    }
+    .hero {
+    height : 100vh;
+    position : relative;
+    align-items : center;
+    gap : 2rem;
+    padding-top : 40%;
+    }
+    .hero-text p {
+    color : var(--accent1);
+    font-size : 1.5rem;
+    line-height : 1.2;
+    margin-bottom : 15rem;
+    text-align : left;
+    }
+.hero-text a {
+    text-decoration : none;
+    display : inline-block;
+    color : var(--primary-color);
+    background-color : #f5f4f4;
+    padding : 4%;
+    margin : 1%;
+    width : 30%;
+    line-height : 1.4;
+    font-weight : bold;
+    border : solid 2px;
+    border-radius : 2rem;
+    text-align : center;
+    text-transform : uppercase;
+    transition : all 0.55s ease;
 }
 
-nav a{
-    height: 100%;
-    padding:0 2rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: var(--accent1);
-    font-size: .8rem;
-    font-weight: 600;
-    transition: all .5s ease;    
-    color: var(--accent1);
+    .hero-text a:hover {
+    background : transparent;
+    color : var(--accent1);
+    transform : translateX(8px);
+    }
+    .hero-text a.cta {
+    background : transparent;
+    color : var(--accent1);
+    }
+    .hero-text a.cta:hover {
+    background : #f5f4f4;
+    color : var(--primary-color);
+    }
+
+/* Page main content */
+.content,
+main section {
+    width : 100%;
+    margin : 0;
 }
 
-nav a:hover, .active{
-    background-color: var(--accent1);
-    color: var(--primary-color);
-  }
-
-.logo{
-    display: flex;
-    gap: .5rem;
-    padding: .5% 2%;
-    font-size: .8rem; 
-    font-weight: 600; 
-    width: 500px;
-}
-
-.logo img{
-    width: 50px;
-    margin-right: .5rem;
-}
-
-.logo a{
-    line-height: 1.8rem;
-    color: var(--accent1);
-}
-
-.logo a:hover{
-    color: var(--secondary-color);
-    background: none;
-}
- 
-.action_button{
-    background-color: var(--accent1);
-    border: solid 1px var(--primary-color);
-    border-radius: 10rem;
-    color: var(--primary-color);
-    padding: 0 auto;
-}
-
-.action_button:hover{
-    background-color: var(--secondary-color);
-    color: var(--accent1);
-}
-
-/* NAV BAR */
-
-
-/*Hamburger Menu style*/
-/* small view navigation */
-#menuToggler,
-#closeMenu {    
-    display: block;
-    position: fixed;
-    right: 0;
-    top: 0;
-    border: 0;
-    background:var(--accent1);
-    padding:.5% 4%;
-    text-align: center;
-    z-index: 100;
-    font-size: 3rem;
-    cursor: pointer;
-}
-
-#closeMenu, 
-#closeMenu.hide,
-#menuToggler.hide {
-    display: none;  
-}
-
-nav ul.show,
-#closeMenu.show {
-    display: block;    
-}
-
-
-
-h1{
-    font-size: 2.5rem;
-    color: var(--accent1);
-    font-weight: 300;
-}
-
-#page-title{
-    text-align: center;
-    padding-top: 20%;
-    margin-top: 0;
-}
-
-h2{
-    color: var(--title-color);
-}
-
-h3{
-    color: var(--subtitle-color);
-}
-
-h2{
-    font-size: 2rem;
-}
-
-section{
-    padding: 0 7%;
-}
-
-.hero{
-    height: 100vh;
-    position: relative;
-    align-items: center;
-    gap: 2rem;
-    padding-top: 40%;
-}
-
-
-
-
-.hero-text p{
-    color: var(--accent1);
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-bottom: 15rem;
-    text-align: left;
-}
-
-.hero-text a{
-    text-decoration: none;
-    display: inline-block;
-    color: var(--primary-color);
-    background-color: var(--accent1);
-    padding: 4%;
-    margin: 1%;
-    width: 30%;
-    line-height: 1.4;
-    font-weight: bold;
-    border: solid 2px;
-    border-radius: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all .55s ease; 
-}
-
-.hero-text a:hover{
-    background: transparent;
-    color: var(--accent1);
-    transform: translateX(8px);
-}
-
-.hero-text a.cta{
-    background: transparent;
-    color: var(--accent1);
-}
-
-.hero-text a.cta:hover{
-    background: var(--accent1);
-    color: var(--primary-color);
-}
-
-.content{
-    width: 100vh;
-    margin: 0;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-    background: white;
-}
-
-p{
-    text-align: justify;
-    line-height: 1.4rem;
-}
-
-th, tbody{     
-    padding: .5rem;
-}
-
-.table{
-    border: var(--primary-color) solid 1px;
-    width: 100%;
-    text-align: center;  
-}
-
-.primary{
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.secondary{
-    background-color: var(--secondary-color);
-    color: white;
-}
-
-.accent1{
-    background-color: var(--accent1);
-    color: var(--primary-color);
-}
-.accent2{
-    background-color: var(--accent2);
-    color: white;
-}
-
-/*Style for accordion menu*/
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion-wrapper{    
-    border: solid .5px;    
-    margin-top: .1rem;
-}
-.accordion {
-    background-color: var(--accent1);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-    border: none;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .accordion:hover {
-    background-color: var(--accent2);
-    color: black;    
-  }
-  
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: var(--accent1);
-    display: none;
-    overflow: hidden;
-  }
-
-  /*End Style for accordion menu*/
-
-  #mobile{
-    width:60%;
-  }
-
-  #desktop{
-    width:100%;
-    border:solid 1px;
-  }
-
-
-footer {
+.mission-section{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.mission-section h2{
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.mission-section .card{
+    height: 12rem;
+    width: 20rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    padding: 1% 10%;
+    border: solid 1px var(--accent2);    
+}
+
+.weather-section{
+    display: flex;
+    background-color: white;
+}
+
+
+    p {    
+        line-height : 1.4rem;
+    }
+    th, tbody {
+    padding : 0.5rem;
+    }
+    .table {
+    border : var(--primary-color) solid 1px;
+    width : 100%;
+    text-align : center;
+    }
+    .primary {
+    background-color : #0a2341;
+    color : white;
+    }
+    .secondary {
+    background-color : #365681;
+    color : white;
+    }
+    .accent1 {
+    background-color : #f5f4f4;
+    color : var(--primary-color);
+    }
+    .accent2 {
+    background-color : #554E4E;
+    color : white;
+    }
+    .accordion-wrapper {
+    border : solid 0.5px;
+    margin-top : 0.1rem;
+    }
+    .accordion {
+    background-color : #f5f4f4;
+    cursor : pointer;
+    padding : 18px;
+    width : 100%;
+    text-align : left;
+    outline : none;
+    transition : 0.4s;
+    border : none;
+    }
+    .accordion:hover {
+    background-color : #554E4E;
+    color : black;
+    }
+    .panel {
+    padding : 0 18px;
+    background-color : #f5f4f4;
+    display : none;
+    overflow : hidden;
+    }
+    #mobile {
+    width : 60%;
+    }
+    #desktop {
+    width : 100%;
+    border : solid 1px;
+    }
+    footer {
+    display : flex;
     text-align : center;
     padding-bottom : 0;
-    background-color : var(--primary-color);
+    background-color : #0a2341;
     margin-bottom : 0;
-    color: var(--accent1);
+    color : var(--accent1);
     font-size : 0.85rem;
-    width: 100%;
-}
-
-footer .secondary-menu{
-    padding: 2%;
-}
-
-footer a{
-    color: var(--accent1);
-    margin: 2%;
-}
-
-footer a:hover{
-    color: var(--secondary-color);
-}
-
-footer .legal-mention{
-    background-color: black;
-    width: inherit;
+    width : 100%;
+    }
+    footer .secondary-menu {
+    padding : 2%;
+    }
+    footer a {
+    color : var(--accent1);
+    margin : 2%;
+    }
+    footer a:hover {
+    color : var(--secondary-color);
+    }
+    footer .legal-mention {
+    background-color : black;
+    width : inherit;
     padding : 1%;
-    margin: 0 auto;
-    line-height: 1.2rem;
-    font-size: 1rem;
-}
-
-
+    margin : 0 auto;
+    line-height : 1.2rem;
+    font-size : 1rem;
+    }

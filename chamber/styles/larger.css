@@ -1,89 +1,66 @@
 @media only screen and (min-width: 1024px) {
-  h1{
-    font-size: 4rem;
-  } 
+  h1 {
+  font-size : 4rem;
+  }
+  nav {
+  display : flex;
+  align-items : center;
+  justify-content : space-between;
+  }
+  nav ul, #primaryMenu {
+  display : flex;
+  justify-content : flex-end;
+  align-items : center;
+  box-shadow : none;
+  backdrop-filter : ;
+  }
+  nav ul li:first-child {
+  display : block;
+  }
+  #menuToggler, #closeMenu {
+  display : none;
+  }
+  main {
+  width : 60%;
+  margin : 0 auto;
+  }
+  #mobile {
+  width : 40%;
+  }
+  #desktop {
+  width : 80%;
+  border : solid 1px;
+  }
+  .logo {
+  font-size : 1rem;
+  font-weight : 700;
+  }
+  .action_button {
+  width : 100px;
+  }
+  section {
+  padding : 0 18%;
+  }
+  .hero {
+  padding-top : 20%;
+  }
+  .hero-text a {
+  width : 10rem;
+  margin : 0.5%;
+  padding : 2%;
+  }
+  .hero-text h1 {
+  margin-top : 0;
+  }
+  .hero-text p {
+  margin-bottom : 3rem;
+  }
+  section#mission h2 {
+  grid-column : 1 / 4;
+  grid-row : 1 / 2;
+  text-align : center;
+  }
+  }
+  ↑ TOP
   
-  nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
   
-  nav ul,
-  #primaryMenu{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    box-shadow:none;
-    backdrop-filter: none;
-}
-
-  /*Display the home menu in mobile view*/
-  nav ul li:first-child{
-    display: block;
-  }
-
-  #menuToggler,
-  #closeMenu{
-    display: none;
-  }
-
-
-  main{
-      width: 60%;
-      margin:0 auto;
-    }
-
-    #mobile{
-        width:40%;
-      }
-    
-    #desktop{
-      width:80%;
-      border:solid 1px;
-    }
-
-    
-
-    .logo{
-      font-size: 1rem; 
-      font-weight: 700; 
-    }
-
-    .action_button{
-      width: 100px;      
-    }
-
-    section{
-      padding: 0 18%;
-    }
-
-    .hero{
-      padding-top: 20%;
-    
-    }
-
-    .hero-text a{
-      width: 10rem;
-      margin: .5%;
-      padding: 2%; 
-    }
-
-    .hero-text h1{
-      margin-top: 0;
-    }
-
-    .hero-text p{
-      margin-bottom: 3rem;
-    }
-
-    section#mission h2{
-      grid-column: 1/4;
-      grid-row: 1/2;
-      text-align: center;
-      
-  }
-
-        
-}

@@ -94,9 +94,7 @@ nav ul li {
     list-style-type : none;
     display : block;
     font-size : .85rem;
-    text-transform : uppercase;
-    text-decoration : none;    
-    
+    text-transform : uppercase;   
     text-align : center;
 }
 
@@ -106,12 +104,18 @@ nav ul li a {
     font-weight : bold;
     letter-spacing : 1.6px;
     display: none;
-    padding : .6rem;
 }
 
-nav ul li:hover, .active{
-    background-color : var(--secondary-color);    
-    color: black;
+nav li:hover,
+.active{
+    border-bottom : solid 5px var(--secondary-color);
+    width: fit-content;
+    transition: all .3s ease;
+    
+}
+
+nav a:hover{
+    color: var(--link-hover-color);
 }
 
 /*
@@ -119,26 +123,7 @@ nav ul li:hover, .active{
 	content: "📍";  /* just a wayfinding symbol for the user
 }*/
 
-.dropdown-content {
-    display : none;
-    position : absolute;
-    background-color : #f1f1f1;
-    min-width : 160px;
-    box-shadow : 0 8px 16px 0 rgb(0, 0, 0, 0.2);
-    z-index : 1;
-}
 
-.dropdown-content a {
-    color : black;
-    padding : 0.5rem;
-    display : block;
-}
-.dropdown-content a:hover {
-    background-color : #ddd;
-}
-.dropdown:hover .dropdown-content {
-    display : block;
-}
 main {
     width : 90%;
     display : grid;
@@ -186,7 +171,6 @@ main h2 {
 
 footer {
     display: grid;
-}
     text-align : center;
     padding-bottom : 0;
     background-color : #1A587A;

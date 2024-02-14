@@ -1,0 +1,66 @@
+:root {
+  --primary-color : #0a2341;
+  --secondary-color : #365681;
+  --accent1 : #f5f4f4;
+  --accent2 : #554E4E;
+  --paragraph-text-color : var(--accent1);
+  --paragraph-background-color : var(--accent2);
+  --title-color : var(--primary-color);
+  --subtitle-color : var(--accent2);
+}
+
+.weather-card {
+  background: rgba( 0, 0, 0, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  overflow: hidden;
+  
+}
+
+
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.js-tilt-glare {
+  border-radius: 10px;
+}
+
+a {
+  margin-top: 7%;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
