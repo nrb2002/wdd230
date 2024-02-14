@@ -46,6 +46,16 @@
     }
     /* ./Sticky navbar on scroll */
 
+    .temple-name {
+        position: absolute;
+        top: 70%;
+        right: 3%;
+    }
+
+    .temple-name h3{ 
+        font-size: 2rem;
+    }
+
     main {
         max-width : 80%;
         display : grid;
