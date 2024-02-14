@@ -34,6 +34,18 @@
         padding : 0;
     }
 
+    /* Sticky navbar on scroll */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+    .sticky + .content {
+        padding-top: 60px;
+    }
+    /* ./Sticky navbar on scroll */
+
     main {
         max-width : 80%;
         display : grid;

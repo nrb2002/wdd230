@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+   <main>
+    <div class="hero">
+        <h1>WDD230 - Responsive Images Activity</h1><hr>
+        <h3>Baron Tshibasu</h3>
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/hero-small.webp" >
+            <source media="(max-width: 1000px)" srcset="images/hero-medium.webp" >
+            <img src="images/hero-large.webp" alt="kinshasa-temple" width="1279" height="640" >
+        </picture>
+    </div>
+
+   </main>
+    
+
+   <script>
+    //Sticky title on scroll
+        window.onscroll = function() {myFunction()};
+                    
+        var title = document.querySelector("h1");
+        var sticky = title.offsetTop;
+
+        function myFunction() {
+            if (window.scrollY >= sticky) {
+                title.classList.add("sticky")
+            } else {
+            title.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
