@@ -43,8 +43,7 @@ header img {
 
 h1 {
     font-size : 1.5rem;
-    color: var(--title-color);
-    
+    color: var(--title-color);    
 }
 
 
@@ -128,7 +127,7 @@ nav a:hover{color: var(--link-hover-color);}
 
 .temple-name {
 	position: absolute;
-	top: 25%;
+	top: 35%;
     margin-left: 3%;
 	background: radial-gradient(#fff, var(--primary-color));
 	border: 2px solid rgba(0,0,0,.75);
