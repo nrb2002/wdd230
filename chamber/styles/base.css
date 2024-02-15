@@ -19,7 +19,8 @@ html, body {
     margin : 0 auto;
     min-height : 100vh;
 }
-    header, #page-header {
+
+header, #page-header {
     height : 100vh;
     background : url(../images/kinshasa-financial-center.webp);
     background-repeat : no-repeat;
@@ -27,57 +28,61 @@ html, body {
     background-size : cover;
     background-attachment : fixed;
     z-index : -1;
-    }
+}
+
     #page-header {
-    height : 50vh;
+        height : 50vh;
     }
     nav {
-    position : fixed;
-    right : 0;
-    top : 0;
-    z-index : 100;
-    width : 100%;
-    align-items : center;
-    justify-content : space-between;
-    background-color : #0a2341;
-    color : var(--accent1);
-    opacity : 0.9;
+        position : fixed;
+        right : 0;
+        top : 0;
+        z-index : 100;
+        width : 100%;
+        align-items : center;
+        justify-content : space-between;
+        background-color : #0a2341;
+        color : var(--accent1);
+        opacity : 0.95;
     }
     nav ul {
-    display : none;
-    list-style : none;
-    text-align : left;
-    justify-content : flex-start;
-    box-shadow : -10px 0 10px #554E4E;
-    backdrop-filter : blur(10px);
-    padding : 0 2%;
-    left : -100%;
-    transition : all 0.5s ease;
+        display : none;
+        list-style : none;
+        text-align : left;
+        justify-content : flex-start;
+        box-shadow : -10px 0 10px #554E4E;
+        backdrop-filter : blur(10px);
+        padding : 0 2%;
+        left : -100%;
+        transition : all 0.5s ease;
     }
     nav ul li:first-child {
-    display : none;
+        display : none;
     }
+
     nav li {
-    height : 50px;
-    text-transform : uppercase;
-    margin-right : 2%;
-    width : 100%;
+        height : 50px;
+        text-transform : uppercase;
+        margin-right : 2%;
+        width : 100%;
     }
+    
     nav a {
-    height : 100%;
-    padding : 0 2rem;
-    text-decoration : none;
-    display : flex;
-    align-items : center;
-    color : var(--accent1);
-    font-size : 0.8rem;
-    font-weight : 600;
-    transition : all 0.5s ease;
-    color : var(--accent1);
+        height : 100%;
+        padding : 0 2rem;
+        text-decoration : none;
+        display : flex;
+        align-items : center;
+        color : var(--accent1);
+        font-size : 0.8rem;
+        font-weight : 600;
+        transition : all 0.5s ease;
+        color : var(--accent1);
     }
     nav a:hover, .active {
-    background-color : #f5f4f4;
-    color : var(--primary-color);
+        background-color : #f5f4f4;
+        color : var(--primary-color);
+        
     }
     .logo {
     display : flex;
@@ -92,7 +97,7 @@ html, body {
     margin-right : 0.5rem;
     }
     .logo a {
-    line-height : 1.8rem;
+    /* line-height : 1.8rem; */
     color : var(--accent1);
     }
     .logo a:hover {
@@ -126,7 +131,7 @@ html, body {
     display : none;
     }
     nav ul.show, #closeMenu.show {
-    display : block;
+        display : block;
     }
     h1 {
     font-size : 2.5rem;
@@ -290,31 +295,31 @@ main section {
     width : 100%;
     border : solid 1px;
     }
-    footer {
-    display : flex;
-    text-align : center;
-    padding-bottom : 0;
-    background-color : #0a2341;
-    margin-bottom : 0;
-    color : var(--accent1);
-    font-size : 0.85rem;
-    width : 100%;
-    }
-    footer .secondary-menu {
-    padding : 2%;
-    }
-    footer a {
-    color : var(--accent1);
-    margin : 2%;
-    }
-    footer a:hover {
-    color : var(--secondary-color);
-    }
-    footer .legal-mention {
-    background-color : black;
-    width : inherit;
-    padding : 1%;
-    margin : 0 auto;
-    line-height : 1.2rem;
-    font-size : 1rem;
-    }
+    
+footer{
+    background-color: var(--primary-color);
+    color: var(--accent1);
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+footer h4{
+    font-weight: 100;
+}
+
+footer .secondary-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    justify-content: center;
+    padding: 1.5%;
+}
+
+footer .legal-mention{
+    background-color: black;
+    padding: 1% 0 ;    
+}
+
+footer a:hover{
+    color: var(--secondary-color);
+}

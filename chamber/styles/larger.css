@@ -3,22 +3,22 @@
   font-size : 4rem;
   }
   nav {
-  display : flex;
-  align-items : center;
-  justify-content : space-between;
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
+    opacity : 0.75;
   }
   nav ul, #primaryMenu {
-  display : flex;
-  justify-content : flex-end;
-  align-items : center;
-  box-shadow : none;
-  backdrop-filter : ;
+    display : flex;
+    justify-content : flex-end;
+    align-items : center;
+    box-shadow : none;
   }
   nav ul li:first-child {
   display : block;
   }
   #menuToggler, #closeMenu {
-  display : none;
+    display : none;
   }
   main {
   width : 60%;
@@ -61,6 +61,5 @@
   text-align : center;
   }
   }
-  ↑ TOP
   
   
