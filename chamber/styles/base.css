@@ -30,46 +30,46 @@ header, #page-header {
     z-index : -1;
 }
 
-    #page-header {
-        height : 50vh;
-    }
-    nav {
-        position : fixed;
-        right : 0;
-        top : 0;
-        z-index : 100;
-        width : 100%;
-        align-items : center;
-        justify-content : space-between;
-        background-color : #0a2341;
-        color : var(--accent1);
-        opacity : 0.95;
-    }
-    nav ul {
-        display : none;
-        list-style : none;
-        text-align : left;
-        justify-content : flex-start;
-        box-shadow : -10px 0 10px #554E4E;
-        backdrop-filter : blur(10px);
-        padding : 0 2%;
-        left : -100%;
-        transition : all 0.5s ease;
-    }
-    nav ul li:first-child {
-        display : none;
-    }
+#page-header {
+    height : 50vh;
+}
+nav {
+    position : fixed;
+    z-index : 100;
+    width : 100%;
+    align-items : center;
+    justify-content : space-between;
+    background-color : #0a2341;
+    color : var(--accent1);
+    opacity : 0.95;
+}
 
-    nav li {
-        height : 50px;
-        text-transform : uppercase;
-        margin-right : 2%;
-        width : 100%;
-    }
+nav ul {
+    display : none;
+    list-style : none;
+    text-align : left;
+    justify-content : flex-start;
+    box-shadow : -10px 0 10px #554E4E;
+    backdrop-filter : blur(10px);
+    padding : 0 2%;
+    left : -100%;
+    transition : all 0.5s ease;
+}
+nav ul li:first-child {
+    display : none;
+}
+
+nav li {
+    height : 50px;
+    text-transform : uppercase;
+    margin-right : 2%;
+    width : 100%;
+}
     
     nav a {
         height : 100%;
-        padding : 0 2rem;
+        padding : 0 .1rem;
+        margin-top: 1%;
         text-decoration : none;
         display : flex;
         align-items : center;
@@ -77,7 +77,6 @@ header, #page-header {
         font-size : 0.8rem;
         font-weight : 600;
         transition : all 0.5s ease;
-        color : var(--accent1);
     }
     nav a:hover, .active {
         background-color : #f5f4f4;
@@ -85,12 +84,13 @@ header, #page-header {
         
     }
     .logo {
-    display : flex;
-    gap : 0.5rem;
-    padding : 0.5% 2%;
-    font-size : 0.8rem;
-    font-weight : 600;
-    width : 500px;
+        display : flex;
+        gap : 0.5rem;
+        padding : 0.5% 2%;
+        font-size : 0.8rem;
+        font-weight : 400;
+        width : 500px;
+        
     }
     .logo img {
     width : 50px;
@@ -115,17 +115,17 @@ header, #page-header {
     color : var(--accent1);
     }
     #menuToggler, #closeMenu {
-    display : block;
-    position : fixed;
-    right : 0;
-    top : 0;
-    border : 0;
-    background : #f5f4f4;
-    padding : 0.5% 4%;
-    text-align : center;
-    z-index : 100;
-    font-size : 3rem;
-    cursor : pointer;
+        display : block;
+        position : fixed;
+        right : 0;
+        top : 0;
+        border : 0;
+        background : #f5f4f4;
+        padding : 0.5% 4%;
+        text-align : center;
+        z-index : 100;
+        font-size : 3rem;
+        cursor : pointer;
     }
     #closeMenu, #closeMenu.hide, #menuToggler.hide {
     display : none;
@@ -201,10 +201,14 @@ header, #page-header {
     }
 
 /* Page main content */
-.content,
+main{
+    padding: 0 4%;
+    margin : 0;
+}
+
 main section {
     width : 100%;
-    margin : 0;
+    
 }
 
 .mission-section{
@@ -288,13 +292,15 @@ main section {
     display : none;
     overflow : hidden;
     }
-    #mobile {
+
+#mobile {
     width : 60%;
-    }
-    #desktop {
+}
+
+#desktop {
     width : 100%;
     border : solid 1px;
-    }
+}
     
 footer{
     background-color: var(--primary-color);

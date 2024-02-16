@@ -17,6 +17,10 @@
   nav ul li:first-child {
   display : block;
   }
+
+  nav a{
+    padding: 0 2rem;
+  }
   #menuToggler, #closeMenu {
     display : none;
   }

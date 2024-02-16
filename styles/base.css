@@ -127,7 +127,7 @@ nav a:hover{color: var(--link-hover-color);}
 
 .temple-name {
 	position: absolute;
-	top: 35%;
+	top: 45%;
     margin-left: 3%;
 	background: radial-gradient(#fff, var(--primary-color));
 	border: 2px solid rgba(0,0,0,.75);
