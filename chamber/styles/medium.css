@@ -1,8 +1,17 @@
-@media screen and (min-width: 826px) and (max-width: 1023px){
-    
+@media screen and (min-width: 426px){
+    h1, h2{
+      font-size: 1.8rem;
+  }
+
+  h
     
     .hero-text p{
         margin-bottom: 1rem;
         line-height: 1.5;
       }
+
+
+      footer .secondary-menu{
+        flex-direction: row;
+       }
 }

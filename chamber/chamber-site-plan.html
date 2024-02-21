@@ -13,27 +13,31 @@
         
         <meta property="og:title" content="WDD230 - Chamber of Commerce Project">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://images.app.goo.gl/1NaoAwSNifaaTB1f9">
+        <meta property="og:image" content="images/kinshasa-financial-center.webp">
         <meta property="og:url" content="https://nrb2002.github.io/wdd230/lesson03/chamber/">
         <meta property="og:description" content="WDD 230 - Web Frontend Development Baron Tshibasu Course Assignment Portal">
         <meta name="twitter:card" content="summary_large_image">
 
         
-
-        <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display">
-        <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">        
-        <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans/about">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;1,300;1,400&family=Rosarivo:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rosarivo:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Rosarivo:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+                
+        
         
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/larger.css"> 
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/slideshow.css"> 
 
         <!-- Weather widget stylesheet -->
         <link rel="stylesheet" href="styles/weather.css">
-   
+  
         
-        <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon.ico">  
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
     </head>
 
     <body>        
@@ -185,8 +189,8 @@
                 <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
                 <tr>
                     <td class="color-schema">Playfair Display</td>
-                    <td class="color-schema">Roboto</td>
-                    <td class="color-schema">Josefin Sans</td>                    
+                    <td class="color-schema">Poppins Static</td>
+                    <td class="color-schema">Rosarivo</td>                    
                 </tr>
             </table>
             <br>
@@ -207,29 +211,20 @@
         </main>
 
         <footer>
-            <div class="secondary-menu">
-                <div>
-                    <a href="index.html"><img src="images/logo-chamber-of-commerce.png" alt="Logo" width="50"></a>
-                </div>
-                <div>
-                    <h4>MENU</h4>
-                    <a href="#">About</a>  
-                    <a href="#">Events</a>  
-                    <a href="#">Resources</a>  
-                    <a href="#">Latest news</a> 
-                    
-                    <a href="chamber-site-plan.html">Site plan</a>
-                </div>
-                <div>
-                    <h4>CONTACT</h4>
-                    Email: tshibasubaron@yahoo.fr <br>
-                    Phone: 0810548945
-                </div>
+            <div class="secondary-menu">               
+                <a href="index.html"><img src="images/logo-chamber-of-commerce.png" alt="Logo" width="50"></a>               
+                <a href="#">About</a>  
+                <a href="#">Events</a>                     
+                <a href="#">Resources</a>  
+                <a href="#">Latest news</a>                    
+                <a href="chamber-site-plan.html">Site plan</a> 
+                <a href="../">Course Home Page</a>
             </div>
 
             <div class="legal-mention">
-                <small>Copyright © <span id="currentYear"></span> | WDD230 - The Kinshasa Chamber of Commerce | All rights reserved.</small><br>
                 <small>Baron Tshibasu | Democratic Republic of Congo | <img src="images/drc_flag.png" alt="[Flag]" width="25"></small><br>
+                <small>tshibasubaron@yahoo.fr | 0810548945</small><br>
+                <small>Copyright © <span id="currentYear"></span> | WDD230 - The Kinshasa Chamber of Commerce | All rights reserved.</small><br>
                 <small><i><strong>Last modified: <span id="lastUpdate"></span></strong></i></small><br>
                 
             </div>            
@@ -239,8 +234,6 @@
         <script src="scripts/chamber.js"></script>
         <script src="scripts/getdates.js"></script>
 
-        <!-- Weather widget script -->
-        <script src="scripts/weather.js" defer></script>
-        <!-- Scripts links -->
+        
     </body>
 </html>
