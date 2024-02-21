@@ -1,13 +1,12 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   h1, h2{
-  font-size : 3.5rem;
+  font-size : 3rem;
   }
 
   nav {
     display : flex;
     align-items : center;
     justify-content : space-between;
-    opacity : 0.75;
   }
   nav ul, #primaryMenu {
     display : flex;
@@ -59,6 +58,24 @@
     margin-bottom : 3rem;
   }
 
+  header, #page-header {
+    height : 100vh;
+    background : url(../images/kinshasa-financial-center-large.webp);
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+    background-attachment : fixed;
+    z-index : -1;
+  }
+  /* Inner pages styling */
+
+  .pages-content{
+    width: 65%;
+    padding: .5% 4%;
+  }
+
+  /* Inner pages styling */
+
   .section-content{
     width: 65%;
     display: grid;
@@ -87,6 +104,16 @@
       grid-column: 5/6;
       font-style: normal;
       font-size: 1.2rem;
+  }
+
+    .secondary-menu{
+      line-height: 1.5rem;
+  }
+
+  .secondary-menu a{
+    margin: 0 auto;
+    padding: 2%;
+    width: 10rem;
   }
 
   

@@ -13,35 +13,35 @@ html, body {
     overflow-x : hidden;
     background-color : #f5f4f4;
     font-family : 'Poppins Static', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin : 0 auto;
     min-height : 100vh;
+    min-width: 325px;
+}
+
+h1, h2, h3, h4{
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 h1, h2{
     font-family:'Playfair Display', serif;
-    font-weight: 300;
-    color: var(--title-color);
-    font-size: 4rem;
+    color: var(--title-color);    
 }
 
 h3, h4{
     font-family:'Playfair Display', serif;
-    font-size: 2rem; 
-    font-weight: 200;
+    color: var(--subtitle-color);
 }
 
-
-.hero h1,
-    #weather-section h3{
-    color: var(--accent1);
+p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
-
-
 
 header, #page-header {
     height : 100vh;
-    background : url(../images/kinshasa-financial-center.webp);
+    background : url(../images/kinshasa-financial-center-small.webp);
     background-repeat : no-repeat;
     background-position : center;
     background-size : cover;
@@ -62,7 +62,7 @@ nav {
     justify-content : space-between;
     background-color : var(--primary-color);
     color : var(--accent1);
-    opacity : 0.95;
+    opacity : 0.90;
 }
 
 nav ul {
@@ -102,7 +102,8 @@ nav a {
 
 nav a:hover, .active {
     background-color : #f5f4f4;
-    color : var(--primary-color);        
+    color : var(--primary-color);     
+    border-radius : 10rem;       
 }
 
 .logo {
@@ -121,16 +122,13 @@ nav a:hover, .active {
     margin-right : 0.5rem;
 }
     
-.logo a:hover {
-    color : var(--secondary-color);
-    background : none;
-}
+.logo a:hover {cursor: pointer;}
 
 .action_button {
-    background-color : #f5f4f4;
-    border : var(--primary-color) solid 1px;
+    /* background-color : #f5f4f4; */
+    border : white solid 2px;
     border-radius : 10rem;
-    color : var(--primary-color);
+    color : white;
 }
 
 .action_button:hover {
@@ -152,18 +150,15 @@ nav a:hover, .active {
     cursor : pointer;
 }
 
-#closeMenu, #closeMenu.hide, #menuToggler.hide {
-    display : none;
-}
+#closeMenu, #closeMenu.hide, #menuToggler.hide {display:none;}
 
-nav ul.show, #closeMenu.show {
-    display : block;
-}
+nav ul.show, #closeMenu.show {display:block;}
     
 #page-title {
     text-align : center;
     padding-top : 20%;
     margin-top : 0;
+    color: var(--accent1);
 }
 
 .hero {
@@ -173,6 +168,11 @@ nav ul.show, #closeMenu.show {
     align-items : center;
     gap : 2rem;
     padding : 0 5%;
+}
+
+.hero h1,
+#weather-section h3{
+    color: var(--accent1);
 }
     
 .hero-text p {
@@ -222,6 +222,8 @@ main{
     width: 100%;
 }
 
+
+
 section {
     width : 100%;
     justify-content: center;
@@ -259,7 +261,7 @@ section {
 #weather-section{
     display: flex;
     flex-direction: column;
-    color: var(--secondary-color);
+    color: white;
     line-height: 1.2rem;
     font-family: "Rosarivo", cursive;
     font-weight: 300;  
@@ -268,7 +270,6 @@ section {
 
 #weather-section .card:last-child{
     background-color: var(--secondary-color);
-    color: var(--accent1);
     font-style: normal;
     font-size: 1.2rem;
     line-height: 2rem;
@@ -285,10 +286,15 @@ section {
     margin: 0 auto;    
 }
 
+/* Inner-pages styling */
+.pages-content{
+    width: 90%;
+    padding: 2% 6%;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
-p {    
-    line-height : 1.4rem;
-}
+  /* Inner-pages styling */
 
 th, tbody {
     padding : 0.5rem;
@@ -296,7 +302,7 @@ th, tbody {
 
 .table {
     border : var(--primary-color) solid 1px;
-    width : 100%;
+    width : 98%;
     text-align : center;
 }
     
@@ -332,7 +338,7 @@ th, tbody {
     }
     .accordion:hover {
     background-color : #554E4E;
-    color : black;
+    color : white;
     }
     .panel {
     padding : 0 18px;
@@ -361,13 +367,14 @@ footer h4{
     font-weight: 100;
 }
 
-footer .secondary-menu{
+.secondary-menu{
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
-    gap: 5%;
-    padding-bottom: 2%;
+    gap: 20%;
+    padding: 2% 6%;
     flex-direction: column;
+    line-height: 1.2rem;
 }
 
 footer .legal-mention{
