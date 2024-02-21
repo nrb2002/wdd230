@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    
+
+    <header>
+        <!-- The header should contain a page title in an <h1> element. -->
+        <h1>WDD230 - Lazy Loading Example</h1>
+    </header>
+    
+    <main>
+        <h2>African Beauty Gallery</h2>
+
+        <!-- The main section contains six (6) <img> elements. -->
+        <!-- The images dimensions must be 400px width by 600px+ height (portrait layouts). -->
+        <img loading="lazy" src="images/african-beauty-1.webp" alt="" width="400" height="600">
+        <img loading="lazy" src="images/african-beauty-2.webp" alt="" width="400" height="600">
+        <img loading="lazy" src="images/african-beauty-3.webp" alt="" width="400" height="600">
+        <img loading="lazy" src="images/african-beauty-4.webp" alt="" width="400" height="600">
+        <img loading="lazy" src="images/african-beauty-5.webp" alt="" width="400" height="600">
+        <img loading="lazy" src="images/african-beauty-6.webp" alt="" width="400" height="600">
+    </main>
+
+    <footer>
+        <!-- The footer can contain whatever you think appropriate along with the date that the document was last modified using JavaScript. -->
+        <p>Copyright © <span id="currentYear"></span> | Baron Tshibasu | Democratic Republic of Congo | <img src="images/drc_flag.png" alt="[Flag]" width="25"> | All rights reserved</p>
+        <p><i><small><strong>Last modified: <span id="lastUpdate"></span></strong></small></i></p>
+
+    </footer>
+
+
+    <!-- Scripts sources -->
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

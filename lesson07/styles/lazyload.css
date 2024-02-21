@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(38, 2, 38);
+}
+
+h1{
+    background-color: black;
+    color: white;
+    padding: 1% 4%;
+    box-shadow: 20rem pink;
+}
+
+h2{
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(237, 188, 237);
+    padding-top: 4% auto;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+main img{
+    border: solid .5rem purple;
+    /* Add a fade from black animation to each image using CSS animation and opacity. */
+    background-color: black;
+    animation: fade-in 10s;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+    font-size: 1.2rem;
+}
