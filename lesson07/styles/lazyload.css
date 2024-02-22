@@ -3,20 +3,24 @@
     margin: 0;
     overflow-x: hidden;
     background-color: rgb(38, 2, 38);
+    
 }
 
 h1{
     background-color: black;
     color: white;
     padding: 1% 4%;
-    box-shadow: 20rem pink;
 }
 
 h2{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     color: rgb(237, 188, 237);
     padding-top: 4% auto;
+    background-color: rgb(17, 44, 101);
+    width: 100%;
+    padding: 2%;
+    margin: 1%;
 }
 main{
     display: flex;
