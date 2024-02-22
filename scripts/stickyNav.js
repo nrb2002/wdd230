@@ -1,13 +1,3 @@
-//Hamburger menu toggler
-const hamButton = document.querySelector('#menuToggler');
-const navigation = document.querySelector('nav');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
-
-
 //Sticky navbar on scroll
 window.onscroll = function() {myFunction()};
             
