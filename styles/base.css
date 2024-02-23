@@ -162,10 +162,14 @@ main h2 {
 }
 
 
+section{
+    display : grid;
+    grid-template-columns: 2fr, 1fr;
+}
 
 
 .card {
-    display : grid;
+    
     border : lightgray solid 1px;
     margin: 1%;
     border-radius: 0 0 1rem 1rem ;
@@ -188,6 +192,8 @@ main h2 {
     line-height : 1.8em;
     list-style : none;    
 }
+
+
 
 .weather,
 .numberOfVisits{

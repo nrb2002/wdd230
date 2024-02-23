@@ -98,10 +98,10 @@ let geocode = {
 //Search weather information
 weather.fetchWeather(myCity);
 
-//Reload page every 5 min
+//Reload page every 60 min
 setInterval(function() {
   location.reload();
-}, 300000);
+}, 3600000);
 
 
 
