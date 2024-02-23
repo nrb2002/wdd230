@@ -14,7 +14,7 @@ h1{
 
 h2{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(237, 188, 237);
     padding-top: 4% auto;
     background-color: rgb(17, 44, 101);
@@ -26,7 +26,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -53,5 +53,4 @@ footer{
     margin: 0 auto;
     text-align: center;
     padding: 2%;
-    font-size: 1.2rem;
 }
