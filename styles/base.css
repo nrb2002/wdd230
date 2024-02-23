@@ -6,7 +6,7 @@
     --title-color : white;
     --link-hover-color : #fbaf00ff;
     --link-visited-color : #ffd639ff;
-    --paragraph-background-color : whitesmoke;
+    --paragraph-background-color : rgb(211, 228, 240);
 }
 * {
     padding : 0;
@@ -152,7 +152,7 @@ nav a:hover{color: var(--link-hover-color);}
 main {
     width : 90%;
     display : grid;
-    padding : 2%;
+    padding: 2%;
     margin : 0 auto;
     }
 
@@ -171,8 +171,7 @@ main h2 {
 .card {
     display : grid;
     border : lightgray solid 1px;
-    margin : 2% 1%;
-    font-size : .95em;
+    margin: 1%;
     border-radius: 0 0 1rem 1rem ;
     background-color: var(--paragraph-background-color);    
 }
@@ -185,19 +184,23 @@ main h2 {
     grid-row : 1 / 2;
     background-color : #1A587A;
     padding : 2%;
-    font-weight : bold;
     color : var(--title-color);    
     text-align : center;
 }
-.card ul, .card label {
+.card ul{
     padding : 2% 4%;
     line-height : 1.8em;
     list-style : none;    
 }
 
-#activities ul li{
-    font-size: 1.2em;
+.weather,
+.numberOfVisits{
+    text-align: center;
+    padding: 2%;
+    line-height: 2rem;             
 }
+
+
 
 iframe{
     width: 100%;
