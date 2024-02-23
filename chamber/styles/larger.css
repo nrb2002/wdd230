@@ -107,7 +107,7 @@
 
   .weather-section .card:first-child{
     grid-column: 2/5;
-    font-style: italic;  
+    font-style: italic;
   }
   
 
@@ -115,7 +115,21 @@
       grid-column: 5/6;
       font-style: normal;
       font-size: 1.2rem;
+      height: 100%;
   }
+
+  .events-section-content{
+    grid-template-columns: repeat(7, 1fr);
+    gap:.3%;
+}
+
+.upcoming-events{
+  grid-column: 2/5;
+}
+
+.latest-events{
+  grid-column: 5/7;
+}
 
     .secondary-menu{
       line-height: 1.5rem;

@@ -47,6 +47,10 @@ p{
     font-size: 1rem;
 }
 
+a{
+    padding: 0;
+}
+
 header, #page-header {
     height : 100vh;
     background : url(../images/kinshasa-financial-center-small.webp);
@@ -273,7 +277,7 @@ section {
     font-family: "Rosarivo", cursive;
     font-weight: 300;  
     font-size: 1.2rem; 
-    padding-top: 2%;
+    
 }
 
 .weather-section .card:last-child{
@@ -281,29 +285,40 @@ section {
     font-style: normal;
     font-size: 1.2rem;
     line-height: 2rem;
-    padding: 2% 6%;
+    padding:0 4%;
 }
 
 .events-section{
     background-color: white;
     width: 100%;
-    margin:0;
+    margin-bottom: 8%;
 }
 
 .events-section-content{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    padding: 0 3% 0 3%;
+    gap:2%;
 }
 
-.upcoming-events{
-    grid-column: 2/5;
+.events-section-content h3{
+    margin: 0;
+    border-bottom: solid 5px red;
+    width: fit-content;
+    position: relative;
+    top: 0;
+}
+
+.events-section-content .card{
+    border: solid 1px lightblue;
+}
+
+/* .upcoming-events{
     border: solid 1px lightgray;
 }
 
 .latest-events{
-    grid-column: 5/7;
     border: solid 1px lightgray;
-}
+} */
 
 
 .events-section h2{
