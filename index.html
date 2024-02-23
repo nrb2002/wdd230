@@ -53,15 +53,12 @@
                 </div>
                 <div class="authorName">
                     <h1>Baron Tshibasu</h1>
-                </div>       
-                
+                </div>
             </div>
-        
-            
         </header>
 
         <!--Hamburger menu-->
-        <button id="menuToggler"></button>
+        <button id="menuToggler" aria-label="menuToggler"></button>
                 
         <nav >
             <ul>
@@ -80,9 +77,7 @@
                 <img src="images/hero-large.webp" alt="kinshasa-temple" width="960" height="640" >
             </picture>
 
-            <div class="temple-name">
-                <h4>Kinshasa Temple</h4>
-            </div>
+            <p class="temple-name">Kinshasa Temple</p>
         </div>
 
         <main>
@@ -131,14 +126,24 @@
 
             <!--Information-->
             <section class="card">
-                <div id="information">
+                <div class="information">
                     <h3>Information</h3>
-                    <label id="weather"></label>
-                    <label id="numberOfVisits"></label>  
+                    <div class="weather loading">
+                        <strong><div class="city"></div></strong>
+                        <div class="temp"></div>
+                        <div class="flex">
+                            <img loading="lazy"  src="https://openweathermap.org/img" loading="lazy" alt="" class="icon" />
+                            <div class="description"></div>
+                        </div>
+                        <!-- <div class="humidity"></div>
+                        <div class="wind"></div>                     -->
+                    </div>
+
+                    <div class="numberOfVisits"><span class="label">Page Visits: </span><span class="visits"></span></div> 
                 </div>                  
             </section>
 
-            <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127297.67587343676!2d15.322744649999997!3d-4.40130375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3130fe066a8b%3A0x168b7e4e1f52378d!2sKinshasa!5e0!3m2!1sen!2scd!4v1706725949010!5m2!1sen!2scd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="google-map" title="kinshasa-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127297.67587343676!2d15.322744649999997!3d-4.40130375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3130fe066a8b%3A0x168b7e4e1f52378d!2sKinshasa!5e0!3m2!1sen!2scd!4v1706725949010!5m2!1sen!2scd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           
 
         </main>
@@ -153,6 +158,9 @@
         <script src="scripts/hambMenu.js"></script>
         <script src="scripts/stickyNav.js"></script>
         <script src="scripts/getdates.js"></script>
+        <script src="scripts/weather.js" defer></script><!-- Weather widget script -->
+        <script src="scripts/getVisits.js"></script>
+
 
        
             
