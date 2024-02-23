@@ -14,13 +14,17 @@ h1{
 
 h2{
     text-align: center;
-    font-size: 2.5rem;
     color: rgb(237, 188, 237);
     padding-top: 4% auto;
     background-color: rgb(17, 44, 101);
     width: 100%;
     padding: 2%;
     margin: 1%;
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: .3rem;
 }
 main{
     display: flex;
