@@ -50,10 +50,7 @@
         position: absolute;
         top: 40%;
         right: 2%;
-    }
-
-    .temple-name h4{ 
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     main {
