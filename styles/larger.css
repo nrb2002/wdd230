@@ -47,7 +47,6 @@
     /* ./Sticky navbar on scroll */
 
     .temple-name {
-        position: absolute;
         top: 40%;
         right: 2%;
         font-size: 3rem;
