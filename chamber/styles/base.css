@@ -67,7 +67,7 @@ header, #page-header {
 
 nav {
     position : fixed;
-    top: 0;
+    top: 10;
     z-index : 100;
     width : 100%;
     align-items : center;
@@ -85,7 +85,7 @@ nav ul {
     box-shadow : -10px 0 10px #554E4E;
     backdrop-filter : blur(10px);
     padding : 0 2%;
-    left : -100%;
+    margin-right: 10%;
     transition : all 0.55s ease;
 }
 nav ul li:first-child {
@@ -217,7 +217,7 @@ nav ul.show, #closeMenu.show {display:block;}
     transform : translateX(8px);
 }
     
-.hero-text a.cta {
+.hero-text a.cta{
     background : transparent;
     color : var(--accent1);
 }
@@ -257,7 +257,13 @@ section {
     justify-content: center;
 }
 
-.our-mission h2{
+.section-content p{
+    grid-column: 1/4;
+    margin: 0 auto;
+    padding: 2% 6% 2% 4%;
+}
+
+section h2{
     text-align: center;    
 }
 
@@ -277,21 +283,26 @@ section {
     font-family: "Rosarivo", cursive;
     font-weight: 300;  
     font-size: 1.2rem; 
+    height: fit-content;
     
 }
+
+
 
 .weather-section .card:last-child{
     background-color: var(--secondary-color);
     font-style: normal;
     font-size: 1.2rem;
     line-height: 2rem;
-    padding:0 4%;
+    padding:0 8% ;
+    z-index: 1;
 }
 
 .events-section{
     background-color: white;
     width: 100%;
-    margin-bottom: 8%;
+    margin: 0;
+    padding: 1%;
 }
 
 .events-section-content{
@@ -320,10 +331,43 @@ section {
     border: solid 1px lightgray;
 } */
 
-
-.events-section h2{
-    text-align: center;    
+.all-events-link{
+    color: var(--secondary-color);
+    margin-top: 0;
 }
+
+.partners-section{
+    background-color: white;
+}
+
+.call-to-action{
+    text-align: center;
+    
+}
+
+.call-to-action .action_button{
+    background-color: var(--secondary-color);
+    padding: 2% 4%;
+    grid-column: 1/4;
+    font-size: 1rem;
+    margin: 0 auto;
+    width: auto;
+    text-decoration: none;
+    border: solid 2px var(--primary-color);
+}
+
+.call-to-action .action_button:hover{
+    color: var(--accent1);
+    background-color: var(--primary-color);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+
+
 
 /* Inner-pages styling */
 .pages-content{

@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/larger.css">
-        <link rel="stylesheet" href="styles/slideshow.css"> 
+        <link rel="stylesheet" href="styles/slideshow.css">
 
         <!-- Weather widget stylesheet -->
         <link rel="stylesheet" href="styles/weather.css">
@@ -39,7 +39,8 @@
     </head>
 
     <body>
-        <header>            
+        <header>       
+            
             <nav>                              
                 <div class="logo">
                     <a  href="./"><img loading="lazy"  src="images/logo-chamber-of-commerce.png" alt="KCC Logo">
@@ -53,13 +54,11 @@
                   
                 <ul id="primaryMenu">                     
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#">Dicover</a></li>
+                    <li><a href="#">Discover</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#" class="action_button">Sign in</a></li>
                 </ul>
-
-                
             </nav>
             <!-- Hero section -->
             <div class="hero">
@@ -77,10 +76,11 @@
         <main>
 
             <!-- Mission statement -->
-            <section>
-                <div class="our-mission">
+            <section class="our-mission">
+                <h2>Our mission</h2>
+               
                     <div class="section-content">
-                        <h2>Our mission</h2>
+                        
                         <div class="card">
                             <img loading="lazy"  class="mission-icon" src="images/advocacy-icon.png" alt="">
                             <h3>Adovacy</h3>
@@ -98,21 +98,21 @@
                         </div>
                     </div>
                     
-                </div>
+                
             </section>
 
             <!-- Weather section -->
             <section class="weather-section">                
-                <div class="card">
+                <div class="card spotlight">
                     <div class="slideshow-container">                    
                         <div class="mySlides fade">                            
-                            <a href="#"><img loading="lazy"  src="images/kinshasa-city-1-large.webp" style="width:100%"></a>
+                            <a href="#"><img loading="lazy"  src="images/kinshasa-city-1-large.webp"  width="900" height="506"></a>
                         </div>                        
                         <div class="mySlides fade">                            
-                            <a href="#"><img loading="lazy"  src="images/kinshasa-city-2-large.webp" style="width:100%"></a>
+                            <a href="#"><img loading="lazy"  src="images/kinshasa-city-2-large.webp"  width="900" height="506"></a>
                         </div>                        
                         <div class="mySlides fade">
-                            <a href="#"><img loading="lazy"  src="images/kinshasa-city-3-large.webp" style="width:100%"></a>                            
+                            <a href="#"><img loading="lazy"  src="images/kinshasa-city-3-large.webp" width="900" height="506"></a>                            
                         </div>                        
                     </div>                   
 
@@ -138,8 +138,9 @@
                 </div>               
             </section>
 
+            <!-- Events section -->
             <section class="events-section" >
-                <h2>Events</h2>
+                <h2>Events</h2>                
                 <div class="events-section-content">
                     <div class="upcoming-events">
                         <h3>Upcoming Events</h3>
@@ -162,16 +163,28 @@
                         <div class="card">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas similique quisquam aliquam error illum iure quia recusandae, impedit atque voluptatum consequuntur deserunt natus dolor perferendis voluptas. Minus natus fuga voluptatum.
                         </div>
+                        <small class="all-events-link"><a href="#">See all events</a></small>
                     </div>
                     
-
                 </div>
 
             </section>
-
+            <!-- Events section -->
             
+            <!-- Call to action section -->
+            <section class="call-to-action">
+                <h2>Join us for free</h2>                
+                <div class="section-content">
+                    <p>There is plenty of advantages becoming a member of our association. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor libero maxime vero nostrum asperiores atque dolores temporibus quas. Explicabo eveniet ipsam sapiente perspiciatis sit nisi illo ipsum similique quod sequi!</p>
+                    <a class="action_button" href="#">Click here to register</a>
+                </div>             
+            </section>
 
-            <section id="partners">
+            <section class="partners-section">
+                <h2>They trust us</h2>
+                <div class="section-content">
+
+                </div>
 
             </section>
             
@@ -211,6 +224,10 @@
         <!-- Weather widget script -->
 
         <script src="scripts/slideshow.js"></script>
+
+        <!-- Darkmode script -->
+        <script src="scripts/darkmode.js"></script>
+        <!-- Darkmode script -->
 
     </body>
 </html>

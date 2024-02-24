@@ -21,6 +21,17 @@
     line-height: 1.5;
   }
 
+  .all-events-link{
+    font-size: .9rem;
+  }
+
+  .call-to-action .action_button{
+    font-size: 1.2rem;
+  }
+
+
+
+
   .secondary-menu{
     flex-direction: row;
   }
