@@ -67,7 +67,7 @@ header, #page-header {
 
 nav {
     position : fixed;
-    top: 10;
+    top: 0;
     z-index : 100;
     width : 100%;
     align-items : center;
@@ -84,8 +84,8 @@ nav ul {
     justify-content : flex-start;
     box-shadow : -10px 0 10px #554E4E;
     backdrop-filter : blur(10px);
-    padding : 0 2%;
-    margin-right: 10%;
+    padding : 0 4%;
+    margin:0 auto
     transition : all 0.55s ease;
 }
 nav ul li:first-child {
@@ -151,7 +151,7 @@ nav a:hover, .active {
 #menuToggler, #closeMenu {
     display : block;
     position : fixed;
-    right : 0;
+    right : 5%;
     top : 0;
     border : 0;
     background : #f5f4f4;
