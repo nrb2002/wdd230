@@ -12,7 +12,7 @@
 .switch {
     position: relative;
     display: block;
-    width: 60px;
+    width: 56px;
     height: 28px;
     color:white;
     
@@ -82,9 +82,10 @@
 
 
   /* if dark-mode class is added set this background */
-.dark-mode {
-  section,
-  section-content{
+.dark-mode{
+  
+  section
+  {
     background: black;
     color: white;
   }

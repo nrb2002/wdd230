@@ -85,7 +85,7 @@ nav ul {
     box-shadow : -10px 0 10px #554E4E;
     backdrop-filter : blur(10px);
     padding : 0 4%;
-    margin:0 auto
+    margin:0 auto;
     transition : all 0.55s ease;
 }
 nav ul li:first-child {
@@ -238,7 +238,7 @@ main{
 section {
     width : 100%;
     justify-content: center;
-    padding: 4% auto;
+    padding: 4%;
     margin: 0;
 }
 

@@ -1,6 +1,7 @@
 let checkbox = document.getElementById("modeCheckBox"); //get the checkbox to a variable
 let label = document.getElementById("modeLabel"); //get the switch label
 
+
 //check storage if dark mode was on or off
 if (sessionStorage.getItem("mode") == "dark") {
   darkmode(); //if dark mode was on, run this funtion
