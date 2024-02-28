@@ -1,0 +1,55 @@
+h1{
+    background-color: #bbbbd1;
+    padding: 2%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #8c8c8c;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 2% auto;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-image: linear-gradient(#c4c5d6, #f7f7fa, #e7e7ef, #bbbbd1);
+  }
+
+ thead{
+    font-size: 1.5rem;
+  }
+
+  tbody{
+    font-size: 1.2rem;
+  }
+
+  tfoot{
+    font-size: .5rem;
+  }
+  
+  th,
+  td {
+    border: 1px solid #a0a0a0;
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: #d8dbe7;
+  }
+  
+ 
+  
