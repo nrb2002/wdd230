@@ -20,25 +20,25 @@ function confirmPass() {
 }
 
 //Validate form before submission
-document.addEventListener("DOMContentLoaded", function () {
-	// Function to handle form submission
-	function handleSubmit(event) {
-		// Prevent default form submission
-		event.preventDefault();
+// document.addEventListener("DOMContentLoaded", function () {
+// 	// Function to handle form submission
+// 	function handleSubmit(event) {
+// 		// Prevent default form submission
+// 		event.preventDefault();
 
-		// Access form elements
-		let myForm = event.target;
-		let formData = new FormData(myForm);
+// 		// Access form elements
+// 		let myForm = event.target;
+// 		let formData = new FormData(myForm);
 
-		// Display form element values
-		for (let pair of formData.entries()) {
-			console.log(pair[0] + ": " + pair[1]);
-		}
-	}
+// 		// Display form element values
+// 		for (let pair of formData.entries()) {
+// 			console.log(pair[0] + ": " + pair[1]);
+// 		}
+// 	}
 
-	const form = document.querySelector("form");
-	form.addEventListener("submit", handleSubmit);
-});
+// 	const form = document.querySelector("form");
+// 	form.addEventListener("submit", handleSubmit);
+// });
 
 
 //Page rating script
