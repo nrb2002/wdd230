@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Baron Tshibasu - WDD 230 - Web Frontend Development</title>
+        <title>Registration Form - WDD 230 - Web Frontend Development</title>
 
         <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu Course Assignment Portal">
         <meta name="author" content="Baron Tshibasu">
@@ -27,10 +27,11 @@
         <!--Normalize.css-->
         <link rel="stylesheet" href="styles/normalize.css">
         
-        <!--Local style sheets-->
-        <link rel="stylesheet" href="styles/form.css">
+        <!--Local style sheets--> 
+        <link rel="stylesheet" href="styles/form.css">       
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
+        
         
 
         <!--Google fonts imports-->
@@ -66,40 +67,47 @@
                 
         <nav >
             <ul>
-                <li class="active"><a href="index.html" >Home</a></li>
+                <li><a href="index.html" >Home</a></li>
                 <li><a href="chamber/chamber-site-plan.html" target="_blank">Site Plan</a></li>
                 <li><a href="chamber/" target="_blank">Chamber</a></li>
                 <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/19?lang=eng" target="_blank">Scripture</a></li>
+                <li class="active"><a href="form.html">Register</a></li>
             </ul>
         </nav>
 
         <main>
-            <form action="record.html" method="GET">
+            <form method="GET" action="record.html" class="regForm">
                 <h2>User Registration Form</h2><hr>
-                <label> Username*<input type="text" id="username" name="username" placeholder="username" title="Please enter your username" required></label>
-                <!-- the user inputted password value must be at least eight (8) characters long and can only be alpha-numeric -->
-                <label> Password*<input type="password" id="passwd" name="passwd" pattern="[A-Za-z0-9]{8,}" placeholder="password" title="Please enter a password of at least 8 alphanumeric characters. No special characters. " required></label>
-                <label> Confirm Password*<input type="password" id="confirmPasswd" name="confirmPasswd" placeholder="confirm password" title="Please confirm your password" required></label>
-                <label> Email*<input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" placeholder="username@byui.edu" title="Please enter a valid byui.edu email address" required></label>
-                
-                <label> Page Rating
-                    <div id="rangevalue">0</div>
-                    <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
-                    <datalist id="rangevalues">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </datalist>
-                </label>
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label> Username*<input type="text" id="username" name="username" placeholder="username" title="Please enter your username" required></label>
+                    <!-- the user inputted password value must be at least eight (8) characters long and can only be alpha-numeric -->
+                    <label> Password*<input type="password" id="passwd" name="passwd" pattern="[A-Za-z0-9]{8,}" placeholder="password" title="Please enter a password of at least 8 alphanumeric characters. No special characters. " required></label>
+                    <label> Confirm Password*<input type="password" id="confirmPasswd" name="confirmPasswd" placeholder="confirm password" title="Please confirm your password" required></label>
+                    <label> Email*<input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" placeholder="username@byui.edu" title="Please enter a valid byui.edu email address" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Page Rating</legend>                
+                    <label> Please rate us
+                        <div id="rangevalue">0</div>
+                        <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="valuesList">
+                        <datalist id="valuesList">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </datalist>
+                    </label>
+                </fieldset>
 
                 <input type="submit" value="Register">
 

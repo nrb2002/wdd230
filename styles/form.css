@@ -1,6 +1,102 @@
+:root {
+    --primary-color : #1A587A;
+    --secondary-color : rgb(245, 208, 212);
+    --tertiary-color : rgb(79, 171, 123);
+    --nav-link-color : white;
+    --title-color : white;
+    --link-hover-color : #fbaf00ff;
+    --link-visited-color : #ffd639ff;
+    --paragraph-background-color : rgb(211, 228, 240);
+}
+
+
+
+/* Form styling */
+.regForm{
+    width: 100%;
+    max-width: 600px;
+    
+    grid-column: 1/3;
+    margin: 0 auto;
+}
+
+
+
+
+
+.regForm fieldset{
+    margin: 1rem 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 2px 2px lightgray;
+    
+    
+}
+
+.regForm legend{
+    color: #445ba9;
+    padding: 0 .5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.regForm label{
+    display: block;
+    padding: 1rem;
+    color: var(--primary-color);
+    font-size: 1rem;    
+}
+
+.regForm input[type='text'],
+.regForm input[type='password'],
+.regForm input[type='email']{    
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    appearance: none;
+}
+
+.regForm input[type='submit']{
+    border: none;
+    background-image: linear-gradient( #69bae5, var(--primary-color));
+    color:#ffff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    box-shadow: 1px 1px 4px #000;
+}
+
+.regForm input[type='submit']:hover{
+    border: solid 1px lightblue;
+}
+
+.regForm input[type='submit']:active{
+    box-shadow: 0 2px var(--secondary-color);
+    transform: translateY(2px);
+}
+
+.regForm input:required{
+    border: solid 1px var(--primary-color);
+    background-color: #dddfed;
+}
+
+.regForm input:required:valid{
+    border-right: solid 8px green;
+}
+
+.regForm input:required:invalid{
+    border-right: solid 2px red;
+}
+
+
 /*Page rating style*/
 #rating {
-	width: 350px;
+	width: 93%;
 	margin-bottom: 0;
 }
 
@@ -9,12 +105,16 @@
 	color: navy;
 }
 
-#rangevalues {
+#valuesList {
 	display: flex;
 	margin: 0 0 0 2px;
-	width: 375px;
+	width: 100%;
 }
 
-#rangevalues option {
+#valuesList option {
 	flex: 1 1 auto;
 }
+
+
+
+/* ----------  FORM STYLING ------------- */

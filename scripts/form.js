@@ -4,7 +4,7 @@ const message = document.querySelector("#formmessage");
 
 pass2.addEventListener("focusout", confirmPass);
 
-// This should be refactored.
+// Passwords confirmation .
 function confirmPass() {
 	if (pass1.value !== pass2.value) {
 		message.textContent = "Passwords do not match! Please try again. ";
