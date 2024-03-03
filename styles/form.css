@@ -1,0 +1,20 @@
+/*Page rating style*/
+#rating {
+	width: 350px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 2px;
+	width: 375px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
