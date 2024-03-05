@@ -1,6 +1,7 @@
 /* Fetching Data from OpenWeatherMap API */
 const myCity = "Kinshasa";
 
+
 let weather = {
   apiKey: "aba6ff9d6de967d5eac6fd79114693cc",
   fetchWeather: function (city) {
@@ -28,12 +29,32 @@ let weather = {
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText = temp + "°C";
-    document.querySelector(".humidity").innerText =
-      "Humidity: " + humidity + "%";
-    document.querySelector(".wind").innerText =
-      "Wind speed: " + speed + " km/h";
+    document.querySelector(".temp").innerText = temp;
+    document.querySelector(".humidity").innerText = humidity;
+    document.querySelector(".windSpeed").innerText = speed;
     document.querySelector(".weather").classList.remove("loading");
+
+
+    //Compute Wind Chill - This section of code will be created later as a module in windchill.js and then exported to here. 
+    //Convert celsius to fahrenheit
+    //(0°C × 9/5) + 32 = 32°F
+    const tempF = (temp * 9/5) + 32;
+    
+    //Convert km/h to mph
+    const speedMPH = speed/1.609;
+
+    //Check to make sure they meet the specification limits (<=50°F and >3.0mph) allowed to officially calculate the wind chill
+    if((tempF <= 50) && (speedMPH > 3)){
+      //calculate the wind chill factor
+      const windChillIndex = 35.74 + (0.6215*tempF) - (35.75 * (Math.pow(speedMPH,0.16))) + (0.4275 * tempF * (Math.pow(speedMPH,0.16)));
+
+      //Display the windchill value
+      document.querySelector(".windChill").innerText = windChillIndex;
+    }
+
+
+
+
   },
   search: function () {
     this.fetchWeather(myCity);

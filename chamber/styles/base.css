@@ -53,7 +53,8 @@ a{
 
 header, #page-header {
     height : 100vh;
-    background : url(../images/kinshasa-financial-center-small.webp);
+    /* background-image : url(../images/kinshasa-financial-center-small.webp); */
+    
     background-repeat : no-repeat;
     background-position : center;
     background-size : cover;
@@ -185,6 +186,10 @@ nav ul.show, #closeMenu.show {display:block;}
 .weather-section h3{
     color: var(--accent1);
 }
+
+.weather-section .city{
+    display: none;
+}
     
 .hero-text p {
     color : var(--accent1);
@@ -238,7 +243,7 @@ main{
 section {
     width : 100%;
     justify-content: center;
-    padding: 4% auto;
+    padding: 4%;
     margin: 0;
 }
 
@@ -279,7 +284,6 @@ section h2{
     display: flex;
     flex-direction: column;
     color: white;
-    line-height: 1.2rem;
     font-family: "Rosarivo", cursive;
     font-weight: 300;  
     font-size: 1.2rem; 

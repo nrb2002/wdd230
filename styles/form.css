@@ -20,10 +20,6 @@
     margin: 0 auto;
 }
 
-
-
-
-
 .regForm fieldset{
     margin: 1rem 0;
     border: 1px solid var(--primary-color);
@@ -31,8 +27,6 @@
     padding: .5rem 2%;
     background-color: rgb(244, 244, 244);
     box-shadow: 2px 2px lightgray;
-    
-    
 }
 
 .regForm legend{

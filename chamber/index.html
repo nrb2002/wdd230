@@ -42,7 +42,7 @@
             
             <nav>                              
                 <div class="logo">
-                    <a  href="./"><img loading="lazy"  src="images/logo-chamber-of-commerce.png" alt="KCC Logo">
+                    <a  href="./"><img loading="lazy"  src="images/logo-chamber-of-commerce.webp" alt="KCC Logo">
                     THE KINSHASA CHAMBER OF <br>COMMERCE</a>
                 </div>
                 
@@ -114,9 +114,9 @@
                         <div class="mySlides fade">                            
                             <a href="#">
                                 <picture>
-                                    <!-- <source srcset="images/kinshasa-city-1-small.webp" media="(max-width: 400px)" >                
+                                    <source srcset="images/kinshasa-city-1-small.webp" media="(max-width: 400px)" >                
                                     <source srcset="images/kinshasa-city-1-medium.webp" media="(min-width: 401px)" >
-                                    <source srcset="images/kinshasa-city-1-large.webp" media="(min-width: 1024px)" >  -->
+                                    <source srcset="images/kinshasa-city-1-large.webp" media="(min-width: 1024px)" > 
                                     <img loading="lazy"  src="images/kinshasa-city-1-large.webp"  width="900" height="506" alt="Kinshasa-City">
                                 </picture>
                             </a>
@@ -155,14 +155,15 @@
                 <div class="card">
                     <div class="weather loading">
                         <h3>Local Weather</h3>
-                        <div class="city"></div>
-                        <div class="temp"></div>
+                        <span class="city"></span>
+                        Temperature: <span class="temp"></span><span> °C</span><br><br>
                         <div class="flex">
                             <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" class="icon">
                             <div class="description"></div>
-                        </div>
-                        <div class="humidity"></div>
-                        <div class="wind"></div>                    
+                        </div><br>
+                        Humidity: <span class="humidity"></span><span> %</span><br>
+                        Wind Speed: <span class="windSpeed"></span><span> km/h</span><br>
+                        Wind Chill: <span class="windChill">N/A</span>                   
                     </div>
                 </div>               
             </section>
@@ -257,6 +258,10 @@
         <!-- Darkmode script -->
         <script src="scripts/darkmode.js"></script>
         <!-- Darkmode script -->
+
+        <!-- Wind Chill -->
+        <script src="scripts/windchill.js"></script>
+        <!-- Wind Chill -->
 
     </body>
 </html>
