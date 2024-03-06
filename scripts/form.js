@@ -1,23 +1,28 @@
+const user = document.querySelector("#username");
 const pass1 = document.querySelector("#passwd");
-const pass2 = document.querySelector("#confirmPasswd");
+const pass2 = document.querySelector("#passwd2");
 const message = document.querySelector("#formmessage");
+
 
 pass2.addEventListener("focusout", confirmPass);
 
 // Passwords confirmation .
 function confirmPass() {
-	if (pass1.value !== pass2.value) {
-		message.textContent = "Passwords do not match! Please try again. ";
+	if (pass1.value !== pass2.value){
+		message.textContent = "Passwords do not match! Please try again.";
 		message.style.visibility = "show";
+		message.style.backgroundColor = "#eecdd4";
+		message.style.padding = "2%";
 		pass2.style.backgroundColor = "#fff0f3";
 		pass2.value = "";
-		pass2.focus();
+		pass1.focus();
 	} else {
 		message.style.display = "none";
 		pass2.style.backgroundColor = "#fff";
 		pass2.style.color = "#000";
 	}
 }
+
 
 //Validate form before submission
 // document.addEventListener("DOMContentLoaded", function () {

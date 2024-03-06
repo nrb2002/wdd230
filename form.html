@@ -80,12 +80,13 @@
         <main>
             <form method="GET" action="record.html" autocomplete="on" class="regForm">
                 <h2>User Registration Form</h2><hr>
+                <br><div id="formmessage"></div>
                 <fieldset>
                     <legend>User Information</legend>
                     <label> Username*<input type="text" id="username" name="username" placeholder="username" title="Please enter your username" required></label>
                     <!-- the user inputted password value must be at least eight (8) characters long and can only be alpha-numeric -->
-                    <label> Password*<input type="password" id="passwd" name="passwd" pattern="[A-Za-z0-9]{8,}" placeholder="password" title="Please enter a password of at least 8 alphanumeric characters. No special characters. " required></label>
-                    <label> Confirm Password*<input type="password" id="confirmPasswd" name="confirmPasswd" placeholder="confirm password" title="Please confirm your password" required></label>
+                    <label> Password*<input type="password" id="passwd" name="passwd" pattern="[A-Za-z0-9]{8,}" placeholder="At least 8 alphanumeric characters. " title="Please enter a password of at least 8 alphanumeric characters. No special characters. " required></label>
+                    <label> Confirm Password*<input type="password" id="passwd2" name="passwd2" placeholder="confirm password" title="Please confirm your password" required></label>
                     <label> Email*<input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" placeholder="username@byui.edu" title="Please enter a valid byui.edu email address" required></label>
                 </fieldset>
 
@@ -109,7 +110,7 @@
                         </datalist>                    
                 </fieldset>
 
-                <input type="submit" value="Register now!">
+                <input type="submit" value="Register now!" id="register">
 
             </form>
 

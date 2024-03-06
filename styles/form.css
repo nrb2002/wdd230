@@ -14,10 +14,13 @@
 /* Form styling */
 .regForm{
     width: 100%;
-    max-width: 600px;
-    
+    max-width: 600px;    
     grid-column: 1/3;
     margin: 0 auto;
+}
+
+.regForm #formmessage{
+	padding: 2%;
 }
 
 .regForm fieldset{
