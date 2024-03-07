@@ -1,0 +1,65 @@
+{
+    "Area":"Central Africa",
+    "Country":"Congo, the Democratic Republic of",
+    "stakeName":"Kinshasa",
+    "wardName":"Kasa-Vubu",
+    "newFamilies":[
+        {
+            "familyName": "Tshibasu",
+            "moveInDate": "2017-03-15",
+            "numberOfPeople": 5,
+            "visitedByBishopric": true,
+            "familyMembers": [
+                {
+                    "name": "Baron Tshibasu",
+                    "gender": "Male",
+                    "birthdate": "1985-05-20"
+                },
+                {
+                    "name": "Nana Mbula",
+                    "gender": "Female",
+                    "birthdate": "1988-11-12"
+                },
+                {
+                    "name": "Rachel Tshibasu",
+                    "gender": "Female",
+                    "birthdate": "2010-10-03"
+                },
+                {
+                    "name": "Rochelle Tshibasu",
+                    "gender": "Female",
+                    "birthdate": "2012-01-27"
+                },
+                {
+                    "name": "Ruchelle Tshibasu",
+                    "gender": "Male",
+                    "birthdate": "2015-04-10"
+                }
+            ]
+        },
+        {
+            "familyName": "Liandja",
+            "moveInDate": "2022-08-22",
+            "numberOfPeople": 3,
+            "visitedByBishopric": true,
+            "familyMembers": [
+                {
+                    "name": "Didier Liandja",
+                    "gender": "Male",
+                    "birthdate": "1987-01-01"
+                },
+                {
+                    "name": "Laurette Kalambayi",
+                    "gender": "Female",
+                    "birthdate": "1989-02-29"
+                },
+                {
+                    "name": "Phoebe Liandja",
+                    "gender": "Female",
+                    "birthdate": "2023-05-06"
+                }
+            ]
+        }
+        
+    ]
+  }
