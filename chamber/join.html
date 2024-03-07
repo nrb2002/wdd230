@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Join Us - Kinshasa Chamber of Commerce</title>
+        <title>Join Page - The Kinshasa Chamber of Commerce</title>
 
         <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu Chamber of Commerce Site">
         <meta name="author" content="Baron Tshibasu">        
@@ -15,7 +15,7 @@
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://nrb2002.github.io/wdd230/lesson03/chamber/images/kinshasa-financial-center.webp">
         <meta property="og:url" content="https://nrb2002.github.io/wdd230/lesson03/chamber/">
-        <meta property="og:description" content="WDD 230 - Web Frontend Development Baron Tshibasu Course Assignment Portal">
+        <meta property="og:description" content="WDD 230 - Web Frontend Development Baron Tshibasu Chamber Join Page">
         <meta name="twitter:card" content="summary_large_image">
 
         
@@ -53,9 +53,9 @@
                   
                 <ul id="primaryMenu">                     
                     <li><a href="./" >Home</a></li>
-                    <li><a href="#">Discover</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                     <li><a href="#">Directory</a></li>
-                    <li><a href="#" class="active">Join</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
                     <li><a href="#" class="action_button">Sign in</a></li>
                 </ul>
 
@@ -81,49 +81,57 @@
         </header>
 
         <main>
-            <form method="GET" action="record.html" autocomplete="on" class="regForm">
-                <h2>User Registration Form</h2><hr>
-                <fieldset>
-                    <legend>User Information</legend>
-                    <label> Username*<input type="text" id="username" name="username" placeholder="username" title="Please enter your username" required></label>
-                    <!-- the user inputted password value must be at least eight (8) characters long and can only be alpha-numeric -->
-                    <label> Password*<input type="password" id="passwd" name="passwd" pattern="[A-Za-z0-9]{8,}" placeholder="password" title="Please enter a password of at least 8 alphanumeric characters. No special characters. " required></label>
-                    <label> Confirm Password*<input type="password" id="confirmPasswd" name="confirmPasswd" placeholder="confirm password" title="Please confirm your password" required></label>
-                    <label> Email*<input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" placeholder="username@byui.edu" title="Please enter a valid byui.edu email address" required></label>
-                </fieldset>
+            <form action="thankyou.html" method="get" class="regForm">
+                <!-- The applicant's first name, text type, required, name, and id. -->
+                <label>Fistname* <input type="text" id="firstname" name="firstname" title="Please enter your legal Firstname" required></label>
+                <!-- The applicant's last name, text type, required, name, and id. -->
+                <label>Lastname* <input type="text" id="lastname" name="lastname" title="Please enter your legal Lastname" required></label>
+                <!-- The applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression. -->
+                <label>Position* <input type="text" id="position" name="position" pattern="[a-zA-Z\-\s]{7,}" placeholder="Please enter your position" title="Please enter your position or title within your organization" required></label>
+                <!-- An contact email address, email type, required, name, id, and placeholder which contains an example email input. -->
+                <label>Email* <input type="email" id="email" name="email" placeholder="someone@domain.com" title="Please enter your email address" required></label>
+                <!-- A mobile phone number, telephone type, required, name, and id. -->
+                <label>Phone* <input type="text" id="phone" name="phone" placeholder="+243810000000" title="Please enter your phone number" required></label>
+                <!-- The business/organization's name, text type, required, name, and id. -->
+                <label>Business Name* <input type="text" id="business" name="business" title="Please enter your business or organization's name" required></label>
+                
+                <!-- A membership level selection using an appropriate form field of your choosing to allow the user to select a membership level.  -->
+                <label>Membership Level
+                    <select name="membership" id="membership">
+                        <option value="">Select a level</option>
+                        <option value="NP">NP</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
+                </label>
+                <small>
+                    <div>NP Membership is for non profit organizations and there is no fee.</div>
+                    <div>Bronze Membership</div>
+                    <div>Silver Membership</div>
+                    <div>Gold Membership</div>
+                </small>
+                
+                <!-- A business/organization's description, text area, name, and id. -->
+                <label>Business Description <textarea name="businessDesc" id="businessDesc" placeholder="Please describe in a few word what type of business you do (sector, prodcut, service, ...)" cols="30" rows="10"></textarea></label>
+                <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. 
+                    You must use JavaScript to set the value of this field. -->
+                <label>Date <input type="date" name="currentDate" id="currentDate" hidden></label>
+                <!-- 🚑 Hint: What property do you need to use to set the value of that hidden input element? -->
 
-                <fieldset>
-                    <legend>Page Rating</legend>                
-                    <br>Please rate us  
-                        <label id="rangevalue">0</label>
-                        <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="valuesList">
-                        <datalist id="valuesList">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </datalist>                    
-                </fieldset>
-
-                <input type="submit" value="Register now!">
+                <!-- A form submission button with type submit that is properly labeled in the content area of the button. -->
+                <label><input type="submit" id="register" name="register"></label>
 
             </form>
        </main>
 
         <footer>
             <div class="secondary-menu">               
-                <div><a href="index.html"><img loading="lazy"  src="images/logo-chamber-of-commerce.webp" alt="Logo" width="50"></a></div>
+                <div><a href="./"><img loading="lazy"  src="images/logo-chamber-of-commerce.webp" alt="Logo" width="50"></a></div>
                 <div>
                     <a href="#">Discover</a>  
                     <a href="#">Directory</a>                     
-                    <a href="#">Join</a>
+                    <a href="join.html">Join</a>
                 </div> 
                 <div>
                     <a href="#">Latest news</a>                    
