@@ -151,6 +151,16 @@
     width: 10rem;
   }
 
+  /* Registration Form styling */
+  .regForm{
+    max-width: 60%;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .regForm .basicInfo{
+    grid-column: 1/2;
+  }
+   /* Registration Form styling */
   
  
 }

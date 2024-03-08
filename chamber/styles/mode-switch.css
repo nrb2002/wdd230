@@ -82,9 +82,16 @@
 
 
   /* if dark-mode class is added set this background */
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
 .dark-mode {
-  section{
-    background: black;
+  section,
+  fieldset,
+  label{
+    background: #060522;
     color: white;
   }
 
