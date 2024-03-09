@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Discover - Kinshasa Chamber of Commerce</title>
+        <title>Chamber Discover Page - Kinshasa Chamber of Commerce</title>
 
-        <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu Chamber Discover Page">
+        <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu - Chamber Discover Page">
         <meta name="author" content="Baron Tshibasu">        
 
         <!--Open Graph Meta Tags for social media sharing-->    
@@ -76,14 +76,6 @@
                 <h2>Photo Gallery</h2>
                 <div class="main-content">
                     <picture>
-                        <source srcset="images/kinshasa-financial-center-small.webp" media="(max-width: 400px)" >                
-                        <source srcset="images/kinshasa-financial-center-small.webp" media="(min-width: 401px)" >
-                        <source srcset="images/kinshasa-financial-center-large.webp" media="(min-width: 1024px)" > 
-                        <img loading="lazy" src="images/kinshasa-financial-center-large.webp" alt="" width="800" height="600">
-                    </picture>
-                    <small><legend><i>Kinshasa Financial Center</i></legend></small><br>
-
-                    <picture>
                         <source srcset="images/kinshasa-city-1-small.webp" media="(max-width: 400px)" >                
                         <source srcset="images/kinshasa-city-1-medium.webp" media="(min-width: 401px)" >
                         <source srcset="images/kinshasa-city-1-large.webp" media="(min-width: 1024px)" > 
@@ -116,18 +108,28 @@
                     
                     <picture>
                         <source srcset="images/hero-small.webp" media="(max-width: 400px)" >                
-                        <source srcset="images/hero-medium.webp" media="(min-width: 401px)" >
+                        <source srcset="images/hero-medium.webp" media="(max-width: 1023px)" >
                         <source srcset="images/hero-large.webp" media="(min-width: 1024px)" > 
                         <img loading="lazy" src="images/african-beauty-1.webp" alt="" width="800" height="600">
                     </picture>
+
+                    <picture>
+                        <source srcset="images/kinshasa-financial-center-small.webp" media="(max-width: 400px)" >                
+                        <source srcset="images/kinshasa-financial-center-small.webp" media="(max-width: 1023px)" >
+                        <source srcset="images/kinshasa-financial-center-large.webp" media="(min-width: 1024px)" > 
+                        <img loading="lazy" src="images/kinshasa-financial-center-large.webp" alt="" width="800" height="600">
+                    </picture>
+                    <small><legend><i>Kinshasa Financial Center</i></legend></small><br>
                 </div>
-                <div class="sidebar">
+                <aside>
                     <div class="card">
                         <!-- Events -->
-                        <h4>Upcoming Events</h4>
+                        <hr><h4>Upcoming Events</h4>
+
+
                     </div>
                     <div class="card">
-                        <h4>Local Weather</h4>
+                        <hr><h4>Local Weather</h4>
                         <div class="weather loading">
                             <span class="city"></span>
                             Temperature: <span class="temp"></span><span> °C</span><br><br>
@@ -144,16 +146,15 @@
                         <!-- Demographics -->
                     </div>
                     <div class="card">
+                        <hr>
                         <h4>Site Traffic</h4>
-                        <div class="numberOfVisits"><span class="label">Page Visits: </span><span class="visits"></span></div>
-                        
+                        <div class="numberOfVisits"><span class="label">Page Visits: </span><span class="visits"></span></div>                        
+                        <hr>
                     </div>
-                    <card>
+                    <div class="card">
                         <!-- Calendar -->
-                    </card>
-                </div>
-                
-
+                    </div>
+                </aside>
             </div>
         </main>
 

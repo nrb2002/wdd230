@@ -52,12 +52,14 @@ a{
     padding: 0;
 }
 
+
+
 fieldset{
     margin: 0 0 2% 1%;
     border: 1px solid rgb(154, 157, 217);
     border-radius: 6px;
     padding: 2% 6%;
-    background-color: rgb(218, 218, 230);
+    background-color: rgb(242, 242, 246);
     box-shadow: 2px 2px lightgray;
 }
 fieldset legend{
@@ -387,24 +389,7 @@ th, tbody {
     text-align : center;
     font-size: .9rem;
 }
-    
-.primary {
-    background-color : #0a2341;
-    color : white;
-}
-
-    .secondary {
-    background-color : #365681;
-    color : white;
-    }
-    .accent1 {
-    background-color : #f5f4f4;
-    color : var(--primary-color);
-    }
-    .accent2 {
-    background-color : #554E4E;
-    color : white;
-    }
+ 
     .accordion-wrapper {
     border : solid 0.5px;
     margin-top : 0.1rem;
@@ -484,6 +469,20 @@ input[type='submit']:active{
     margin: 0 auto;
     display: grid;
 }
+aside{
+    width: 83%;
+    border: solid 1px rgb(207, 206, 230);
+    border-radius: 2%;
+    height: fit-content;
+    padding:2% 4%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 12%;
+    line-height: 1.5rem;
+}
+aside h4{
+    text-decoration: underline;
+}
+
 
 .regForm,
 .page-content,
@@ -557,7 +556,8 @@ input[type='submit']{
     border: solid .4rem var(--primary-color);
     /* Add a fade from black animation to each image using CSS animation and opacity. */
     background-color: black;
-    animation: fade-in 10s;    
+    animation: fade-in 5s; 
+    width: 90%;   
 }
 
 @keyframes fade-in {
