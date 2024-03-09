@@ -80,9 +80,9 @@
                         <legend>Member's Information</legend>
                     
                         <!-- The applicant's first name, text type, required, name, and id. -->
-                        <label>Fistname* <input type="text" id="firstname" name="firstname" title="Please enter your legal Firstname" required></label>
+                        <label>Fistname* <input type="text" id="firstname" name="firstname" placeholder="Your firstname" title="Please enter your legal Firstname" required></label>
                         <!-- The applicant's last name, text type, required, name, and id. -->
-                        <label>Lastname* <input type="text" id="lastname" name="lastname" title="Please enter your legal Lastname" required></label>
+                        <label>Lastname* <input type="text" id="lastname" name="lastname" placeholder="Your lastname" title="Please enter your legal Lastname" required></label>
                         <!-- The applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression. -->
                         <label>Position* <input type="text" id="position" name="position" pattern="[a-zA-Z\-\s]{7,}" placeholder="Min: 7 characters. No special characters allowed. " title="Please enter your position or title within your organization" required></label>
                         <!-- An contact email address, email type, required, name, id, and placeholder which contains an example email input. -->
@@ -95,9 +95,9 @@
                         <legend>Business Information</legend>
                     
                         <!-- The business/organization's name, text type, required, name, and id. -->
-                        <label>Business Name* <input type="text" id="business" name="business" title="Please enter your business or organization's name" required></label>
+                        <label>Business Name* <input type="text" id="business" name="business" placeholder="Name of company or organization" title="Please enter your business or organization's name" required></label>
                         <!-- A business/organization's description, text area, name, and id. -->
-                        <label>Business Description (optional) <textarea name="businessDesc" id="businessDesc" placeholder="Max:300 words. " maxlength="300" cols="30" rows="10"></textarea></label>
+                        <label>Business Description (optional) <textarea name="businessDesc" id="businessDesc" placeholder="Type of business, product(s), or sector of activity. Max:300 words. " title="Please describe your organization's type of business or sector of activity." maxlength="300" cols="30" rows="10"></textarea></label>
                     </fieldset>
                 </div>
                 <div class="membership">
@@ -129,7 +129,9 @@
                     </fieldset>
                     
                     <!-- A form submission button with type submit that is properly labeled in the content area of the button. -->
-                    <label><input type="submit" id="register" name="register" value="Submit Membership Registration"></label>
+                    <br><fieldset>
+                        <label><input type="submit" id="register" name="register" value="Submit Membership Registration"></label>
+                    </fieldset>
                 </div>
                 
                 <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. 
