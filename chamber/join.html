@@ -38,7 +38,7 @@
     </head>
 
     <body>
-        <header>       
+        <header class="page-header">   
             
             <nav>                              
                 <div class="logo">
@@ -104,19 +104,19 @@
                     <fieldset>
                         <legend>Membership Level</legend>
                         <!-- A membership level selection using an appropriate form field of your choosing to allow the user to select a membership level.  -->
+                        <p>
+                            There are four membership levels:
+                            <ul>
+                                <li>NP Membership is for non profit organizations and there is no fee.</li>
+                                <li>Bronze Membership</li>
+                                <li>Silver Membership</li>
+                                <li>Gold Membership</li>
+                            </ul>
+                        </p>
+                        <small>These membership levels have increasing costs as well as increased benefits per level. 
+                            Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.
+                        </small>
                         <label>
-                            <p>
-                                There are four membership levels:
-                                <ul>
-                                    <li>NP Membership is for non profit organizations and there is no fee.</li>
-                                    <li>Bronze Membership</li>
-                                    <li>Silver Membership</li>
-                                    <li>Gold Membership</li>
-                                </ul>
-                            </p>
-                            <small>
-                                These membership levels have increasing costs as well as increased benefits per level. Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.
-                            </small>
                             <select name="membership" id="membership">
                                 <option value="">Pick a membership level</option>
                                 <option value="NP">NP</option>
@@ -130,7 +130,7 @@
                     
                     <!-- A form submission button with type submit that is properly labeled in the content area of the button. -->
                     <br><fieldset>
-                        <label><input type="submit" id="register" name="register" value="Submit Membership Registration"></label>
+                        <label><input type="submit" id="register" name="register" value="Complete my registration"></label>
                     </fieldset>
                 </div>
                 
@@ -141,7 +141,7 @@
                 
 
             </form>
-       </main>
+        </main>
 
 
 

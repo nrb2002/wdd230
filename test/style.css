@@ -1,21 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
- }
-
- nav {
-    background-color: #242582;
-    padding: 1.3rem;
-    display: flex;
-    justify-content: flex-end;
+body{
+    min-height: 100vh;
 }
 
-nav a   {
-    color: white;
-    padding: 1.3rem;
-    cursor: pointer;
-}
-
-nav a.active {
-    background-color: #f64c72;
+nav{
+    background: var(--primary-color);
+    
 }

@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
 
-    </header>
-    <nav>
-        <a class="active"> HOME </a>
-        <a> PROFILE </a>
-        <a> ABOUT  </a>
-        <a> SIGN IN </a>
-    </nav>
+  <table class="dataA">
+    <tr>
+    <td>Temperature</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>High: 90</td>
+    <td>Low: 70</td>
+    </tr>
+    </table>
+
+    <table class="dataA">
+      <tr>
+      <td rowspan="2">Temperature</td>
+      </tr>
+      <tr>
+      <td>High: 90</td>
+      <td>Low: 70</td>
+      </tr>
+      </table>
+      
+      <table class="dataA">
+      <tr>
+      <td colspan="2">Temperature</td>
+      <td>High: 90</td>
+      <td>Low: 70</td>
+      </tr>
+      </table>
+      
+      <table class="dataA">
+      <tr>
+      <td rowspan="2">Temperature</td>
+      <td>High: 90</td>
+      </tr>
+      <tr>
+      <td>Low: 70</td>
+      </tr>
+      </table>
+  
 </body>
 </html>

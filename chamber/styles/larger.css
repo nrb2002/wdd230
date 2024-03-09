@@ -4,7 +4,7 @@
   }
 
   h2{
-      font-size: 3rem;    
+      font-size: 2.5rem;    
   }
 
   h3{
@@ -78,14 +78,7 @@
     background-attachment : fixed;
     z-index : -1;
   }
-  /* Inner pages styling */
-
-  .pages-content{
-    width: 65%;
-    padding: .5% 4%;
-  }
-
-  /* Inner pages styling */
+  
 
   .section-content{
     width: 65%;
@@ -152,15 +145,23 @@
   }
 
   /* Registration Form styling */
-  .regForm{
-    max-width: 60%;
-    grid-template-columns: 2fr 1fr;
+  .regForm,
+  .page-content{
+    grid-template-columns: 2fr 1fr 1fr;
   }
 
   .regForm .basicInfo{
     grid-column: 1/2;
   }
-   /* Registration Form styling */
+
+  .main-content{
+    grid-column: 1/3;
+  }
+
+  .sidebar{
+    grid-column: 3/4;
+  }
+  
   
  
 }

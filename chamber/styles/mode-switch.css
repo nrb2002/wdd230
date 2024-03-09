@@ -90,7 +90,8 @@
 .dark-mode {
   section,
   fieldset,
-  label{
+  label,
+  .main-content{
     background: #060522;
     color: white;
   }

@@ -38,7 +38,7 @@
     </head>
 
     <body>
-        <header>       
+        <header class="page-header">       
             
             <nav>                              
                 <div class="logo">
@@ -53,9 +53,9 @@
                   
                 <ul id="primaryMenu">                     
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="active">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="#" class="action_button">Sign in</a></li>
                 </ul>
 
@@ -70,9 +70,92 @@
             
             <h1 id="page-title">Discover</h1>
             
-        </header>
-
+        </header>       
         <main>
+            <div class="page-content">
+                <h2>Photo Gallery</h2>
+                <div class="main-content">
+                    <picture>
+                        <source srcset="images/kinshasa-financial-center-small.webp" media="(max-width: 400px)" >                
+                        <source srcset="images/kinshasa-financial-center-small.webp" media="(min-width: 401px)" >
+                        <source srcset="images/kinshasa-financial-center-large.webp" media="(min-width: 1024px)" > 
+                        <img loading="lazy" src="images/kinshasa-financial-center-large.webp" alt="" width="800" height="600">
+                    </picture>
+                    <small><legend><i>Kinshasa Financial Center</i></legend></small><br>
+
+                    <picture>
+                        <source srcset="images/kinshasa-city-1-small.webp" media="(max-width: 400px)" >                
+                        <source srcset="images/kinshasa-city-1-medium.webp" media="(min-width: 401px)" >
+                        <source srcset="images/kinshasa-city-1-large.webp" media="(min-width: 1024px)" > 
+                        <img loading="lazy" src="images/kinshasa-city-1-large.webp" alt="" width="800" height="600">
+                    </picture>
+                    <small><legend><i>Kinshasa Minerals Trade Center</i></legend></small><br>
+
+                    <picture>
+                        <source srcset="images/kinshasa-city-2-small.webp" media="(max-width: 400px)" >                
+                        <source srcset="images/kinshasa-city-2-medium.webp" media="(min-width: 401px)" >
+                        <source srcset="images/kinshasa-city-2-large.webp" media="(min-width: 1024px)" > 
+                        <img loading="lazy" src="images/kinshasa-city-2-large.webpp" alt="" width="800" height="600">
+                    </picture>
+                    <small><legend><i>Congo River view from Kinshasa side</i></legend></small><br>
+
+                    <picture>
+                        <source srcset="images/kinshasa-city-3-small.webp" media="(max-width: 400px)" >                
+                        <source srcset="images/kinshasa-city-3-medium.webp" media="(min-width: 401px)" >
+                        <source srcset="images/kinshasa-city-3-large.webp" media="(min-width: 1024px)" > 
+                        <img loading="lazy" src="images/kinshasa-city-3-large.webp" alt="" width="800" height="600">
+                    </picture>
+                    <small><legend><i>Kinshasa Metro Area</i></legend></small><br>
+
+                    <picture>
+                        <source srcset="images/hero-small.webp" media="(max-width: 400px)" >                
+                        <source srcset="images/hero-medium.webp" media="(min-width: 401px)" >
+                        <source srcset="images/hero-large.webp" media="(min-width: 1024px)" > 
+                        <img loading="lazy" src="images/african-beauty-1.webp" alt="" width="800" height="600">
+                    </picture>
+                    
+                    <picture>
+                        <source srcset="images/hero-small.webp" media="(max-width: 400px)" >                
+                        <source srcset="images/hero-medium.webp" media="(min-width: 401px)" >
+                        <source srcset="images/hero-large.webp" media="(min-width: 1024px)" > 
+                        <img loading="lazy" src="images/african-beauty-1.webp" alt="" width="800" height="600">
+                    </picture>
+                </div>
+                <div class="sidebar">
+                    <div class="card">
+                        <!-- Events -->
+                        <h4>Upcoming Events</h4>
+                    </div>
+                    <div class="card">
+                        <h4>Local Weather</h4>
+                        <div class="weather loading">
+                            <span class="city"></span>
+                            Temperature: <span class="temp"></span><span> °C</span><br><br>
+                            <div class="flex">
+                                <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" class="icon">
+                                <div class="description"></div>
+                            </div><br>
+                            Humidity: <span class="humidity"></span><span> %</span><br>
+                            Wind Speed: <span class="windSpeed"></span><span> km/h</span><br>
+                            Wind Chill: <span class="windChill">N/A</span>                   
+                        </div>
+                        <!-- Weather -->
+                        <!-- Statistical data -->
+                        <!-- Demographics -->
+                    </div>
+                    <div class="card">
+                        <h4>Site Traffic</h4>
+                        <div class="numberOfVisits"><span class="label">Page Visits: </span><span class="visits"></span></div>
+                        
+                    </div>
+                    <card>
+                        <!-- Calendar -->
+                    </card>
+                </div>
+                
+
+            </div>
+        </main>
 
 
         </main>
@@ -81,9 +164,9 @@
             <div class="secondary-menu">               
                 <div><a href="index.html"><img loading="lazy"  src="images/logo-chamber-of-commerce.webp" alt="Logo" width="50"></a></div>
                 <div>
-                    <a href="#">Discover</a>  
-                    <a href="#">Directory</a>                     
-                    <a href="#">Join</a>
+                    <a href="discover.html">Discover</a>  
+                    <a href="directory.html">Directory</a>                     
+                    <a href="join.html">Join</a>
                 </div> 
                 <div>
                     <a href="#">Latest news</a>                    
@@ -119,6 +202,10 @@
         <!-- Wind Chill -->
         <script src="scripts/windchill.js"></script>
         <!-- Wind Chill -->
+
+        <!-- Visits Stats -->
+        <script src="scripts/getVisits.js"></script>
+        <!-- Visits Stats -->
 
     </body>
 </html>
