@@ -553,7 +553,7 @@ input[type='submit']{
 
 /* Photo gallery style */
 .main-content img{
-    border: solid .4rem var(--primary-color);
+    border: solid .2rem var(--primary-color);
     /* Add a fade from black animation to each image using CSS animation and opacity. */
     background-color: black;
     animation: fade-in 5s; 
@@ -569,3 +569,5 @@ input[type='submit']{
     }
     
 }
+
+
