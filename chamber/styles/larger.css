@@ -159,7 +159,6 @@
   }
 
   aside{
-    width: 100%;
     grid-column: 3/4;
     margin: 0;
   }

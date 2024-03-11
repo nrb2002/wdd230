@@ -470,17 +470,21 @@ input[type='submit']:active{
     display: grid;
 }
 aside{
-    width: 83%;
-    border: solid 1px rgb(207, 206, 230);
-    border-radius: 2%;
-    height: fit-content;
-    padding:2% 4%;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 12%;
-    line-height: 1.5rem;
+    width: 90%;
 }
 aside h4{
     text-decoration: underline;
+}
+
+aside .card{
+    border: solid 1px rgb(207, 206, 230);
+    border-radius: 2%;
+    box-shadow: 1px 1px 4px var(--primary-color);
+    height: fit-content;
+    padding:2% 4%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2%;
+    line-height: 1.5rem;
 }
 
 
