@@ -41,7 +41,7 @@
             "familyName": "Liandja",
             "moveInDate": "2022-08-22",
             "numberOfPeople": 3,
-            "visitedByBishopric": true,
+            "visitedByBishopric": false,
             "familyMembers": [
                 {
                     "name": "Didier Liandja",
