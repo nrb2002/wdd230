@@ -30,8 +30,10 @@ const displayProphets = (prophets) => {
         //create an img element and store it in a variable named "portrait",
         let portrait = document.createElement("img");
 
-        //create a footnote for each prophet containing additional information
-        let details = document.createElement("small");
+        //create a footnote for additional information
+        let birth = document.createElement("small");
+        let death = document.createElement("small");
+        let children = document.createElement("small");
         
         //populate the heading element with the prophet's full name using a template string to build the full name,
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
@@ -44,15 +46,18 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('height', '440');
 
         //Populate the footnote
-        details.textContent = `Born on ${prophet.birthdate} in  ${prophet.birthplace}. 
-                                Died on ${prophet.birthplace}.
-                                Number of children: ${prophet.numofchildren}.`
+        birth.textContent = `Born on ${prophet.birthdate} in  ${prophet.birthplace}.`;
+        death.textContent = `Died on ${prophet.death}.` ;
+        children.textContent = `Number of children: ${prophet.numofchildren}.`;                              
+                                
         
 
         //Using appendChild() on the section element named "card", add the heading and image elements one at a time.
         card.appendChild(fullName);
         card.appendChild(portrait);
-        card.appendChild(details);
+        card.appendChild(birth);
+        card.appendChild(death);
+        card.appendChild(children);
 
         //Finally, add the section card to the "cards" div that was selected at the beginning of the script file.
         cards.appendChild(card);
