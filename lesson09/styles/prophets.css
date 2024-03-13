@@ -7,8 +7,15 @@ body {
 header,
 main,
 footer {
-  margin: 1rem;
+  margin: 0 auto;
   position: relative;
+  
+}
+
+main {
+  margin:0 auto;
+  min-width: 320px;
+  /* overflow-x: hidden; */
 }
 
 h1 {
@@ -44,18 +51,19 @@ small{
     width : 60%;
     text-align : "center";
 }
-main {
-  margin-left: 2rem;
-  min-width: 320px;
-}
+
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: .2%;
 }
 
+
+
 section {
-  margin: 0.25rem;
+  margin: 0 auto;
+  width: 90%;
   padding: 2%;
   background-color: #eee;
   border: 1px solid #bbb;
