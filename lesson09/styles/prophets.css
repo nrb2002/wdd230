@@ -14,9 +14,10 @@ footer{
 
 main {
   min-width: 320px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  margin-bottom: 35%;
+  
 }
-
 
 h1 {
   color: #e3e1ef;
