@@ -6,23 +6,23 @@ body {
 
 header,
 main,
-footer {
-  margin: 0 auto;
+footer{
+  margin: 2% auto;
   position: relative;
   
 }
 
 main {
-  margin:0 auto;
   min-width: 320px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
+
 
 h1 {
   color: #e3e1ef;
   border-bottom: 1px solid #eee;
   text-shadow: 0 0 15px #777;
-  /* width: 100%; */
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -31,7 +31,7 @@ h1 {
 h2 {
   color: navy;
   margin: 0 0 1rem 0;
-	 border-bottom: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
 }
 
 h3 {
@@ -48,15 +48,15 @@ p {
 }
 
 small{
-    width : 60%;
-    text-align : "center";
+  width : 60%;
+  text-align : "center";
 }
 
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: .2%;
+  gap: .1%;
 }
 
 
