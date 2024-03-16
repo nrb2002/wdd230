@@ -4,13 +4,13 @@ const baseURL = "https://nrb2002.github.io/wdd230/";
 const linksURL = "https://nrb2002.github.io/wdd230/data/links.json";
 
 //Get the unordered list
-const ul = document.querySelector("#activitiesList");
+const activitiesList = document.querySelector("#activitiesList");
 
 //Write an asynchronous function to get the links data in the links.json data file.
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    //console.log(data); //Test the JSON result by writing the data to the console.
+    //console.log(data); //Test the JSON resactivitiesListt by writing the data to the console.
 
     
 
@@ -27,12 +27,12 @@ const displayLinks = (weeks) => {
         let li = document.createElement("li");
         let span = document.createElement("span");
         span.textContent = `${week.lesson}: `; //Print the week number in a span
-        li.appendChild(span); //Append the week number to the bullet
+        li.appendChild(span); //Append the week number to the bactivitiesListlet
 
         //Go through the weekly links array
         week.links.forEach((link) => {
             let lastLink = week.links.slice(-1); //Get last index of the array
-            
+            //Create weekly links
             let a = document.createElement("a");
             a.textContent = `${link.title}`;
             a.setAttribute("href", link.url);
@@ -40,12 +40,12 @@ const displayLinks = (weeks) => {
             
             //Check 
             if(lastLink !== week.links.length - 1){  
-                let sep = " | ";              
+                const sep = " | ";              
                 span.append(sep);
                 li.appendChild(span);                
             }
         });
-        //Append the list bullet to the ul
-        ul.appendChild(li);
+        //Append the list bactivitiesListlet to the activitiesList
+        activitiesList.appendChild(li);
     });
 }
