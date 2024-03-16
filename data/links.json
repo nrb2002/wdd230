@@ -4,8 +4,12 @@
         "lesson": "02",
         "links": [
           {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
+            "url":"lesson02/media-query.html",
+            "title":"Media Query Example"
+          },
+          {
+            "url":"lesson02/design.html",
+            "title":"Web Design Principles"
           },
           {
             "url":"lesson02/design-principles.html",
@@ -17,77 +21,65 @@
         "lesson": "03",
         "links": [
           {
-            "url":"lesson03/mediaquery.html",
-            "title":"Media Queries"
+            "url":"lesson03/css-combinators.html",
+            "title":"CSS Combinator Exercise"
           },
           {
-            "url":"lesson03/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"https://codepen.io/nrb2002/pen/GReyeoQ",
+            "title":"Responsive Hamburger Menu"
           }
         ]
       },
       {
-        "lesson": "02",
+        "lesson": "04",
         "links": [
           {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
-          },
-          {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"https://codepen.io/nrb2002/pen/jOJxvmj",
+            "title":"CSS Pseudo-Classes"
           }
         ]
       },
       {
-        "lesson": "02",
+        "lesson": "05",
         "links": [
           {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
-          },
-          {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"lesson05/bom.html",
+            "title":"The Book of Mormon Favorite Chapters Application"
           }
         ]
       },
       {
-        "lesson": "02",
+        "lesson": "06",
         "links": [
           {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
+            "url":"lesson06/images/landscape.webp",
+            "title":"Webp"
           },
           {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"lesson06/responsive-images.html",
+            "title":"Responsive Images"
           }
         ]
       },
       {
-        "lesson": "02",
+        "lesson": "07",
         "links": [
           {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
-          },
-          {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"lesson07/lazyload.html",
+            "title":"Lazy Loading"
           }
         ]
       },
       {
-        "lesson": "02",
+        "lesson": "08",
         "links": [
           {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
+            "url":"lesson08/tablebuild.html",
+            "title":"HTML Tables for Data Presentation"
           },
           {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"lesson08/Form-start/index.html",
+            "title":"HTML Forms Example"
           }
         ]
       },
@@ -95,12 +87,12 @@
         "lesson": "09",
         "links": [
           {
-            "url":"lesson09/mediaquery.html",
-            "title":"Media Queries"
+            "url":"lesson09/new-ward-members.json",
+            "title":"JSON File Example"
           },
           {
-            "url":"lesson09/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"lesson09/prophets.html",
+            "title":"Fetch API Example"
           }
         ]
       },
@@ -108,12 +100,8 @@
         "lesson": "10",
         "links": [
           {
-            "url":"lesson10/mediaquery.html",
-            "title":"Media Queries"
-          },
-          {
-            "url":"lesson10/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"lesson10/weather.html",
+            "title":"Consuming a Weather API"
           }
         ]
       }

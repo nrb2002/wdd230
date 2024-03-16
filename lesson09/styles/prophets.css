@@ -8,14 +8,12 @@ header,
 main,
 footer{
   margin: 2% auto;
-  position: relative;
+  /* position: relative; */
   
 }
 
 main {
   min-width: 320px;
-  /* overflow-x: hidden; */
-  /* margin-bottom: 35%; */
 }
 
 h1 {
