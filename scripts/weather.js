@@ -17,22 +17,20 @@ let weather = {
         }
         return response.json();
       })
-      .then((data) => this.displayWeather(data));
+      .then((data) => this.displayCurrentWeather(data));
   },
-  displayWeather: function (data) {
+  displayCurrentWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
-    // const { speed } = data.wind;
-    document.querySelector(".city").innerText = name;
-    document.querySelector(".icon").src =
-      "https://openweathermap.org/img/wn/" + icon + ".png";
-    document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText = temp + "°C";
-    // document.querySelector(".humidity").innerText =
-    //   "Humidity: " + humidity + "%";
-    // document.querySelector(".wind").innerText =
-    //   "Wind speed: " + speed + " km/h";
+    const { speed } = data.wind;
+    document.querySelector(".city").textContent = `${name} Weather Info`;
+    document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+    document.querySelector(".description").textContent = description;
+    document.querySelector(".temp").textContent = temp + "°C";
+    document.querySelector(".imperial").textContent = `(${(temp*9/5+32).toFixed(2)} °F)`; //Convert celsius to imperial
+    document.querySelector(".humidity").textContent = "Humidity: " + humidity + "%";
+    document.querySelector(".wind").textContent = "Wind speed: " + speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
   },
   search: function () {
@@ -43,11 +41,11 @@ let weather = {
 /* Fetching Data from OpenCageData Geocoder */
 let geocode = {
   reverseGeocode: function (latitude, longitude) {
-    var apikey = "90a096f90b3e4715b6f2e536d934c5af";
+    let apikey = "90a096f90b3e4715b6f2e536d934c5af";
 
-    var api_url = "https://api.opencagedata.com/geocode/v1/json";
+    let api_url = "https://api.opencagedata.com/geocode/v1/json";
 
-    var request_url =
+    let request_url =
       api_url +
       "?" +
       "key=" +
@@ -57,19 +55,19 @@ let geocode = {
       "&pretty=1" +
       "&no_annotations=1";
 
-    var request = new XMLHttpRequest();
+    let request = new XMLHttpRequest();
     request.open("GET", request_url, true);
 
     request.onload = function () {
 
       if (request.status == 200) {
-        var data = JSON.parse(request.responseText);
+        let data = JSON.parse(request.responseText);
         weather.fetchWeather(data.results[0].components.city);
         console.log(data.results[0].components.city)
       } else if (request.status <= 500) {
 
         console.log("unable to geocode! Response code: " + request.status);
-        var data = JSON.parse(request.responseText);
+        let data = JSON.parse(request.responseText);
         console.log("error msg: " + data.status.message);
       } else {
         console.log("server error");

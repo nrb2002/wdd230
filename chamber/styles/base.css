@@ -481,7 +481,7 @@ aside .card{
     border-radius: 2%;
     box-shadow: 1px 1px 4px var(--primary-color);
     height: fit-content;
-    padding:2% 4%;
+    padding:2%;
     background-color: rgb(255, 255, 255);
     margin-bottom: 2%;
     line-height: 1.5rem;
