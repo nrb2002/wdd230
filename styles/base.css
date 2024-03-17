@@ -239,4 +239,10 @@ footer {
     grid-column: 1/3;
 }
 
+.city,
+.numberOfVisits{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
 /* REGISTRATION CONFIRMATION PAGE STYLE */
