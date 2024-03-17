@@ -47,7 +47,15 @@ const displayProphets = (prophets) => {
 
         //Populate the footnote
         birth.textContent = `Born on ${prophet.birthdate} in  ${prophet.birthplace}.`;
-        death.textContent = `Died on ${prophet.death}.` ;
+        
+        if (prophet.death == null){
+            death.textContent = "";
+        }else{
+            death.textContent = `Died on ${prophet.death}.` ;
+        }
+        
+
+
         children.textContent = `Number of children: ${prophet.numofchildren}.`;                              
                                 
         
