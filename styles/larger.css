@@ -54,8 +54,7 @@
 
     main {
         max-width : 80%;
-        display : grid;
-        grid-template-columns : 1fr 1fr;  
+        grid-template-columns : 2fr 1fr;  
         grid-gap: .05rem;      
     }
 
@@ -73,6 +72,10 @@
 
     .card {
         font-size : 1.1em;
+    }
+
+    .information{
+        
     }
 
    #google-map{

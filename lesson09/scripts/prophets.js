@@ -51,7 +51,7 @@ const displayProphets = (prophets) => {
         if (prophet.death == null){
             death.textContent = "";
         }else{
-            death.textContent = `Died on ${prophet.death}.` ;
+            death.textContent = `Died on ${prophet.death}.`;
         }
         
 
