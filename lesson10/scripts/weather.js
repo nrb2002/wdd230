@@ -1,7 +1,9 @@
 //select all of the HTML elements that will need to be manipulated and assign them to const variables.
 const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("weather-icon");
+const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
+const humidity = document.querySelector("#humidity");
+const windSpeed= document.querySelector("#wind-speed");
 
 //Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
 const lat = 49.75;
@@ -43,11 +45,16 @@ function displayResults(data){
     
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute("src",iconsrc);
-    weatherIcon.setAttribute("alt", "Loading...")
+    weatherIcon.setAttribute("alt", "Weather Icon");
     weatherIcon.setAttribute("loading","lazy" );
     
     let desc = data.weather[0].description;
     captionDesc.textContent = `${desc.toUpperCase()}`;
+
+    humidity.textContent = `${data.main.humidity}%`; 
+    windSpeed.textContent = `${data.wind.speed}mph`;
+
+    
 }
 
 

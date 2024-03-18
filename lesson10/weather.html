@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API</title>
+    <title>Weather API Example</title>
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <h1>OpenWeatherMap.org API Test</h1>
     <main>
-        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+        <p>The current temperature in <br><strong>Trier, Germany</strong><br><br><span id="current-temp">51°F</span></p>
         <figure>
-            <img src="" alt="" id="weather-icon">
+            <img src="" alt="" id="weather-icon" loading="lazy">
             <figcaption></figcaption>
         </figure>
+        <p>Humidity: <span id="humidity"></span> | Wind Speed: <span id="wind-speed"></span></p>
     </main>
 
     <footer>Crafted with 💖 by Baron Tshibasu | OpeWeatherMap.org | CC BY-SA 4.0</footer>

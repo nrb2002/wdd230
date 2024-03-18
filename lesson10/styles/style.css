@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(202, 202, 168);
+}
+
+
+h1,
+main,
+footer{
+    text-align: center;
+    padding: 2.5%;
+}
+
+h1{
+    background-color: rgb(199, 161, 91);
+    margin: 0;
+    
+}
+
+main{
+    font-size: 1.2rem;
+    height: 80vh;    
+}
+
+main strong,
+#current-temp{
+    font-size: 2.5rem;
+}
+
+footer{
+    background-color: rgb(57, 43, 16);
+    color: rgb(240, 238, 233);       
+}
