@@ -10,15 +10,28 @@
 <body>
     <h1>OpenWeatherMap.org API Test</h1>
     <main>
-        <p>The current temperature in <br><strong>Trier, Germany</strong><br><br><span id="current-temp">51°F</span></p>
-        <figure>
-            <img src="" alt="" id="weather-icon" loading="lazy">
-            <figcaption></figcaption>
-        </figure>
-        <p>Humidity: <span id="humidity"></span> | Wind Speed: <span id="wind-speed"></span></p>
+        <div class="main-content">
+            <p>The current weather in <br><strong>Trier, Germany</strong><br><br><span id="current-temp"></span></p>
+            <figure>
+                <img src="" alt="" id="weather-icon" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <p>Humidity: <span id="humidity"></span> | Wind Speed: <span id="wind-speed"></span></p>
+        </div>
+        <div class="data">
+            <table>
+                <thead>Local Weather Data
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        
     </main>
 
-    <footer>Crafted with 💖 by Baron Tshibasu | OpeWeatherMap.org | CC BY-SA 4.0</footer>
+    <footer>Crafted with 💖 by Baron Tshibasu | OpenWeatherMap.org | CC BY-SA 4.0</footer>
 
     <script src="scripts/weather.js"></script>
 </body>
