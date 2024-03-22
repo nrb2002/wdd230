@@ -10,7 +10,7 @@ const windSpeed= document.querySelector("#wind-speed");
 const lat = -4.32;
 const lon = 15.31;
 //Set the units to imperial: "units=imperial"
-const units = "metric";
+const units = "imperial";
 //Provide your API key: "appid=[enter your key here]"
 const apiKey = "4fbad2e30a8af0dbabfe5ed17d272cf8";
 //Declare a const variable named "url" and assign it a valid URL string as given in the openweathermap api documentation.
@@ -43,7 +43,7 @@ apiFetch();
 //Build the displayResults function to output to the given HTML document
 function displayResults(data){
     cityName.innerHTML = "Kinshasa";
-    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute("src",iconsrc);
@@ -54,7 +54,7 @@ function displayResults(data){
     captionDesc.textContent = `${desc}`;
 
     humidity.textContent = `${data.main.humidity}%`; 
-    windSpeed.textContent = `${data.wind.speed}m/s`;
+    windSpeed.textContent = `${data.wind.speed}mph`;
 
     
 }
