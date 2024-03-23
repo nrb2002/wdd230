@@ -354,6 +354,14 @@ aside{
     width: 100%;
     margin-bottom: 1%;
 }
+
+.confirmation,
+.confirmation h2{
+    text-align: center;
+}
+.confirmation h2{
+    background-color: lightblue;
+}
 /*Inner-page content*/
 
 /*DIRECTORY PAGE STYLING*/

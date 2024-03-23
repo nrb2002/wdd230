@@ -32,7 +32,11 @@
     grid-column: 2/4;
     height: 150px;
   }
+
   .main-content{
+    grid-column: 1/4;
+  }
+  .confirmation{
     grid-column: 1/4;
   }
   aside{
