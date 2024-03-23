@@ -20,10 +20,12 @@
 
   .modeContainer{
     display: flex;
-    gap: 2%;
-   justify-content: right;
-   margin: 1%;
-   text-align: center;
+    justify-content: right;
+    margin: 1%;
+    text-align: center;
+  }
+  .modeContainer label{
+    margin: 2%;
   }
   
   .switch input { 
