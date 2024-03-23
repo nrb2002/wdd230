@@ -120,6 +120,7 @@ nav li {
     
 nav a {
     height : 100%;
+    width: 4rem;
     padding : 0 .1rem;
     margin-top: 1%;
     text-decoration : none;
