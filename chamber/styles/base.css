@@ -166,7 +166,7 @@ nav a:hover, .active {
     width : 50px;
     margin-right : 0.5rem;
 }
-    
+.logo a{width:fit-content;}   
 .logo a:hover {cursor: pointer;}
 .action_button:hover {
     background-color : #365681;
