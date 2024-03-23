@@ -1,128 +1,60 @@
-/* Fetching Data from OpenWeatherMap API */
-const myCity = "Kinshasa";
+//select all of the HTML elements that will need to be manipulated and assign them to const variables.
+const cityName = document.querySelector("#city");
+const currentTemp = document.querySelector("#current-temp");
+const weatherIcon = document.querySelector("#weather-icon");
+const captionDesc = document.querySelector("#description");
+const humidity = document.querySelector("#humidity");
+const windSpeed= document.querySelector("#windSpeed");
 
+//Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
+const lat = -4.32;
+const lon = 15.31;
+//Set the units to imperial: "units=imperial"
+const units = "imperial";
+//Provide your API key: "appid=[enter your key here]"
+const apiKey = "4fbad2e30a8af0dbabfe5ed17d272cf8";
+//Declare a const variable named "url" and assign it a valid URL string as given in the openweathermap api documentation.
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
 
-let weather = {
-  apiKey: "aba6ff9d6de967d5eac6fd79114693cc",
-  fetchWeather: function (city) {
-    fetch(
-      "https://api.openweathermap.org/data/2.5/weather?q=" +
-        city +
-        "&units=metric&appid=" +
-        this.apiKey
-    )
-      .then((response) => {
-        if (!response.ok) {
-          alert("No weather found.");
-          throw new Error("No weather found.");
+//Define an asynchronous function named "apiFetch()" that uses a try block to handle errors.
+async function apiFetch(){
+    try{
+        //Store the results of the URL fetch into a variable named "response".
+        const response = await fetch(url);
+        //If the response is OK, then store the result of response.json() conversion in a variable named "data", 
+        if(response.ok){
+            const data = await response.json();
+            //Output the results to the console for testing
+            console.log(data);
+            //output to the given HTML document
+            displayResults(data);
+        //Else, throw an Error using the response.text().
+        }else{
+            throw Error(await response.text());
         }
-        return response.json();
-      })
-      .then((data) => this.displayWeather(data));
-  },
-  displayWeather: function (data) {
-    const { name } = data;
-    const { icon, description } = data.weather[0];
-    const { temp, humidity } = data.main;
-    const { speed } = data.wind;
-    document.querySelector(".city").innerText = name;
-    document.querySelector(".icon").src =
-      "https://openweathermap.org/img/wn/" + icon + ".png";
-    document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText = temp;
-    document.querySelector(".humidity").innerText = humidity;
-    document.querySelector(".windSpeed").innerText = speed;
-    document.querySelector(".weather").classList.remove("loading");
+    //Finish off the catch block by outputting any try error to the console.
+    }catch (error){
+        console.log(error);
+    }
+}
+//invoke the apiFetch() function with a call
+apiFetch();
 
-
-    //Compute Wind Chill - This section of code will be created later as a module in windchill.js and then exported to here. 
-    //Convert celsius to fahrenheit
-    //(0°C × 9/5) + 32 = 32°F
-    const tempF = (temp * 9/5) + 32;
+//Build the displayResults function to output to the given HTML document
+function displayResults(data){
+    cityName.innerHTML = "Kinshasa";
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     
-    //Convert km/h to mph
-    const speedMPH = speed/1.609;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    weatherIcon.setAttribute("src",iconsrc);
+    weatherIcon.setAttribute("alt", "Weather Icon");
+    weatherIcon.setAttribute("loading","lazy" );
+    
+    let desc = data.weather[0].description;
+    captionDesc.textContent = `${desc}`;
 
-    //Check to make sure they meet the specification limits (<=50°F and >3.0mph) allowed to officially calculate the wind chill
-    if((tempF <= 50) && (speedMPH > 3)){
-      //calculate the wind chill factor
-      const windChillIndex = 35.74 + (0.6215*tempF) - (35.75 * (Math.pow(speedMPH,0.16))) + (0.4275 * tempF * (Math.pow(speedMPH,0.16)));
+    humidity.textContent = `${data.main.humidity}%`; 
+    windSpeed.textContent = `${data.wind.speed}mph`;
 
-      //Display the windchill value
-      document.querySelector(".windChill").innerText = windChillIndex;
-    }
-
-
-
-
-  },
-  search: function () {
-    this.fetchWeather(myCity);
-  },
-};
-
-/* Fetching Data from OpenCageData Geocoder */
-let geocode = {
-  reverseGeocode: function (latitude, longitude) {
-    var apikey = "90a096f90b3e4715b6f2e536d934c5af";
-
-    var api_url = "https://api.opencagedata.com/geocode/v1/json";
-
-    var request_url =
-      api_url +
-      "?" +
-      "key=" +
-      apikey +
-      "&q=" +
-      encodeURIComponent(latitude + "," + longitude) +
-      "&pretty=1" +
-      "&no_annotations=1";
-
-    var request = new XMLHttpRequest();
-    request.open("GET", request_url, true);
-
-    request.onload = function () {
-
-      if (request.status == 200) {
-        var data = JSON.parse(request.responseText);
-        weather.fetchWeather(data.results[0].components.city);
-        console.log(data.results[0].components.city)
-      } else if (request.status <= 500) {
-
-        console.log("unable to geocode! Response code: " + request.status);
-        var data = JSON.parse(request.responseText);
-        console.log("error msg: " + data.status.message);
-      } else {
-        console.log("server error");
-      }
-    };
-
-    request.onerror = function () {
-      console.log("unable to connect to server");
-    };
-
-    request.send(); 
-  },
-  getLocation: function() {
-    function success (data) {
-      geocode.reverseGeocode(data.coords.latitude, data.coords.longitude);
-    }
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(success, console.error);
-    }
-    else {
-      weather.fetchWeather(myCity);
-    }
-  }
-};
-
-//Search weather information
-weather.fetchWeather(myCity);
-
-//Reload page every 5 min
-setInterval(function() {
-  location.reload();
-}, 300000);
-
-
-
+    
+}

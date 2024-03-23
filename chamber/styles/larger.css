@@ -1,17 +1,32 @@
 @media only screen and (min-width: 1024px) {
-  /*INNER-PAGE STYLING*/
+  /*HOME PAGE AND GENERAL STYLING*/
   .content{
     grid-template-columns: repeat(4,1fr);
     gap: 1%;
     width: 60%;
     /* border: solid; */
   }
+  
+  .home-cards{
+    grid-column: 1/5; /*Takes full width of parent*/
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+    text-align: center;
+  }
+  .spotlight-container{
+    grid-column: 2/4;
+    margin: -4%;
+  }
+  .call-to-action{
+    grid-column: 1/5;
+  }
+  
+  /*HOME PAGE AND GENERAL STYLING*/
+  
+  /*INNER-PAGE STYLING*/  
   .spotlight{
     grid-column: 2/4;
     height: 150px;
-  }
-  .content h2{
-    grid-column: 1/5;
   }
   .main-content{
     grid-column: 1/4;
@@ -27,9 +42,9 @@
   h1{
     font-size: 3.5rem;
   }
-
   h2{
-      font-size: 2.5rem;    
+    grid-column: 1/5;
+    font-size:3rem;
   }
 
   h3{
@@ -105,37 +120,6 @@
   }
   
   
-
-  .section-content{
-    width: 65%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-  }
-
-  .our-mission h2{
-    text-align: center;
-    grid-column: 1/4;
-  }
-
-  .weather-section{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-     
-  }
-
-  .weather-section .card:first-child{
-    grid-column: 2/5;
-    font-style: italic;
-  }
-  
-
-  .weather-section .card:last-child{
-      grid-column: 5/6;
-      font-style: normal;
-      font-size: 1.2rem;
-      height: 100%;
-  }
 
   .events-section-content{
     grid-template-columns: repeat(7, 1fr);
