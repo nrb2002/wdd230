@@ -37,8 +37,7 @@
     </head>
 
     <body>
-        <header class="page-header">   
-            
+        <header class="page-header">
             <nav>                              
                 <div class="logo">
                     <a  href="./"><img loading="lazy"  src="images/logo-chamber-of-commerce.webp" alt="KCC Logo">
@@ -53,7 +52,7 @@
                 <ul id="primaryMenu">                     
                     <li><a href="./" >Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li><a href="directoy.html">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html" class="active">Join</a></li>
                     <li><a href="#" class="action_button">Sign in</a></li>
                 </ul>
@@ -70,107 +69,125 @@
             <h1 id="page-title">Join Us</h1>
             
         </header>
-
         <main>
-            <form action="thankyou.html" method="get" class="regForm">
+            <!-- <div class="content">
+                <article class="spotlight">
+                    Spotlight
+                </article>
+                <h2>Explore our directory</h2>                
+                <div class="main-content">
+
+                </div>
+                <aside>
+
+                </aside>                
+            </div> -->
+            <div class="content">
+                <article class="spotlight">
+                    Spotlight
+                </article>
                 <h2>Registration Form</h2>
-                <div class="basicInfo">
-                    <fieldset>
-                        <legend>Member's Information</legend>
-                    
-                        <!-- The applicant's first name, text type, required, name, and id. -->
-                        <label>Fistname* <input type="text" id="firstname" name="firstname" placeholder="Your firstname" title="Please enter your legal Firstname" required></label>
-                        <!-- The applicant's last name, text type, required, name, and id. -->
-                        <label>Lastname* <input type="text" id="lastname" name="lastname" placeholder="Your lastname" title="Please enter your legal Lastname" required></label>
-                        <!-- The applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression. -->
-                        <label>Position* <input type="text" id="position" name="position" pattern="[a-zA-Z\-\s]{7,}" placeholder="Min: 7 characters. No special characters allowed. " title="Please enter your position or title within your organization" required></label>
-                        <!-- An contact email address, email type, required, name, id, and placeholder which contains an example email input. -->
-                        <label>Email* <input type="email" id="email" name="email" placeholder="someone@domain.com" title="Please enter your email address" required></label>
-                        <!-- A mobile phone number, telephone type, required, name, and id. -->
-                        <label>Phone* <input type="text" id="phone" name="phone" placeholder="XXX - XXXX - XXX  " title="Please enter your phone number" required></label>
-                    </fieldset>
-                    
-                    <fieldset>
-                        <legend>Business Information</legend>
-                    
-                        <!-- The business/organization's name, text type, required, name, and id. -->
-                        <label>Business Name* <input type="text" id="business" name="business" placeholder="Name of company or organization" title="Please enter your business or organization's name" required></label>
-                        <!-- A business/organization's description, text area, name, and id. -->
-                        <label>Business Description (optional) <textarea name="businessDesc" id="businessDesc" placeholder="Type of business, product(s), or sector of activity. Max:300 words. " title="Please describe your organization's type of business or sector of activity." maxlength="300" cols="30" rows="10"></textarea></label>
-                    </fieldset>
-                </div>
-                <div class="membership">
-                    <fieldset>
-                        <legend>Membership Level</legend>
-                        <!-- A membership level selection using an appropriate form field of your choosing to allow the user to select a membership level.  -->
-                        <p>There are four membership levels:</p>
-                            <ul>
-                                <li>NP Membership is for non profit organizations and there is no fee.</li>
-                                <li>Bronze Membership</li>
-                                <li>Silver Membership</li>
-                                <li>Gold Membership</li>
-                            </ul>
+                <div class="main-content">
+                    <form action="thankyou.html" method="get" class="regForm">
+                        <div class="basicInfo">
+                            <fieldset>
+                                <legend>Member's Information</legend>
+                            
+                                <!-- The applicant's first name, text type, required, name, and id. -->
+                                <label>Fistname* <input type="text" id="firstname" name="firstname" placeholder="Your firstname" title="Please enter your legal Firstname" required></label>
+                                <!-- The applicant's last name, text type, required, name, and id. -->
+                                <label>Lastname* <input type="text" id="lastname" name="lastname" placeholder="Your lastname" title="Please enter your legal Lastname" required></label>
+                                <!-- The applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression. -->
+                                <label>Position* <input type="text" id="position" name="position" pattern="[a-zA-Z\-\s]{7,}" placeholder="Min: 7 characters. No special characters allowed. " title="Please enter your position or title within your organization" required></label>
+                                <!-- An contact email address, email type, required, name, id, and placeholder which contains an example email input. -->
+                                <label>Email* <input type="email" id="email" name="email" placeholder="someone@domain.com" title="Please enter your email address" required></label>
+                                <!-- A mobile phone number, telephone type, required, name, and id. -->
+                                <label>Phone* <input type="text" id="phone" name="phone" placeholder="XXX - XXXX - XXX  " title="Please enter your phone number" required></label>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Business Information</legend>
+                            
+                                <!-- The business/organization's name, text type, required, name, and id. -->
+                                <label>Business Name* <input type="text" id="business" name="business" placeholder="Name of company or organization" title="Please enter your business or organization's name" required></label>
+                                <!-- A business/organization's description, text area, name, and id. -->
+                                <label>Business Description (optional) <textarea name="businessDesc" id="businessDesc" placeholder="Type of business, product(s), or sector of activity. Max:300 words. " title="Please describe your organization's type of business or sector of activity." maxlength="300" cols="30" rows="10"></textarea></label>
+                            </fieldset>
+                        </div>
+                        <div class="membership">
+                            <fieldset>
+                                <legend>Membership Level</legend>
+                                <!-- A membership level selection using an appropriate form field of your choosing to allow the user to select a membership level.  -->
+                                <p>There are four membership levels:</p>
+                                    <ul>
+                                        <li>NP Membership is for non profit organizations and there is no fee.</li>
+                                        <li>Bronze Membership</li>
+                                        <li>Silver Membership</li>
+                                        <li>Gold Membership</li>
+                                    </ul>
+                                
+                                <small>These membership levels have increasing costs as well as increased benefits per level. 
+                                    Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.
+                                </small>
+                                <label>
+                                    <select name="membership" id="membership">
+                                        <option value="">Pick a membership level</option>
+                                        <option value="NP">NP</option>
+                                        <option value="Bronze">Bronze</option>
+                                        <option value="Silver">Silver</option>
+                                        <option value="Gold">Gold</option>
+                                    </select>
+                                </label>
+
+                            </fieldset>
+                            
+                            <!-- A form submission button with type submit that is properly labeled in the content area of the button. -->
+                            <br><fieldset>
+                                <label><input type="submit" id="register" name="register" value="Complete my registration"></label>
+                            </fieldset>
+                        </div>
                         
-                        <small>These membership levels have increasing costs as well as increased benefits per level. 
-                            Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.
-                        </small>
-                        <label>
-                            <select name="membership" id="membership">
-                                <option value="">Pick a membership level</option>
-                                <option value="NP">NP</option>
-                                <option value="Bronze">Bronze</option>
-                                <option value="Silver">Silver</option>
-                                <option value="Gold">Gold</option>
-                            </select>
-                        </label>
+                        <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. 
+                            You must use JavaScript to set the value of this field. -->
+                            <!-- 🚑 Hint: What property do you need to use to set the value of that hidden input element? -->
+                        <label><input type="date" name="currentDate" id="currentDate" hidden></label>
+                        
 
-                    </fieldset>
-                    
-                    <!-- A form submission button with type submit that is properly labeled in the content area of the button. -->
-                    <br><fieldset>
-                        <label><input type="submit" id="register" name="register" value="Complete my registration"></label>
-                    </fieldset>
+                    </form>
                 </div>
-                
-                <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. 
-                    You must use JavaScript to set the value of this field. -->
-                    <!-- 🚑 Hint: What property do you need to use to set the value of that hidden input element? -->
-                <label><input type="date" name="currentDate" id="currentDate" hidden></label>
-                
-
-            </form>
-            <aside>
-                <div class="card">
-                    <!-- Events -->
-                    <h4>Upcoming Events</h4>
-                </div>
-                <div class="card">
-                    <h4>Local Weather</h4>
-                    <div class="weather loading">
-                        <span class="city"></span>
-                        Temperature: <span class="temp"></span><span> °C</span><br><br>
-                        <div class="flex">
-                            <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" class="icon">
-                            <div class="description"></div>
-                        </div><br>
-                        Humidity: <span class="humidity"></span><span> %</span><br>
-                        Wind Speed: <span class="windSpeed"></span><span> km/h</span><br>
-                        Wind Chill: <span class="windChill">N/A</span>                   
+                <aside>
+                    <div class="card">
+                        <!-- Events -->
+                        <h4>Upcoming Events</h4>
                     </div>
-                    <!-- Weather -->
-                    <!-- Statistical data -->
-                    <!-- Demographics -->
-                </div>
-                <div class="card">                        
-                    <h4>Site Traffic</h4>
-                    <div class="numberOfVisits"><span class="label">Page Visits: </span><span class="visits"></span></div>                        
-                    
-                </div>
-                <div class="card">
-                    <!-- Calendar -->
-                    
-                </div>
-            </aside>
+                    <div class="card">
+                        <h4>Local Weather</h4>
+                        <div class="weather loading">
+                            <span class="city"></span>
+                            Temperature: <span class="temp"></span><span> °C</span><br><br>
+                            <div class="flex">
+                                <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" class="icon">
+                                <div class="description"></div>
+                            </div><br>
+                            Humidity: <span class="humidity"></span><span> %</span><br>
+                            Wind Speed: <span class="windSpeed"></span><span> km/h</span><br>
+                            Wind Chill: <span class="windChill">N/A</span>                   
+                        </div>
+                        <!-- Weather -->
+                        <!-- Statistical data -->
+                        <!-- Demographics -->
+                    </div>
+                    <div class="card">                        
+                        <h4>Site Traffic</h4>
+                        <div class="numberOfVisits"><span class="label">Page Visits: </span><span class="visits"></span></div>                        
+                        
+                    </div>
+                    <div class="card">
+                        <!-- Calendar -->
+                        
+                    </div>
+                </aside>
+            </div>
         </main>
 
 

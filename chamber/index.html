@@ -38,8 +38,7 @@
     </head>
 
     <body>
-        <header>       
-            
+        <header>
             <nav>                              
                 <div class="logo">
                     <a  href="./"><img loading="lazy"  src="images/logo-chamber-of-commerce.webp" alt="KCC Logo">
@@ -82,90 +81,89 @@
 
         <main>
             <!-- Mission statement -->
-            <section class="our-mission">
-                <h2>Our mission</h2>
-               
-                    <div class="section-content">
-                        
-                        <div class="card">
-                            <img loading="lazy"  class="mission-icon" src="images/advocacy-icon.png" alt="icon">
-                            <h3>Adovacy</h3>
-                            <p>We advocate for our members and preserve their rigths in business legal matters.</p>
-                        </div>
-                        <div class="card">
-                            <img loading="lazy"  class="mission-icon" src="images/mentorship-icone.png" alt="icon">
-                            <h3>Mentorship</h3>
-                            <p>We mentor, coach and promote startups and new businesses starting Kinshasa.</p>
-                        </div>
-                        <div class="card">
-                            <img loading="lazy"  class="mission-icon" src="images/networking-icon.png" alt="icon">
-                            <h3>Networking</h3>
-                            <p>We  connect, lead, and inspire our local entrepreneurs' community.</p>
+            <section class="mission-section">                               
+                    <div class="content">
+                        <h2>Our mission</h2>
+                        <div class="home-cards">                        
+                            <div class="card">
+                                <img loading="lazy"  class="mission-icon" src="images/advocacy-icon.png" alt="icon">
+                                <h3>Adovacy</h3>
+                                <p>We advocate for our members and preserve their rigths in business legal matters.</p>
+                            </div>
+                            <div class="card">
+                                <img loading="lazy"  class="mission-icon" src="images/mentorship-icone.png" alt="icon">
+                                <h3>Mentorship</h3>
+                                <p>We mentor, coach and promote startups and new businesses starting Kinshasa.</p>
+                            </div>
+                            <div class="card">
+                                <img loading="lazy"  class="mission-icon" src="images/networking-icon.png" alt="icon">
+                                <h3>Networking</h3>
+                                <p>We  connect, lead, and inspire our local entrepreneurs' community.</p>
+                            </div>
                         </div>
                     </div>
-                    
-                
             </section>
 
             <!-- Weather section -->
             <section class="weather-section">                
-                <div class="card spotlight">
-                    <div class="slideshow-container">                    
-                        <div class="mySlides fade">                            
-                            <a href="#">
-                                <picture>
-                                    <source srcset="images/kinshasa-city-1-small.webp" media="(max-width: 400px)" >                
-                                    <source srcset="images/kinshasa-city-1-medium.webp" media="(min-width: 401px)" >
-                                    <source srcset="images/kinshasa-city-1-large.webp" media="(min-width: 1024px)" > 
-                                    <img loading="lazy"  src="images/kinshasa-city-1-large.webp"  width="900" height="506" alt="Kinshasa-City">
-                                </picture>
-                            </a>
-                                
-                        </div>                        
-                        <div class="mySlides fade"> 
-                            <a href="#">
-                                <picture>
-                                    <!-- <source srcset="images/kinshasa-city-2-small.webp" media="(max-width: 400px)" >                
-                                    <source srcset="images/kinshasa-city-2-medium.webp"  media="(min-width: 401px)" >
-                                    <source srcset="images/kinshasa-city-2-large.webp" media="(min-width: 1024px)" >  -->
-                                    <img loading="lazy"  src="images/kinshasa-city-2-large.webp"  width="900" height="506" alt="Kinshasa-City">
-                                </picture>
-                            </a>                       
-                           
-                        </div>                        
-                        <div class="mySlides fade">
-                            <a href="#">
-                                <picture>
-                                    <!-- <source srcset="images/kinshasa-city-3-small.webp" media="(max-width: 400px)" >                
-                                    <source srcset="images/kinshasa-city-3-medium.webp" media="(min-width: 401px)" >
-                                    <source srcset="images/kinshasa-city-3-large.webp" media="(min-width: 1024px)" >  -->
-                                    <img loading="lazy"  src="images/kinshasa-city-3-large.webp" width="900" height="506" alt="Kinshasa-City"></a>                            
-                                </picture>
-                                
-                        </div>                        
-                    </div>                   
-
-                    <div style="text-align:center">
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
+                <div class="content">
+                    <div class="weather-card">
+                        <div class="weather loading">
+                            <h3>Local Weather</h3>
+                            <span id="city"></span>
+                            Temperature: <span id="temp"></span><br><br>
+                            <div class="flex">
+                                <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" id="icon">
+                                <div id="description"></div>
+                            </div><br>
+                            Humidity: <span id="humidity"></span><br>
+                            Wind Speed: <span id="windSpeed"></span>><br>
+                            Wind Chill: <span id="windChill">N/A</span>                   
+                        </div>
+                    </div> 
+                    <div class="spotlight-container">
+                        <div class="home-spotlight">                    
+                            <div class="mySlides fade">                            
+                                <a href="#">
+                                    <picture>
+                                        <source srcset="images/kinshasa-city-1-small.webp" media="(max-width: 400px)" >                
+                                        <source srcset="images/kinshasa-city-1-medium.webp" media="(min-width: 401px)" >
+                                        <source srcset="images/kinshasa-city-1-large.webp" media="(min-width: 1024px)" > 
+                                        <img loading="lazy"  src="images/kinshasa-city-1-large.webp"  width="900" height="506" alt="Kinshasa-City">
+                                    </picture>
+                                </a>                                
+                            </div>                        
+                            <div class="mySlides fade"> 
+                                <a href="#">
+                                    <picture>
+                                        <source srcset="images/kinshasa-city-2-small.webp" media="(max-width: 400px)" >                
+                                        <source srcset="images/kinshasa-city-2-medium.webp"  media="(min-width: 401px)" >
+                                        <source srcset="images/kinshasa-city-2-large.webp" media="(min-width: 1024px)" >
+                                        <img loading="lazy"  src="images/kinshasa-city-2-large.webp"  width="900" height="506" alt="Kinshasa-City">
+                                    </picture>
+                                </a>
+                            </div>                        
+                            <div class="mySlides fade">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset="images/kinshasa-city-3-small.webp" media="(max-width: 400px)">                
+                                        <source srcset="images/kinshasa-city-3-medium.webp" media="(min-width: 401px)">
+                                        <source srcset="images/kinshasa-city-3-large.webp" media="(min-width: 1024px)">  
+                                        <img loading="lazy"  src="images/kinshasa-city-3-large.webp" width="900" height="506" alt="Kinshasa-City"></a>                            
+                                    </picture>
+                                    
+                            </div>                        
+                        </div>
+                        <div style="text-align:center">
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                        </div>
                     </div>
+                    
                 </div>
                  
-                <div class="card">
-                    <div class="weather loading">
-                        <h3>Local Weather</h3>
-                        <span class="city"></span>
-                        Temperature: <span class="temp"></span><span> °C</span><br><br>
-                        <div class="flex">
-                            <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" class="icon">
-                            <div class="description"></div>
-                        </div><br>
-                        Humidity: <span class="humidity"></span><span> %</span><br>
-                        Wind Speed: <span class="windSpeed"></span><span> km/h</span><br>
-                        Wind Chill: <span class="windChill">N/A</span>                   
-                    </div>
-                </div>               
+                              
             </section>
 
             <!-- Events section -->
@@ -203,11 +201,13 @@
             
             <!-- Call to action section -->
             <section class="call-to-action">
-                <h2>Join us for free</h2>                
-                <div class="section-content">
-                    <p>There is plenty of advantages becoming a member of our association. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor libero maxime vero nostrum asperiores atque dolores temporibus quas. Explicabo eveniet ipsam sapiente perspiciatis sit nisi illo ipsum similique quod sequi!</p>
-                    <a class="action_button" href="#">Click here to register</a>
-                </div>             
+                <div class="content">
+                    <h2>Join us for free</h2>                
+                    <div class="call-to-action">
+                        <p>There is plenty of advantages becoming a member of our association. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor libero maxime vero nostrum asperiores atque dolores temporibus quas. Explicabo eveniet ipsam sapiente perspiciatis sit nisi illo ipsum similique quod sequi!</p>
+                        <a class="action_button" href="#">Click here to register</a>
+                    </div> 
+                </div>            
             </section>
 
             <section class="partners-section">
