@@ -253,10 +253,9 @@ section {
 }
 .content{
     display: grid;
-    margin: 0 auto;
+    margin: 1% auto;
     width: 90%;
     padding: 2%;
-    gap:2%;
 }
 .mission-section .card{text-align: center;}
 .weather-section .unique-value,
