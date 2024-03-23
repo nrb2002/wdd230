@@ -281,6 +281,10 @@ aside{
 /*Inner-page content*/
 
 /*DIRECTORY PAGE STYLING*/
+.directory{
+    margin-top:-3%;
+}
+
 .directory small{
   width : 60%;
   text-align : "center";
@@ -306,11 +310,11 @@ aside{
 }
 .directory section > p {min-height: 60px;}
 
-.directory img {
+.directory section > img {
     max-width: 100px;
     box-shadow: 0 0 30px #777;
     height: 100px;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     margin-bottom: 4%;
 }
 .directory li > img {
@@ -374,7 +378,7 @@ section {
     padding: 1%;
 }
 
-.section-content{
+.home-content{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -570,7 +574,6 @@ input[type='submit']:active{
     box-shadow: 0 2px var(--secondary-color);
     transform: translateY(2px);
 }
-
 .site-plan{
     width: 90%;
     max-width: 70rem;
@@ -591,17 +594,14 @@ aside .card{
     margin-bottom: 2%;
     line-height: 1.5rem;
 }
-
-
 .regForm,
-.page-content,
 .site-plan{
     width: 95%;
     max-width: 70rem;
-    margin: 0 auto;
+    margin: -1% auto;
     display: grid;
     gap: 1%;
-    padding: 2%;
+    /* padding: 2%; */
 }
 
 .regForm #formmessage{
@@ -644,7 +644,7 @@ input[type='submit']{
 
 .regForm input:required{
     border: solid 1px var(--primary-color);
-    background-color: #f0e7e5;
+    background-color: #f9f6f6;
 }
 
 .regForm input:required:valid{

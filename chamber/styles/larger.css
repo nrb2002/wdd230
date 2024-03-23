@@ -171,14 +171,8 @@
   }
 
   /* Registration Form styling */
-  .regForm,
-  .page-content{
-    grid-template-columns: 2fr 1fr 1fr;
-  }
-
-  .regForm .basicInfo{
-    grid-column: 1/2;
-  }
+  .regForm{grid-template-columns: 2fr 1fr;}
+  .regForm .basicInfo{grid-column: 1/2;}
 
   .main-content img{
     width: 98%;   
