@@ -356,10 +356,13 @@ aside{
 }
 
 .confirmation,
-.confirmation h2{
+.notfound,
+.confirmation h2,
+.notfound h2{
     text-align: center;
 }
-.confirmation h2{
+.confirmation h2,
+.notfound h2{
     background-color: lightblue;
 }
 /*Inner-page content*/

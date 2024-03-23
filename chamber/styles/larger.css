@@ -36,7 +36,8 @@
   .main-content{
     grid-column: 1/4;
   }
-  .confirmation{
+  .confirmation,
+  .notfound{
     grid-column: 1/4;
   }
   aside{
