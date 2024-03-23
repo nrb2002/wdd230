@@ -18,6 +18,18 @@ html, body {
     min-width: 325px;
 }
 
+hr{
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 10px 1px var(--primary-color);
+    width: 60%;
+    margin: 4% auto;
+  }
+  
+  hr:after {
+    content: "\00a0";
+  }
+
 h1{
     color: var(--accent1);
     font-size: 2.5rem;
@@ -25,7 +37,8 @@ h1{
 
 h2{    
     color: var(--title-color);
-    font-size: 1.8rem;   
+    font-size: 1.8rem; 
+    text-align: center;  
 }
 
 h3{
@@ -243,7 +256,7 @@ main{width: 100%;}
 section {
     width : 100%;
     justify-content: center;
-    padding: 2%;
+    padding: 1%;
     margin: 0;
     height: fit-content;
 }
@@ -254,9 +267,9 @@ section {
 }
 .content{
     display: grid;
-    margin: 1% auto;
+    margin: 0 auto;
     width: 90%;
-    padding: 2%;
+    padding: 1%;
 }
 .mission-section .card{text-align: center;}
 .weather-section .unique-value,
@@ -278,8 +291,49 @@ section {
     height: 200px;
     color: var(--primary-color);
 }
+.unique-value h2,
+.site-plan h2{
+    text-align: left;    
+}
 
+.events-section{
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    padding: 1%;
+}
+.all-events-link{
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.partners-section{
+    background-color: white;
+}
+
+.call-to-action{text-align: center;}
+.call-to-action .action_button{
+    padding:4%;
+}
+.action_button{
+    background-color: var(--secondary-color);
+    padding: 2% 4%;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-decoration: none;
+    border: solid 1px var(--accent1);
+    border-radius : 10rem;
+    color : white;
+}
+.action_button:hover{
+    color: var(--accent1);
+    background-color: var(--primary-color);
+}
 /*HOME PAGE AND GENERAL STYLING*/
+
+/* SITE PLAN STYLING */
+
+/* SITE PLAN STYLING */
 
 /*Inner-page styling*/
 
@@ -387,43 +441,7 @@ aside{
 }
 /*..DIRECTORY PAGE STYLING*/
 
-section h2{
-    text-align: center;    
-}
 
-.events-section{
-    background-color: white;
-    width: 100%;
-    margin: 0;
-    padding: 1%;
-}
-.all-events-link{
-    color: var(--secondary-color);
-    margin-top: 0;
-}
-
-.partners-section{
-    background-color: white;
-}
-
-.call-to-action{text-align: center;}
-.call-to-action .action_button{
-    padding:4%;
-}
-.action_button{
-    background-color: var(--secondary-color);
-    padding: 2% 4%;
-    font-size: 1rem;
-    margin: 0 auto;
-    text-decoration: none;
-    border: solid 1px var(--accent1);
-    border-radius : 10rem;
-    color : white;
-}
-.action_button:hover{
-    color: var(--accent1);
-    background-color: var(--primary-color);
-}
 
 th, tbody {
     padding : 0.5rem;
@@ -508,12 +526,7 @@ input[type='submit']:active{
     box-shadow: 0 2px var(--secondary-color);
     transform: translateY(2px);
 }
-.site-plan{
-    width: 90%;
-    max-width: 70rem;
-    margin: 0 auto;
-    display: grid;
-}
+
 aside h4{
     text-decoration: underline;
 }
@@ -528,8 +541,7 @@ aside .card{
     margin-bottom: 2%;
     line-height: 1.5rem;
 }
-.regForm,
-.site-plan{
+.regForm{
     width: 95%;
     max-width: 70rem;
     margin: -1% 2% 1% 2%;
