@@ -154,19 +154,10 @@ nav a:hover, .active {
 }
     
 .logo a:hover {cursor: pointer;}
-
-.action_button {
-    border : white solid 2px;
-    border-radius : 10rem;
-    color : white;
-    /* background-color : #f5f4f4; */
-}
-
 .action_button:hover {
     background-color : #365681;
     color : var(--accent1);
 }
-
 #menuToggler, #closeMenu {
     display : block;
     position : fixed;
@@ -265,13 +256,28 @@ section {
     margin: 0 auto;
     width: 90%;
     padding: 2%;
+    gap:2%;
 }
-.home-cards{
-    display: grid;
-    gap: 2%;
-    text-align: center;
+.mission-section .card{text-align: center;}
+.weather-section .unique-value,
+.weather-section .weather-card{
+    width: 90%;
 }
-
+.weather-card {
+    background: var(--secondary-color);
+    box-shadow: 0 8px 32px 0 var(--accent2);
+    /* backdrop-filter: blur( 11.5px ); */
+    /* -webkit-backdrop-filter: blur( 11.5px ); */
+    border-radius: 1rem;
+    color: white;
+    padding:2% 4%;
+    line-height: 1.5rem;  
+}
+.weather-forecast{
+    background-color: var(--accent1);
+    height: 200px;
+    color: var(--primary-color);
+}
 
 /*HOME PAGE AND GENERAL STYLING*/
 
@@ -330,9 +336,8 @@ aside{
 
 .directory section > img {
     max-width: 100px;
-    box-shadow: 0 0 30px #777;
+    box-shadow: 0 0 30px #eeeef2;
     height: 100px;
-    /* border: 1px solid #333; */
     margin-bottom: 4%;
 }
 .directory li > img {
@@ -380,18 +385,11 @@ aside{
 .directory .un {
 	list-style: none;
 }
-/*DIRECTORY PAGE STYLING*/
-
-
-
-
+/*..DIRECTORY PAGE STYLING*/
 
 section h2{
     text-align: center;    
 }
-
-
-
 
 .events-section{
     background-color: white;
@@ -399,33 +397,6 @@ section h2{
     margin: 0;
     padding: 1%;
 }
-
-.events-section-content{
-    display: grid;
-    padding: 0 3% 0 3%;
-    gap:2%;
-}
-
-.events-section-content h3{
-    margin: 0;
-    border-bottom: solid 5px red;
-    width: fit-content;
-    position: relative;
-    top: 0;
-}
-
-.events-section-content .card{
-    border: solid 1px lightblue;
-}
-
-/* .upcoming-events{
-    border: solid 1px lightgray;
-}
-
-.latest-events{
-    border: solid 1px lightgray;
-} */
-
 .all-events-link{
     color: var(--secondary-color);
     margin-top: 0;
@@ -436,18 +407,20 @@ section h2{
 }
 
 .call-to-action{text-align: center;}
-    
+.call-to-action .action_button{
+    padding:4%;
+}
 .action_button{
     background-color: var(--secondary-color);
     padding: 2% 4%;
     font-size: 1rem;
     margin: 0 auto;
-    width: auto;
     text-decoration: none;
-    border: solid 2px var(--primary-color);
+    border: solid 1px var(--accent1);
+    border-radius : 10rem;
+    color : white;
 }
-
-.call-to-action .action_button:hover{
+.action_button:hover{
     color: var(--accent1);
     background-color: var(--primary-color);
 }
@@ -458,7 +431,7 @@ th, tbody {
 
 .table {
     border : var(--primary-color) solid 1px;
-    /* width : 98%; */
+    width : 98%;
     text-align : center;
     font-size: .9rem;
 }
@@ -601,8 +574,6 @@ input[type='submit']{
     padding: .8rem;
     box-shadow: 1px 1px 4px #000;
 }
-
-
 .regForm input:required{
     border: solid 1px var(--primary-color);
     background-color: #f9f6f6;
@@ -623,11 +594,11 @@ input[type='submit']{
 
 /* Photo gallery style */
 .main-content img{
-    border: solid .2rem var(--primary-color);
+    /* border: solid .2rem var(--primary-color); */
     /* Add a fade from black animation to each image using CSS animation and opacity. */
-    background-color: black;
+    background-color: var(--accent2);
     animation: fade-in 5s; 
-    width: 90%;   
+    width: 90%;
 }
 
 @keyframes fade-in {

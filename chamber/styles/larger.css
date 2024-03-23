@@ -1,25 +1,26 @@
 @media only screen and (min-width: 1024px) {
   /*HOME PAGE AND GENERAL STYLING*/
   .content{
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 1%;
     width: 60%;
-    /* border: solid; */
   }
-  
-  .home-cards{
-    grid-column: 1/5; /*Takes full width of parent*/
-    grid-template-columns: repeat(3,1fr);
-    gap: 2%;
-    text-align: center;
+  .weather-section .unique-value{
+    text-align: left;
+    grid-column: 1/2;
   }
-  .spotlight-container{
+  .weather-section .weather-card{
+    grid-column: 2/4;
+  }
+  /* .spotlight-container{
     grid-column: 2/4;
     margin: -4%;
+  } */
+  .call-to-action{grid-column: 1/5;}  
+  .call-to-action .action_button{
+    padding:2%;
+    width: 20%;
   }
-  .call-to-action{
-    grid-column: 1/5;
-  }  
   /*HOME PAGE AND GENERAL STYLING*/
   
   /*INNER-PAGE STYLING*/  
