@@ -531,9 +531,8 @@ aside .card{
 .site-plan{
     width: 95%;
     max-width: 70rem;
-    margin: -1% auto;
+    margin: -1% 2% 1% 2%;
     display: grid;
-    gap: 1%;
     /* padding: 2%; */
 }
 
@@ -565,13 +564,14 @@ aside .card{
     margin-top: 4%;
 }
 
-input[type='submit']{
+.regForm input[type='submit']{
     border: none;
     background-image: linear-gradient( #69bae5, var(--primary-color));
     color:#ffff;
     border-radius: 6px;
     padding: .8rem;
     box-shadow: 1px 1px 4px #000;
+    margin: 4%;
 }
 .regForm input:required{
     border: solid 1px var(--primary-color);
