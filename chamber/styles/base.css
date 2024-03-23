@@ -319,7 +319,7 @@ section {
     margin: 0 auto;
     text-decoration: none;
     border: solid 1px var(--accent1);
-    border-radius : 10rem;
+    border-radius : .5rem;
     color : white;
 }
 .action_button:hover{
