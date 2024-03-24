@@ -143,15 +143,15 @@
                     <div class="card">
                         <h4>Local Weather</h4>
                         <div class="weather loading">
-                            <span class="city"></span>
-                            Temperature: <span class="temp"></span><span> °C</span><br><br>
+                            Current Temperature in <span id="city"></span>
+                           <span id="current-temp"></span><br><br>
                             <div class="flex">
-                                <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" class="icon">
-                                <div class="description"></div>
+                                <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" id="weather-icon">
+                                <div id="description"></div>
                             </div><br>
-                            Humidity: <span class="humidity"></span><span> %</span><br>
-                            Wind Speed: <span class="windSpeed"></span><span> km/h</span><br>
-                            Wind Chill: <span class="windChill">N/A</span>                   
+                            Humidity: <span id="humidity"></span></span><br>
+                            Wind Speed: <span id="windSpeed"></span><br>
+                            Wind Chill: <span id="windChill">N/A</span>                   
                         </div>
                         <!-- Weather -->
                         <!-- Statistical data -->
@@ -202,6 +202,10 @@
         <!-- Weather widget script -->
         <script src="scripts/weather.js" defer></script>
         <!-- Weather widget script -->
+        
+        <!-- Wind Chill -->
+        <script src="scripts/windchill.js"></script>
+        <!-- Wind Chill -->
 
         <script src="scripts/slideshow.js"></script>
 
@@ -209,9 +213,7 @@
         <script src="scripts/darkmode.js"></script>
         <!-- Darkmode script -->
 
-        <!-- Wind Chill -->
-        <script src="scripts/windchill.js"></script>
-        <!-- Wind Chill -->
+        
 
         <!-- Visits Stats -->
         <script src="scripts/getVisits.js"></script>

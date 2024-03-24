@@ -55,7 +55,7 @@
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="#" class="action_button">Sign in</a></li>
+                    <li><a href="404.html" class="action_button">Sign in</a></li>
                 </ul>
 
                 <div class="modeContainer">
@@ -72,7 +72,7 @@
                     <h1>The Kinshasa Chamber of Commerce</h1>
                     <p>We preserve our member's prosperity</p>
                     <a href="join.html" >Register</a>
-                    <a href="#" class="cta">Donate</a>
+                    <a href="404.html" class="cta">Donate</a>
                 </div>
             </div>
             <!-- ./ Hero section -->
@@ -115,10 +115,10 @@
                         <div class="weather loading">
                             <h3>Local Weather</h3>
                             <div class="current-weather">
-                                <span id="city"></span>
-                                Temperature: <span id="temp"></span><br><br>
+                                Current Temperature in <span id="city"></span><br>
+                                <span id="current-temp"></span><br><br>
                                 <div class="flex">
-                                    <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" id="icon">
+                                    <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" id="weather-icon">
                                     <div id="description"></div>
                                 </div><br>
                                 Humidity: <span id="humidity"></span><br>
@@ -215,7 +215,7 @@
                     <a href="join.html">Join</a>
                 </div> 
                 <div>
-                    <a href="#">Latest news</a>                    
+                    <a href="404.html">Latest news</a>                    
                     <a href="chamber-site-plan.html">Site plan</a> 
                     <a href="../">Course Home Page</a>
                 </div> 
@@ -237,6 +237,7 @@
 
         <!-- Weather widget script -->
         <script src="scripts/weather.js" defer></script>
+        <script src="scripts/windchill.js"></script>
         <!-- Weather widget script -->
 
         <script src="scripts/slideshow.js"></script>
@@ -245,9 +246,7 @@
         <script src="scripts/darkmode.js"></script>
         <!-- Darkmode script -->
 
-        <!-- Wind Chill -->
-        <script src="scripts/windchill.js"></script>
-        <!-- Wind Chill -->
+        
 
     </body>
 </html>
