@@ -287,6 +287,12 @@ section {
     padding:2% 4%;
     line-height: 1.5rem;  
 }
+#current-temp{
+    font-size: 5rem;
+}
+#description{
+    text-transform: capitalize;
+}
 .weather-forecast{
     background-color: var(--accent1);
     height: 200px;
@@ -418,7 +424,6 @@ aside{
   align-items: center;
   grid-template-columns: 1rem 1fr;
 }
-
 .directory .caption h6 {
   position: absolute;
   top: -2.3rem;
@@ -546,7 +551,7 @@ aside .card{
     box-shadow: 1px 1px 4px var(--primary-color);
     height: fit-content;
     padding:2%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--accent1);
     margin-bottom: 2%;
     line-height: 1.5rem;
 }
