@@ -1,12 +1,12 @@
 //Declare a const variable named "url" that contains the URL string of the JSON resource provided.
-const url = 'https://nrb2002.github.io/wdd230/chamber/data/members.json';
+const membersUrl = 'https://nrb2002.github.io/wdd230/chamber/data/members.json';
 //Declare a const variable name "cards" that selects the HTML div element from the document with an id value of "cards".
 const cards = document.querySelector('.cards');
 
-//Create a async defined function named "getProphetData" to fetch data from the JSON source url using the await fetch() method.
+//Create a async defined function named "getProphetData" to fetch data from the JSON source membersUrl using the await fetch() method.
 async function getMembersData (){
     //Store the response from the fetch() method in a const variable named "response".
-    const response = await fetch(url);
+    const response = await fetch(membersUrl);
     //Convert the response to a JSON object using the .json method and store the results in a const variable named "data".
     const data = await response.json();
     //Display members
