@@ -93,10 +93,16 @@
   section,
   fieldset,
   label,
-  .card,
+  aside .card,
   .main-content{
     background: #060522;
     color: white;
+  }
+  .weather-card,
+  .mission-section,
+  .events-section,
+  .partners-section{
+      background-color: var(--primary-color); 
   }
 
   section a{
