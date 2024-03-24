@@ -29,8 +29,8 @@
   
   /*INNER-PAGE STYLING*/  
   .spotlight{
-    grid-column: 2/4;
-    height: 150px;
+    grid-column: 1/5;
+    height: fit-content;
   }
 
   .main-content{
