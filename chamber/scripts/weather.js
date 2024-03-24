@@ -7,12 +7,12 @@ const humidity = document.querySelector("#humidity");
 const windSpeed= document.querySelector("#windSpeed");
 
 //Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
-const lat = -4.32;
-const lon = 15.31;
+const lat = -4.322447;
+const lon = 15.307045;
 //Set the units to imperial: "units=imperial"
 const units = "imperial";
 //Provide your API key: "appid=[enter your key here]"
-const apiKey = "4fbad2e30a8af0dbabfe5ed17d272cf8";
+const apiKey = "d100c53e022ac740b8e46f1ae5caf79f";
 //Declare a const variable named "url" and assign it a valid URL string as given in the openweathermap api documentation.
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
 
@@ -55,6 +55,5 @@ function displayResults(data){
 
     humidity.textContent = `${data.main.humidity}%`; 
     windSpeed.textContent = `${data.wind.speed}mph`;
-
+}  
     
-}
