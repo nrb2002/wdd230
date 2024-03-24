@@ -22,8 +22,9 @@ hr{
     border: 0;
     height: 0;
     box-shadow: 0 0 10px 1px var(--primary-color);
-    width: 60%;
+    width: 90%;
     margin: 4% auto;
+    justify-content: center;
   }
   
   hr:after {
@@ -354,12 +355,29 @@ section {
 /* SITE PLAN STYLING */
 
 /*Inner-page styling*/
+iframe{
+    width: 98%;
+    height: 30rem;
+    border: solid 2px var(--accent2);
+}
 
+
+.gallery{
+    background-color: var(--primary-color);
+    padding: 2% 0 2% 2%;
+    align-items: center;
+}
 .spotlight{
     justify-content: center;
     text-align: center;
     height: fit-content;
-    margin: -8% 0 2% 0;
+    margin: -6% 0 2% 0;
+}
+.spotlight img{
+    padding: 1%;
+    box-shadow: lightgray 0px 2px 8px 0px;
+    width: 90%;
+    border: solid 1px var(--primary-color);
 }
 /*For design testing purpose only. To be commented. */
 /* .main-content,
@@ -372,7 +390,7 @@ aside{
 .main-content,
 aside{
     width: 100%;
-    margin-bottom: 1%;
+    margin-bottom: 0;
 }
 
 .confirmation,
