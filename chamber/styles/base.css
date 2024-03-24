@@ -280,18 +280,32 @@ section {
 .weather-card {
     background: var(--secondary-color);
     box-shadow: 0 8px 32px 0 var(--accent2);
-    /* backdrop-filter: blur( 11.5px ); */
-    /* -webkit-backdrop-filter: blur( 11.5px ); */
+    backdrop-filter: blur( 11.5px ); */
+    -webkit-backdrop-filter: blur( 11.5px );
     border-radius: 1rem;
     color: white;
     padding:2% 4%;
     line-height: 1.5rem;  
+    text-align: center;
+    opacity: .9;
 }
+.weather-card:hover {animation: shaking 0.5s;}
+    @keyframes shaking {
+        0% {transform: rotate(0deg);}
+        20% {transform: rotate(-2deg);}
+        50% {transform: rotate(0deg);}
+        70% {transform: rotate(2deg);}
+        100% {transform: rotate(0deg);}
+    }
 #current-temp{
-    font-size: 5rem;
+    font-size: 8rem;
+    font-weight: 800;
+    margin: 4%;
+    text-align: center;
 }
 #description{
     text-transform: capitalize;
+    
 }
 .weather-forecast{
     background-color: var(--accent1);
