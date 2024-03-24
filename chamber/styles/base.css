@@ -374,7 +374,7 @@ aside{
 
 .directory small{
   width : 60%;
-  text-align : "center";
+  text-align : center;
 }
 
 .directory .grid{display: grid;}
