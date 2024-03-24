@@ -1,32 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <input id="favchap" type="text"></input>
-    <input type="submit" value="Add a chapter" id="submit">
-    <div id="message"></div>
-    
-
-    <script>
-        const btn = document.getElementById("submit");
-        btn.addEventListener("click", function(){ 
-            const message = document.querySelector('#message');
-            const input = document.querySelector('#favchap');
-            if (input.value !== "") {
-            message.innerHTML = "Thank you. Your favorite chapter is " + input.value;
-            } else {
-            message.innerHTML = `Please enter a chapter.`;
-            }
-        });
-        
-    </script>
-    
-    
-</body>
-
-</html>
+<div id='item-group'>
+    <div class='header'>
+      <h1>Title</h1>
+      <div class='btn-group'>
+        <button id='view-grid'><i class='material-icons'>grid_on</i></button>
+        <button id='view-list'><i class='material-icons'>view_list</i></button>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='item'>
+        <h1>Title 1</h1>
+        <a href='#'>Link</a> | <a href='#'>Link</a><br />
+        <p>
+          Short bit of information. 
+        </p>
+        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
+      </div>
+      <div class='item'>
+        <h1>Title 2</h1>
+        <a href='#'>Link</a> | <a href='#'>Link</a><br />
+        <p>
+          Short bit of information. 
+        </p>
+        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='item'>
+        <h1>Title 3</h1>
+        <a href='#'>Link</a> | <a href='#'>Link</a><br />
+        <p>
+          Short bit of information. 
+        </p>
+        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
+      </div>
+      <div class='item'>
+        <h1>Title 4</h1>
+        <a href='#'>Link</a> | <a href='#'>Link</a><br />
+        <p>
+          Short bit of information. 
+        </p>
+        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='item'>
+        <h1>Title 5</h1>
+        <a href='#'>Link</a> | <a href='#'>Link</a><br />
+        <p>
+          Short bit of information. 
+        </p>
+        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
+      </div>
+      <div class='item'>
+        <h1>Title 6</h1>
+        <a href='#'>Link</a> | <a href='#'>Link</a><br />
+        <p>
+          Short bit of information. 
+        </p>
+        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
+      </div>
+    </div>  
+  </div>

@@ -104,6 +104,9 @@
   .partners-section{
       background-color: var(--primary-color); 
   }
+  .spotlight img{    
+    filter:brightness(70%);
+  }
 
   section a{
     color: rgb(212, 227, 233);
