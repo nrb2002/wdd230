@@ -282,7 +282,7 @@ section {
     background: var(--secondary-color);
     box-shadow: 0 8px 32px 0 var(--accent2);
     backdrop-filter: blur( 11.5px ); */
-    -webkit-backdrop-filter: blur( 11.5px );
+    /* -webkit-backdrop-filter{blur11.5px}; */
     border-radius: 1rem;
     color: white;
     padding:2% 4%;
@@ -361,7 +361,6 @@ iframe{
     border: solid 2px var(--accent2);
 }
 
-
 .gallery{
     background-color: var(--primary-color);
     padding: 2% 0 2% 2%;
@@ -375,9 +374,8 @@ iframe{
 }
 .spotlight img{
     padding: 1%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     width: 90%;
-    border: solid 1px var(--primary-color);
+    border: solid 1px lightblue;
 }
 .spotlight img:hover{
     filter:brightness(50%);
