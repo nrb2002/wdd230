@@ -1,63 +1,80 @@
-<div id='item-group'>
-    <div class='header'>
-      <h1>Title</h1>
-      <div class='btn-group'>
-        <button id='view-grid'><i class='material-icons'>grid_on</i></button>
-        <button id='view-list'><i class='material-icons'>view_list</i></button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="c-weather">
+    <aside class="c-weather__side">
+      <figure class="c-weather__side-figure">
+        <img src="https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" class="c-weather__side-image">
+        <div class="c-weather__side-gradient"></div>
+      </figure>
+      
+      <div class="c-weather__side-content">
+        <div class="c-weather__side-date">
+          <h2 class="c-weather__side-dayname">Miércoles</h2>
+          <div class="c-weather__side-day">15 Nov 2023</div>
+          <div class="c-weather__side-location">Palma, ES</div>
+        </div>
+  
+        <div class="c-wather__side-temperature">
+          <h1 class="c-weather__side-temp">29°C</h1>
+          <h3 class="c-weather__side-description">Soleado</h3>
+        </div>
+      </div>
+    </aside>
+    
+    <div class="c-weather__infos">
+      <ul class="c-weather__today-list">
+        <li class="c-weather__today-item">
+          <div class="c-weather__today-item-title">precipitaciones</div>
+          <div class="c-weather__today-item-value">0%</div>
+        </li>
+        
+        <li class="c-weather__today-item">
+          <div class="c-weather__today-item-title">humedad</div>
+          <div class="c-weather__today-item-value">34%</div>
+        </li>
+        
+        <li class="c-weather__today-item">
+          <div class="c-weather__today-item-title">viento</div>
+          <div class="c-weather__today-item-value">0 km/h</div>
+        </li>
+      </ul>
+      
+      <ul class="c-weather__weeklist">
+        <li class="c-weather__weeklist-item is-active">
+          <div class="c-weather__weeklist-item-dayname">mie</div>
+          <div class="temperature">29°C</div>
+        </li>
+        
+        <li class="c-weather__weeklist-item">
+          <div class="c-weather__weeklist-item-dayname">jue</div>
+          <div class="c-weather__weeklist-item-temperature">24°C</div>
+        </li>
+        
+        <li class="c-weather__weeklist-item">
+          <div class="c-weather__weeklist-item-dayname">vie</div>
+          <div class="c-weather__weeklist-item-temperature">24°C</div>
+        </li>
+        
+        <li class="c-weather__weeklist-item">
+          <div class="c-weather__weeklist-item-dayname">sab</div>
+          <div class="c-weather__weeklist-item-temperature">26°C</div>
+        </li>
+      </ul>
+      
+      <div class="c-weather__action">
+        <button class="c-weather__action-button">
+          Cambiar localización
+        </button>
       </div>
     </div>
-    <div class='row'>
-      <div class='item'>
-        <h1>Title 1</h1>
-        <a href='#'>Link</a> | <a href='#'>Link</a><br />
-        <p>
-          Short bit of information. 
-        </p>
-        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
-      </div>
-      <div class='item'>
-        <h1>Title 2</h1>
-        <a href='#'>Link</a> | <a href='#'>Link</a><br />
-        <p>
-          Short bit of information. 
-        </p>
-        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
-      </div>
-    </div>
-    <div class='row'>
-      <div class='item'>
-        <h1>Title 3</h1>
-        <a href='#'>Link</a> | <a href='#'>Link</a><br />
-        <p>
-          Short bit of information. 
-        </p>
-        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
-      </div>
-      <div class='item'>
-        <h1>Title 4</h1>
-        <a href='#'>Link</a> | <a href='#'>Link</a><br />
-        <p>
-          Short bit of information. 
-        </p>
-        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
-      </div>
-    </div>
-    <div class='row'>
-      <div class='item'>
-        <h1>Title 5</h1>
-        <a href='#'>Link</a> | <a href='#'>Link</a><br />
-        <p>
-          Short bit of information. 
-        </p>
-        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
-      </div>
-      <div class='item'>
-        <h1>Title 6</h1>
-        <a href='#'>Link</a> | <a href='#'>Link</a><br />
-        <p>
-          Short bit of information. 
-        </p>
-        <a href='#' class='btn'>Read More<i class='material-icons'>arrow_right</i></a>
-      </div>
-    </div>  
   </div>
+</body>
+</html>

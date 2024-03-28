@@ -112,23 +112,49 @@
                         </p>
                     </div>
                     <div class="card weather-card">
-                        <div class="weather loading">
-                            <h3>Local Weather</h3>
+                        <h3>Local Weather</h3>
+                        <div class="weather loading">                            
                             <div class="current-weather">
                                 <!-- Current Temperature in --><div id="city"></div> 
                                 <div id="current-temp"></div><br><br>
                                 <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" id="weather-icon">
                                 <div id="description"></div>
-                                
-                                <!-- Humidity: <span id="humidity"></span><br>
-                                Wind Speed: <span id="windSpeed"></span>><br>
-                                Wind Chill: <span id="windChill">N/A</span>  -->
-                            </div><br>
-                            <!-- <div class="weather-forecast">
-                                <table>
-                                    <thead>Forecast</thead>
-                                </table>
-                            </div>                  -->
+                                <hr> 
+                                <div class="weather-data">                               
+                                    <span>Humidity: </span><span id="humidity"></span><br>
+                                    <span>Wind Speed: </span><span id="windSpeed"></span><br>
+                                    <span>Wind Chill: </span><span id="windChill">N/A</span> 
+                                </div>
+                            </div>
+                            <div class="forecast">
+                                <h4>3-day Forecast</h4>
+                                <table class="weather-forecast">
+                                    <thead>
+                                    <tr>
+                                        <th>Day</th>
+                                        <th>Temp</th>
+                                        <th>Icon</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td data-column="Day">Tue</td>
+                                        <td data-column="Temp">28°F</td>
+                                        <td data-column="weather-icon"><img src="" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-column="Day">Tue</td>
+                                        <td data-column="Temp">28°F</td>
+                                        <td data-column="weather-icon"><img src="" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-column="Day">Tue</td>
+                                        <td data-column="Temp">28°F</td>
+                                        <td data-column="weather-icon"><img src="" alt=""></td>
+                                    </tr>
+                                    </tbody>
+                                </table> 
+                            </div>               
                         </div>
                     </div>
                     <!-- <div class="spotlight-container">

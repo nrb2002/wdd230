@@ -273,21 +273,23 @@ section {
     padding: 1%;
 }
 .mission-section .card{text-align: center;}
+.weather{
+    display: grid;
+}
 .weather-section h3{color: var(--accent1);}
 .weather-section .unique-value,
-.weather-section .weather-card{
-    width: 90%;
-}
+.weather-section .weather-card{width: 90%;}
 .weather-card {
+    height: fit-content;
     background: var(--secondary-color);
     box-shadow: 0 8px 32px 0 var(--accent2);
-    backdrop-filter: blur( 11.5px ); */
-    /* -webkit-backdrop-filter{blur11.5px}; */
+    /* backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px ); */
     border-radius: 1rem;
     color: white;
     padding:2% 4%;
     line-height: 1.5rem;  
-    text-align: center;
+    text-align: left;
     opacity: .9;
 }
 .weather-card:hover {animation: shaking 0.5s;}
@@ -299,7 +301,7 @@ section {
         100% {transform: rotate(0deg);}
     }
 #current-temp{
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 800;
     margin: 4%;
     text-align: center;
@@ -308,10 +310,19 @@ section {
     text-transform: capitalize;
     
 }
+.forecast{
+    background-color:var(--accent1);
+    padding-left:6%;
+}
+
+.weather-data{
+    text-align: center;
+}
 .weather-forecast{
     background-color: var(--accent1);
     height: 200px;
     color: var(--primary-color);
+    margin-left: 2%;
 }
 
 .events-section{
