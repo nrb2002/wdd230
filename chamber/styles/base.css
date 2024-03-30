@@ -316,7 +316,7 @@ section {
 }
 
 .weather-data{
-    text-align: center;
+    text-align: left;
 }
 .weather-forecast{
     background-color: var(--accent1);

@@ -17,6 +17,7 @@
   }  
   .weather-section .weather-card{
     grid-column: 3/4;
+    width: 20rem;
   }
   
   /* .spotlight-container{
