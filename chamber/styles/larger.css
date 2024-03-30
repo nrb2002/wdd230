@@ -45,7 +45,8 @@
     grid-column: 1/4;
   }
   aside{
-    grid-column: 4/5;    
+    grid-column: 4/5;   
+    max-width: 250px; 
   }
   /*INNER-PAGE STYLING*/
 
