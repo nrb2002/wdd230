@@ -17,7 +17,7 @@ const lon = -87.07513690459317;
 //Set the units to imperial: "units=imperial"
 const units = "imperial";
 //Provide your API key: "appid=[enter your key here]"
-const apiKey = "d100c53e022ac740b8e46f1ae5caf79f";
+const apiKey = "a82bd4620ada83b94d8022e56f26265f";
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

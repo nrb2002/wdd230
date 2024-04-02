@@ -34,7 +34,7 @@
         <!-- Weather widget stylesheet -->
         <link rel="stylesheet" href="styles/weather.css">
 
-
+        <link rel="icon" type="image/x-icon" href="images/logo/favicon.png">
         <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
 </head>
 
@@ -44,6 +44,10 @@
       
     <div class="container"> 
       <div class="top-navbar">
+        <div class="contact-info">
+          <span>Phone: +52-85-339-3965</span>
+          <span>Email: contact@scoots.mx</span>
+        </div>
         <marquee class="maxTemp">Max Temp: 90°F</marquee>
         <ul class="social-list">
           <li>
@@ -68,16 +72,10 @@
       <!-- Main navigation bar -->
       <nav class="navbar" data-navbar>
         <ul>
-          <li>
-            <a href="#home" class="active" data-nav-link>Home</a>
-          </li>
-          <li>
-            <a href="#rental-options" data-nav-link>Rental Options</a>
-          </li> 
-          <li>
-            <a href="contact.html" data-nav-link>Customer Service</a>
-          </li>  
-                  
+          <li><a href="./" class="active" data-nav-link>Home</a></li>
+          <li><a href="#rental-options" data-nav-link>Rental Options</a></li>
+          <li><a href="#photo-gallery" data-nav-link>Photo Gallery</a></li> 
+          <li><a href="contact.html" data-nav-link>Contact Us</a></li>  
         </ul>
       </nav>
       <!-- Main navigation bar -->
@@ -155,12 +153,12 @@
 
           <!-- Call to action -->
           <div>
-            <a href="#rental-options" id="aria-label-txt" class="btn">Explore Available Options</a>
+            <a href="rentals.html" id="aria-label-txt" class="btn cta-2">Book now!</a>
           </div>
           <!-- ./ Call to action -->
         </div>
       </section>
-      <!-- HERO SECTION  -->
+      <!-- ./ HERO SECTION  -->
 
       <!-- RENTAL OPTIONS SECTION  -->
       <section class="section rental-options" id="rental-options">
@@ -169,694 +167,124 @@
           <div class="title-wrapper">
             <h2 class="h2 section-title">Rental Options</h2>
 
-            <a href="#" class="rental-options-link">
-              <span>Back to Top</span>
+            <a href="#" class="section-link">
+              <span class="top-arrow">Back to Top</span>
 
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
           </div>
 
           <ul class="rental-options-list">
-
             <li>
               <div class="rental-options-card">
-
                 <figure class="card-banner">
-                  <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
+                  <img src="images/scoots-scooters/2020-honda-pcx150-india.webp" alt="Honda Scooters" loading="lazy" width="440" height="300"
                     class="w-100">
                 </figure>
-
                 <div class="card-content">
-
                   <div class="card-title-wrapper">
                     <h3 class="h3 card-title">
-                      <a href="#">Toyota RAV4</a>
+                      <a href="#">Honda Scooters</a>
                     </h3>
-
-                    <data class="year" value="2021">2021</data>
                   </div>
-
                   <ul class="card-list">
-
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
-
-                      <span class="card-item-text">4 People</span>
+                      <span class="card-item-text">1 - 2 People</span>
                     </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="flash-outline"></ion-icon>
-
-                      <span class="card-item-text">Hybrid</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="speedometer-outline"></ion-icon>
-
-                      <span class="card-item-text">6.1km / 1-litre</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="hardware-chip-outline"></ion-icon>
-
-                      <span class="card-item-text">Automatic</span>
-                    </li>
-
                   </ul>
-
                   <div class="card-price-wrapper">
-
                     <p class="card-price">
-                      <strong>$440</strong> / month
+                      <strong>From $20</strong>
                     </p>
                     <button class="btn">Explore</button>
-
                   </div>
-
                 </div>
-
               </div>
             </li>
-
             <li>
               <div class="rental-options-card">
-
                 <figure class="card-banner">
-                  <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300"
+                  <img src="images/scoots-atv/2022-honda-pioneer-1000-6-deluxe-crew-debuts-you-can-have-five-passengers-in-it-196440_1.jpg" alt="Honda Pioneer ATV" loading="lazy" width="440" height="300"
                     class="w-100">
                 </figure>
-
                 <div class="card-content">
-
                   <div class="card-title-wrapper">
                     <h3 class="h3 card-title">
-                      <a href="#">BMW 3 Series</a>
+                      <a href="#">Honda Pioneer ATV</a>
                     </h3>
-
-                    <data class="year" value="2019">2019</data>
                   </div>
-
                   <ul class="card-list">
-
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
-
                       <span class="card-item-text">4 People</span>
                     </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="flash-outline"></ion-icon>
-
-                      <span class="card-item-text">Gasoline</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="speedometer-outline"></ion-icon>
-
-                      <span class="card-item-text">8.2km / 1-litre</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="hardware-chip-outline"></ion-icon>
-
-                      <span class="card-item-text">Automatic</span>
-                    </li>
-
                   </ul>
-
                   <div class="card-price-wrapper">
-
                     <p class="card-price">
-                      <strong>$350</strong> / month
+                      <strong>From $50</strong>
                     </p>
                     <button class="btn">Explore</button>
-
                   </div>
-
                 </div>
-
               </div>
             </li>
-
             <li>
               <div class="rental-options-card">
-
                 <figure class="card-banner">
-                  <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440"
-                    height="300" class="w-100">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-title-wrapper">
-                    <h3 class="h3 card-title">
-                      <a href="#">Volkswagen T-Cross</a>
-                    </h3>
-
-                    <data class="year" value="2020">2020</data>
-                  </div>
-
-                  <ul class="card-list">
-
-                    <li class="card-list-item">
-                      <ion-icon name="people-outline"></ion-icon>
-
-                      <span class="card-item-text">4 People</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="flash-outline"></ion-icon>
-
-                      <span class="card-item-text">Gasoline</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="speedometer-outline"></ion-icon>
-
-                      <span class="card-item-text">5.3km / 1-litre</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="hardware-chip-outline"></ion-icon>
-
-                      <span class="card-item-text">Automatic</span>
-                    </li>
-
-                  </ul>
-
-                  <div class="card-price-wrapper">
-
-                    <p class="card-price">
-                      <strong>$400</strong> / month
-                    </p>
-
-                    <button class="btn">Explore</button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="rental-options-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/car-4.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440"
-                    height="300" class="w-100">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-title-wrapper">
-                    <h3 class="h3 card-title">
-                      <a href="#">Cadillac Escalade</a>
-                    </h3>
-
-                    <data class="year" value="2020">2020</data>
-                  </div>
-
-                  <ul class="card-list">
-
-                    <li class="card-list-item">
-                      <ion-icon name="people-outline"></ion-icon>
-
-                      <span class="card-item-text">4 People</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="flash-outline"></ion-icon>
-
-                      <span class="card-item-text">Gasoline</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="speedometer-outline"></ion-icon>
-
-                      <span class="card-item-text">7.7km / 1-litre</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="hardware-chip-outline"></ion-icon>
-
-                      <span class="card-item-text">Automatic</span>
-                    </li>
-
-                  </ul>
-
-                  <div class="card-price-wrapper">
-
-                    <p class="card-price">
-                      <strong>$620</strong> / month
-                    </p>
-                    <button class="btn">Explore</button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="rental-options-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/car-5.jpg" alt="BMW 4 Series GTI 2021" loading="lazy" width="440"
-                    height="300" class="w-100">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-title-wrapper">
-                    <h3 class="h3 card-title">
-                      <a href="#">BMW 4 Series GTI</a>
-                    </h3>
-
-                    <data class="year" value="2021">2021</data>
-                  </div>
-
-                  <ul class="card-list">
-
-                    <li class="card-list-item">
-                      <ion-icon name="people-outline"></ion-icon>
-
-                      <span class="card-item-text">4 People</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="flash-outline"></ion-icon>
-
-                      <span class="card-item-text">Gasoline</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="speedometer-outline"></ion-icon>
-
-                      <span class="card-item-text">7.6km / 1-litre</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="hardware-chip-outline"></ion-icon>
-
-                      <span class="card-item-text">Automatic</span>
-                    </li>
-
-                  </ul>
-
-                  <div class="card-price-wrapper">
-
-                    <p class="card-price">
-                      <strong>$530</strong> / month
-                    </p>
-
-                    <button class="btn">Explore</button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="rental-options-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/car-6.jpg" alt="BMW 4 Series 2019" loading="lazy" width="440" height="300"
+                  <img src="images/scoots-jeep/jeep-wrangler--rubicon-foor-doors-5-pers.webp" alt="Jeep Wrangler" loading="lazy" width="440" height="300"
                     class="w-100">
                 </figure>
-
                 <div class="card-content">
-
                   <div class="card-title-wrapper">
                     <h3 class="h3 card-title">
-                      <a href="#">BMW 4 Series</a>
+                      <a href="#">Jeep Wrangler</a>
                     </h3>
-
-                    <data class="year" value="2019">2019</data>
                   </div>
-
                   <ul class="card-list">
-
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
-
-                      <span class="card-item-text">4 People</span>
+                      <span class="card-item-text">4 - 5 People</span>
                     </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="flash-outline"></ion-icon>
-
-                      <span class="card-item-text">Gasoline</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="speedometer-outline"></ion-icon>
-
-                      <span class="card-item-text">7.2km / 1-litre</span>
-                    </li>
-
-                    <li class="card-list-item">
-                      <ion-icon name="hardware-chip-outline"></ion-icon>
-
-                      <span class="card-item-text">Automatic</span>
-                    </li>
-
                   </ul>
-
                   <div class="card-price-wrapper">
-
                     <p class="card-price">
-                      <strong>$490</strong> / month
+                      <strong>From $60</strong>
                     </p>
-
                     <button class="btn">Explore</button>
-
                   </div>
-
                 </div>
-
               </div>
             </li>
+
+           
 
           </ul>
 
         </div>
       </section>
+      <!--./ RENTAL OPTIONS SECTION  -->
 
-
-
-
-
-      <!-- 
-        - #GET START
-      -->
-
-      <section class="section get-start">
+      <!-- PHOTO GALLERY  -->
+      <section class="section rental-options" id="photo-gallery">
         <div class="container">
 
-          <h2 class="h2 section-title">Get started with 4 simple steps</h2>
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Photo Gallery</h2>
 
-          <ul class="get-start-list">
+            <a href="#" class="section-link">
+              <span class="top-arrow">Back to Top</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
 
-            <li>
-              <div class="get-start-card">
-
-                <div class="card-icon icon-1">
-                  <ion-icon name="person-add-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Create a profile</h3>
-
-                <p class="card-text">
-                  If you are going to use a passage of Lorem Ipsum, you need to be sure.
-                </p>
-
-                <a href="#" class="card-link">Get started</a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="get-start-card">
-
-                <div class="card-icon icon-2">
-                  <ion-icon name="car-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Tell us what car you want</h3>
-
-                <p class="card-text">
-                  Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="get-start-card">
-
-                <div class="card-icon icon-3">
-                  <ion-icon name="person-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Match with seller</h3>
-
-                <p class="card-text">
-                  It to make a type specimen book. It has survived not only five centuries, but also the leap into
-                  electronic
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="get-start-card">
-
-                <div class="card-icon icon-4">
-                  <ion-icon name="card-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Make a deal</h3>
-
-                <p class="card-text">
-                  There are many variations of passages of Lorem available, but the majority have suffered alteration
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
+          
 
         </div>
       </section>
+      <!--./ RENTAL OPTIONS SECTION  -->
 
 
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" id="blog">
-        <div class="container">
-
-          <h2 class="h2 section-title">Our Blog</h2>
-
-          <ul class="blog-list has-scrollbar">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-1.jpg" alt="Opening of new offices of the company" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Company</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Opening of new offices of the company</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-2.jpg" alt="What cars are most vulnerable" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Repair</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">What cars are most vulnerable</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-3.jpg" alt="Statistics showed which average age" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Cars</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Statistics showed which average age</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-4.jpg" alt="What´s required when renting a car?" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Cars</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">What´s required when renting a car?</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-5.jpg" alt="New rules for handling our cars" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Company</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">New rules for handling our cars</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
   </main>
 
 
@@ -872,14 +300,8 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Scoots logo">
+            <img src="images/logo/scoots-logo.svg" alt="Scoots logo" width="250">
           </a>
-
-          <p class="footer-text">
-            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
-            consumers an
-            attractive and fun selection.
-          </p>
         </div>
 
         <ul class="footer-list">
@@ -937,15 +359,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Manhattan</a>
+            <a href="https://unsplash.com/" target="_blank" class="footer-link">https://unsplash.com/</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Central New York City</a>
+            <a href="https://compare.pricesofindia.com/news/bike/481/2020-honda-pcx150-unveiled-in-thailand" target="_blank" class="footer-link">compare.pricesofindia.com</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Upper East Side</a>
+            <a href="https://www.edmunds.com/jeep/wrangler/2021/review/" target="_blank" class="footer-link">edmunds.com/</a>
           </li>
 
           <li>
@@ -975,7 +397,6 @@
       <div class="footer-bottom">
 
         <ul class="social-list">
-
           <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>

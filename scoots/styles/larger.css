@@ -1,11 +1,27 @@
-@media (min-width: 1024px){
+@media (min-width: 1025px){
     
 
     .container { 
         width: 80%;
         max-width: 1200px; 
     }
-    
+    /*TOP NAVBAR STYLE*/
+    .contact-info{
+      grid-template-columns: 1fr 1fr;
+      gap: 4%;
+      margin-right: 5%;
+      margin: -.08% 2% 0 19%;/*for small screens*/
+    }
+    .contact-info span{
+      font-size: .85rem;
+    }
+    .social-list {
+      margin:-.08% 19% 0 2%;
+    }
+
+    /*TOP NAVBAR STYLE*/
+
+
     /*HERO STYLE*/
     .hero-title {
         font-size: 3.5rem;
