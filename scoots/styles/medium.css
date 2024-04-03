@@ -5,6 +5,21 @@
     .hero-title {
         font-size: 2.2rem;
       }
+    /*  TOP NAVBAR */
+    .top-navbar{
+      height: 40px;
+    }
+
+     /*  TOP NAVBAR */
+     /* WEATHER STYLE */
+    .weather-title{
+      font-size: 1.1rem;
+    }
+    .weather #current-temp{
+      font-size: 2.2rem;
+      font-weight: 500;  
+    }
+    /* WEATHER STYLE */
 
 
     /*FOOTER STYLE*/
