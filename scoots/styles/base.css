@@ -160,8 +160,7 @@ button, a { transition: var(--transition); }
 
 .btn:is(:hover, :focus)::before { opacity: 1; }
 
-/* section { padding-block: 50px; } */
-.section-title { margin-top: 120px; }
+section { padding-block: 50px; }
 
 h2,
 .h2,
@@ -340,7 +339,6 @@ nav li a:focus,
   align-items: center;
   z-index: 1;
 }
-
 .hero-text {
   position: absolute;
   top: 50%;
@@ -437,7 +435,7 @@ nav li a:focus,
 /*  WEATHER STYLE*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
 
-.section-card .title-wrapper {
+.section-content .title-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -572,6 +570,7 @@ nav li a:focus,
   --height: 36px;
   min-width: 100%;
 }
+
 .rental-options-card .fav-btn {
   --background: var(--beau-blue);
   --color: var(--blue-jeans);
@@ -586,6 +585,8 @@ nav li a:focus,
   --background: var(--lavender-blush);
   --color: var(--red-salsa);
 }
+.section-title { margin-top: 50px; }
+
 .get-start-list {
   display: grid;
   gap: 20px;
@@ -670,6 +671,11 @@ nav li a:focus,
 
 
 
+
+
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
 
 .blog .section-title { margin-bottom: 30px; }
 
@@ -1032,3 +1038,91 @@ nav li a:focus,
  * responsive for large than 1200px screen
  */
 
+@media (min-width: 1200px) {
+
+
+  .overlay,
+  .toggle-menu { display: none; }
+
+  .navbar,
+  .navbar.active { all: unset; }
+
+  nav ul {
+    display: flex;
+    gap: 4rem;
+  }
+
+  nav ul li a {
+    margin-bottom: 0;
+    font-weight: var(--fw-600);
+  }
+
+  
+
+
+
+  
+
+  .weather { max-width: 900px; }
+
+  .weather .btn {
+    --width: calc(100% - 40px);
+    --height: 50px;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+  #weather-table{
+    overflow-x:auto; 
+    display: grid;   
+  }
+  #weather-table th, td {
+    text-align: left;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+  }
+  
+  #weather-table  tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+  /**
+   * rental CAR 
+   */
+
+  .rental-options-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+
+
+  /**
+   * GET START
+   */
+
+  .get-start-list { grid-template-columns: repeat(4, 1fr); }
+
+
+
+  /**
+   * BLOG
+   */
+
+  .blog .has-scrollbar > li {
+    max-width: 340px;
+    scroll-snap-align: center;
+  }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer-brand { width: 33.33%; }
+
+  .footer-text { max-width: 35ch; }
+
+  .footer-list:not(:last-of-type) { width: 16.66%; }
+
+  .footer-list:last-of-type { width: 33.33%; }
+  }
+}
