@@ -4,44 +4,156 @@
     "location":"Conzumel Island, Mexico",
     "lastUpdate":"2024-4-4",
     "businessType":"Rental Services",
-    "rentalOptions":[
+    "rentalType":[
         {
             "scooter": [
                 {
-                    "name": "Baron Tshibasu",
-                    "gender": "Male",
-                    "birthdate": "1985-05-20"
+                    "make": "Honda",
+                    "model": "Metropolitan",
+                    "engine": "49cc",
+                    "numberOfPersons":"1",
+                    "plans":[
+                        {
+                            "reservation":
+                                {
+                                    "halfDay":"$20",
+                                    "fullDay":"$30"
+                                }
+                        },
+                        {
+                            "walkIn":
+                                {
+                                    "halfDay":"$25",
+                                    "fullDay":"$35"
+                                }
+                        }
+
+                    ]
                 },
                 {
-                    "name": "Nana Mbula",
-                    "gender": "Female",
-                    "birthdate": "1988-11-12"
+                    "make": "Honda",
+                    "model": "Dio",
+                    "engine": "110cc",
+                    "numberOfPersons":"2",
+                    "plans":[
+                        {
+                            "reservation":
+                                {
+                                    "halfDay":"$30",
+                                    "fullDay":"$40"
+                                }
+                        },
+                        {
+                            "walkIn":
+                                {
+                                    "halfDay":"$35",
+                                    "fullDay":"$45"
+                                }
+                        }
+                    ]
+                },
+                {
+                    "make": "Honda",
+                    "model": "PCX150",
+                    "engine": "149cc",
+                    "numberOfPersons":"2",
+                    "plans":[
+                        {
+                            "reservation":
+                                {
+                                    "halfDay":"$40",
+                                    "fullDay":"$50"
+                                }
+                        },
+                        {
+                            "walkIn":
+                                {
+                                    "halfDay":"$45",
+                                    "fullDay":"$55"
+                                }
+                        }
+                    ]
                 }
+                
             ]
         },
         {
             "atv": [
                 {
-                    "name": "Baron Tshibasu",
-                    "gender": "Male",
-                    "birthdate": "1985-05-20"
+                    "make": "Honda",
+                    "model": "Pioneer",
+                    "series": "1000",
+                    "numberOfPersons":"4",
+                    "plans":[
+                        {
+                            "reservation":
+                                {
+                                    "halfDay":"$50",
+                                    "fullDay":"$70"
+                                }
+                        },
+                        {
+                            "walkIn":
+                                {
+                                    "halfDay":"$60",
+                                    "fullDay":"$80"
+                                }
+                        }
+
+                    ]
                 }
             ]
         },
         {
-            "jeep": [
+            "suv": [
                 {
-                    "name": "Baron Tshibasu",
-                    "gender": "Male",
-                    "birthdate": "1985-05-20"
+                    "make": "Jeep",
+                    "model": "Wrangler",
+                    "numberOfDoors":"2",
+                    "numberOfPersons":"4",
+                    "plans":[
+                        {
+                            "reservation":
+                                {
+                                    "halfDay":"$60",
+                                    "fullDay":"$85"
+                                }
+                        },
+                        {
+                            "walkIn":
+                                {
+                                    "halfDay":"$70",
+                                    "fullDay":"$90"
+                                }
+                        }
+
+                    ]
                 },
                 {
-                    "name": "Nana Mbula",
-                    "gender": "Female",
-                    "birthdate": "1988-11-12"
-                }
+                    "make": "Jeep",
+                    "model": "Wrangler",
+                    "numberOfDoors":"4",
+                    "numberOfPersons":"5",
+                    "plans":[
+                        {
+                            "reservation":
+                                {
+                                    "halfDay":"$70",
+                                    "fullDay":"$100"
+                                }
+                        },
+                        {
+                            "walkIn":
+                                {
+                                    "halfDay":"$85",
+                                    "fullDay":"$125"
+                                }
+                        }
+
+                    ]
+                }                
             ]
-        },
+        }
     ]
 
 }
