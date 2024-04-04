@@ -31,11 +31,7 @@
 
   --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
 
-  /**
-   * typography
-   */
-
-  --text-font-family-nunito: 'Nunito', sans-serif;
+  --paragraph-text-font: 'Nunito', sans-serif;
   --text-font-family-open-sans: 'Open Sans', sans-serif;
 
   --text-size-large: 2.125rem;
@@ -136,7 +132,7 @@ button, a { transition: var(--transition); }
   display: grid;
   place-items: center;
   border-radius: 10px;
-  font-family: var(--text-font-family-nunito);
+  font-family: var(--paragraph-text-font);
   font-weight: var(--fw-600);
   overflow: hidden;
 }
@@ -167,7 +163,7 @@ h2,
 h3,
 .h3 {
   color: var(--accent-2);
-  font-family: var(--text-font-family-nunito);
+  font-family: var(--paragraph-text-font);
   line-height: 1.4;
 }
 
@@ -302,7 +298,7 @@ header .container {
 
 nav li a {
   color: var(--nav-text-color);
-  font-family: var(--text-font-family-nunito);
+  font-family: var(--paragraph-text-font);
   font-size: var(--text-font-size-6);
   padding-block: 5px;
   margin-bottom: 15px;
@@ -396,7 +392,7 @@ nav li a:focus,
   border: 1px solid white;
   box-shadow: var(--shadow-2);
   border-radius: 15px;
-  font-family: var(--text-font-family-nunito);
+  font-family: var(--paragraph-text-font);
   padding: 2%;
   width: 100%;
   margin-bottom: 1%;
@@ -513,7 +509,7 @@ nav li a:focus,
 .rental-options-card .card-title > a:is(:hover, :focus) { color: var(--primary-color); }
 
 .rental-options-card .year {
-  font-family: var(--text-font-family-nunito);
+  font-family: var(--paragraph-text-font);
   font-size: var(--text-font-size-6);
   font-weight: var(--fw-600);
   padding: 3px 12px;
@@ -556,7 +552,7 @@ nav li a:focus,
 }
 
 .rental-options-card .card-price {
-  font-family: var(--text-font-family-nunito);
+  font-family: var(--paragraph-text-font);
   font-size: var(--text-font-size-6);
   color: var(--space-cadet);
 }
@@ -643,7 +639,7 @@ nav li a:focus,
 
 .get-start-card .card-title {
   color: var(--space-cadet);
-  font-family: var(--text-font-family-nunito);
+  font-family: var(--paragraph-text-font);
   font-weight: 400;
   margin-bottom: 15px;
 }
@@ -768,10 +764,7 @@ nav li a:focus,
 
 
 
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
+/* FOOTER STYLE */
 .footer {
   background: var(--alice-blue-4);
   color: var(--independence);
@@ -795,14 +788,8 @@ nav li a:focus,
   line-height: 1.8;
 }
 
-.footer-list { font-family: var(--text-font-family-nunito); }
+.footer-list { font-family: var(--paragraph-text-font); }
 
-.footer-list:not(:last-of-type) { width: 50%; }
-
-.footer-list:last-of-type {
-  width: 100%;
-  column-count: 2;
-}
 
 .footer-list-title {
   color: var(--space-cadet);
@@ -931,7 +918,7 @@ nav li a:focus,
 
   .header-contact .contact-link {
     color: var(--space-cadet);
-    font-family: var(--text-font-family-nunito);
+    font-family: var(--paragraph-text-font);
     font-size: var(--text-font-size-5);
     line-height: 1.3;
   }

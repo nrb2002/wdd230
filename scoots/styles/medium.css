@@ -24,18 +24,16 @@
     /* MAIN STYLE */
     .section-title { margin-top: 30px; }
 
-    
-     /* MAIN STYLE */
 
-    /*FOOTER STYLE*/
-    .footer-list:not(:last-of-type) { width: 25%; }
-    .footer-list:last-of-type { width: 50%; }
+     /* MAIN STYLE */
     .copyright { 
       grid-template-columns: repeat(6, 1fr);
       margin: 0 auto;
       gap: 2%;
     }
     /*FOOTER STYLE*/
+
+    /*FOOTER STYLE */
   
   
 }
