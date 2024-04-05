@@ -1,16 +1,15 @@
 {
     "companyName":"Scoots",
     "documentTitle":"Pricing and Plans",
-    "location":"Conzumel Island, Mexico",
     "lastUpdate":"2024-4-4",
     "businessType":"Rental Services",
     "rentalType":[
         {
-            "scooter": [
-                {
+            "scooter":[
+                {   
                     "make": "Honda",
                     "model": "Metropolitan",
-                    "engine": "49cc",
+                    "description": "49cc",
                     "numberOfPersons":"1",
                     "plans":[
                         {
@@ -33,7 +32,7 @@
                 {
                     "make": "Honda",
                     "model": "Dio",
-                    "engine": "110cc",
+                    "description": "110cc",
                     "numberOfPersons":"2",
                     "plans":[
                         {
@@ -55,7 +54,7 @@
                 {
                     "make": "Honda",
                     "model": "PCX150",
-                    "engine": "149cc",
+                    "description": "149cc",
                     "numberOfPersons":"2",
                     "plans":[
                         {
@@ -82,7 +81,7 @@
                 {
                     "make": "Honda",
                     "model": "Pioneer",
-                    "series": "1000",
+                    "description": "1000",
                     "numberOfPersons":"4",
                     "plans":[
                         {

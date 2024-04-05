@@ -4,77 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="c-weather">
-    <aside class="c-weather__side">
-      <figure class="c-weather__side-figure">
-        <img src="https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" class="c-weather__side-image">
-        <div class="c-weather__side-gradient"></div>
-      </figure>
-      
-      <div class="c-weather__side-content">
-        <div class="c-weather__side-date">
-          <h2 class="c-weather__side-dayname">Miércoles</h2>
-          <div class="c-weather__side-day">15 Nov 2023</div>
-          <div class="c-weather__side-location">Palma, ES</div>
-        </div>
-  
-        <div class="c-wather__side-temperature">
-          <h1 class="c-weather__side-temp">29°C</h1>
-          <h3 class="c-weather__side-description">Soleado</h3>
-        </div>
-      </div>
-    </aside>
-    
-    <div class="c-weather__infos">
-      <ul class="c-weather__today-list">
-        <li class="c-weather__today-item">
-          <div class="c-weather__today-item-title">precipitaciones</div>
-          <div class="c-weather__today-item-value">0%</div>
-        </li>
-        
-        <li class="c-weather__today-item">
-          <div class="c-weather__today-item-title">humedad</div>
-          <div class="c-weather__today-item-value">34%</div>
-        </li>
-        
-        <li class="c-weather__today-item">
-          <div class="c-weather__today-item-title">viento</div>
-          <div class="c-weather__today-item-value">0 km/h</div>
-        </li>
-      </ul>
-      
-      <ul class="c-weather__weeklist">
-        <li class="c-weather__weeklist-item is-active">
-          <div class="c-weather__weeklist-item-dayname">mie</div>
-          <div class="temperature">29°C</div>
-        </li>
-        
-        <li class="c-weather__weeklist-item">
-          <div class="c-weather__weeklist-item-dayname">jue</div>
-          <div class="c-weather__weeklist-item-temperature">24°C</div>
-        </li>
-        
-        <li class="c-weather__weeklist-item">
-          <div class="c-weather__weeklist-item-dayname">vie</div>
-          <div class="c-weather__weeklist-item-temperature">24°C</div>
-        </li>
-        
-        <li class="c-weather__weeklist-item">
-          <div class="c-weather__weeklist-item-dayname">sab</div>
-          <div class="c-weather__weeklist-item-temperature">26°C</div>
-        </li>
-      </ul>
-      
-      <div class="c-weather__action">
-        <button class="c-weather__action-button">
-          Cambiar localización
-        </button>
-      </div>
+  <div class="container">
+    <h1>Pick a plan that best fits to your needs!</h1>
+      <table class="pricing-table">
+        <tbody>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Reservation</th>
+            <th></th>
+            <th>Walk-In</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Rental Type</th>
+            <th>Max. Persons</th>
+            <th>Half Day (3hrs)</th>
+            <th>Full Day</th>
+            <th>Half Day (3hrs)</th>
+            <th>Full Day</th>
+          </tr>
+          <tr>
+            <td data-th="Supplier Code">
+              UPS5005
+            </td>
+            <td data-th="Supplier Name">
+              UPS
+            </td>
+            <td data-th="Invoice Number">
+              ASDF19218
+            </td>
+            <td data-th="Invoice Date">
+              06/25/2016
+            </td>
+            <td data-th="Due Date">
+              12/25/2016
+            </td>
+            <td data-th="Net Amount">
+              $8,322.12
+            </td>
+          </tr>
+          <tr>
+            <td data-th="Supplier Code">
+              UPS3449
+            </td>
+            <td data-th="Supplier Name">
+              UPS South Inc.
+            </td>
+            <td data-th="Invoice Number">
+              ASDF29301
+            </td>
+            <td data-th="Invoice Date">
+              6/24/2016
+            </td>
+            <td data-th="Due Date">
+              12/25/2016
+            </td>
+            <td data-th="Net Amount">
+              $3,255.49
+            </td>
+          </tr>
+          <tr>
+            <td data-th="Supplier Code">
+              BOX5599
+            </td>
+            <td data-th="Supplier Name">
+              BOX Pro West
+            </td>
+            <td data-th="Invoice Number">
+              ASDF43000
+            </td>
+            <td data-th="Invoice Date">
+              6/27/2016
+            </td>
+            <td data-th="Due Date">
+              12/25/2016
+            </td>
+            <td data-th="Net Amount">
+              $45,255.49
+            </td>
+          </tr>
+          <tr>
+            <td data-th="Supplier Code">
+              PAN9999
+            </td>
+            <td data-th="Supplier Name">
+              Pan Providers and Co.
+            </td>
+            <td data-th="Invoice Number">
+              ASDF33433
+            </td>
+            <td data-th="Invoice Date">
+              6/29/2016
+            </td>
+            <td data-th="Due Date">
+              12/25/2016
+            </td>
+            <td data-th="Net Amount">
+              $12,335.69
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Resize Me</h3>
     </div>
-  </div>
 </body>
 </html>

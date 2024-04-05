@@ -1,214 +1,173 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:600,700';
 
-// LINE 4: SETTINGS
-// LINE 38: WEATHER COMPONENT
+* {font-family: 'Open Sans', sans-serif;}
 
-:root {
-  --color-dark: #222831;
-  --color-dark-light: #343d4b;
-  --color-light: #fff;
-  --color-primary: #c165dd;
-  --color-secondary: #5c27fe;
-	--color-gradient-1: linear-gradient( 135deg, #5c27fe 10%, #c165dd 100%);
-	--color-gradient-2: linear-gradient( 180deg, #c165dd 10%, #5c27fe 100%);
-  --box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
-  --spacing-base: 4px;
-  --font-principal: Montserrat, sans-serif;
-  --bg-image: url("https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
-  --border-radius-big: 25px;
-  --border-radius-small: 10px;
-  --side-position: 25px;
-  --transform: translateZ(0) scale(1.02) perspective(1000px);
-  --transition: all 300ms ease;
+.pricing-table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-	box-sizing: border-box;
-	line-height: 1.25em;
-  font-family: var(--font-principal);
-  list-style: none;
+.pricing-table tr:first-child {
+  border-top: none;
+  background: #428bca;
+  color: #fff;
 }
 
-body {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-  align-items: center;
-  justify-content: center;
-	background-color: var(--color-dark-light);
+.pricing-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
 }
 
-// WEATHER COMPONENT
-.c-weather {
-  display: grid;
-  grid-template-columns: auto;
-  width: 700px;
-	max-width: 80%;
-	color: var(--color-light);
-	background-color: var(--color-dark);
-	box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius-big);
+.pricing-table tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+.pricing-table th {
+  display: none;
+}
+
+.pricing-table td {
+  display: block;
+}
+
+.pricing-table td:first-child {
+  margin-top: .5em;
+}
+
+.pricing-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.pricing-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.pricing-table th,
+.pricing-table td {
+  text-align: left;
+}
+
+.pricing-table {
+  color: #333;
+  border-radius: .4em;
   overflow: hidden;
-  
-  @media (min-width: 768px) {
-    height: 400px;
-    grid-template-columns: 45% 55%;
+}
+
+.pricing-table tr {
+  border-color: #bfbfbf;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .pricing-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .pricing-table tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  .pricing-table td:before {
+    display: none;
+  }
+  .pricing-table th,
+  .pricing-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .pricing-table th:first-child,
+  .pricing-table td:first-child {
+    padding-left: 0;
+  }
+  .pricing-table th:last-child,
+  .pricing-table td:last-child {
+    padding-right: 0;
+  }
+  .pricing-table th,
+  .pricing-table td {
+    padding: 1em !important;
   }
 }
 
-.c-weather__side {
-  height: 100%;
-	position: relative;
-	border-radius: var(--border-radius-big);
-	box-shadow: var(--box-shadow);
-	transition: var(--transition);
-	transform: var(--transform);
-  
-  .c-weather__side-figure {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    
-    .c-weather__side-gradient,
-    .c-weather__side-image {
-      position: absolute;
-      inset: 0;
-      border-radius: var(--border-radius-big);
-    }
-    
-    .c-weather__side-gradient {
-      background-image: var(--color-gradient-1);
-      opacity: 0.8;
-      z-index: 1;
-    }
-    
-    .c-weather__side-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  
-  .c-weather__side-content {
-    isolation: isolate;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: calc(var(--spacing-base) * 8);
-    z-index: 1;
-  }
-  
-  .c-weather__side-date {
-    .c-weather__side-day {
-      padding: var(--spacing-base) 0 calc(var(--spacing-base) * 2);
-    }
-  }
-  
-  .c-wather__side-temperature {
-    .c-weather__side-temp {
-      font-weight: 700;
-	    font-size: 64px;
-    }
-  }
+
+/* THE END OF THE IMPORTANT STUFF */
+
+/* Basic Styling */
+body {
+background: #4B79A1;
+background: -webkit-linear-gradient(to left, #4B79A1 , #283E51);
+background: linear-gradient(to left, #4B79A1 , #283E51);        
+}
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #f2f2f2;
+}
+.container {
+  display: block;
+  text-align: center;
+}
+h3 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: #cecece;
+}
+h3:before {
+  content: "\25C0";
+  position: absolute;
+  left: -50px;
+  -webkit-animation: leftRight 2s linear infinite;
+  animation: leftRight 2s linear infinite;
+}
+h3:after {
+  content: "\25b6";
+  position: absolute;
+  right: -50px;
+  -webkit-animation: leftRight 2s linear infinite reverse;
+  animation: leftRight 2s linear infinite reverse;
+}
+@-webkit-keyframes leftRight {
+  0%    { -webkit-transform: translateX(0)}
+  25%   { -webkit-transform: translateX(-10px)}
+  75%   { -webkit-transform: translateX(10px)}
+  100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+  0%    { transform: translateX(0)}
+  25%   { transform: translateX(-10px)}
+  75%   { transform: translateX(10px)}
+  100%  { transform: translateX(0)}
 }
 
-.c-weather__infos {
-	position: relative;
-	height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-	padding: calc(var(--spacing-base) * 8);
-  
-  .c-weather__today-list {
-    .c-weather__today-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: calc(var(--spacing-base) * 3);
-      
-      &:last-child {
-        margin-bottom: 0;
-      }
-      
-      .c-weather__today-item-title {
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-    }
+/*
+    Don't look at this last part. It's unnecessary. I was just playing with pixel gradients... Don't judge.
+*/
+/*
+@media screen and (max-width: 601px) {
+  .pricing-table tr {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
   }
-  
-  .c-weather__weeklist {
-    position: relative;
-    flex: 1;
-    display: flex;
-    flex-wrap: nowrap;
-    max-height: 120px;
-    border-radius: var(--border-radius-small);
-    
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      inset: 0;
-      background-color: var(--color-dark-light);
-      border-radius: var(--border-radius-small);
-      opacity: .5;
-    }
-    
-    .c-weather__weeklist-item {
-      isolation: isolate;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: calc(var(--spacing-base) * 4);
-      border-radius: var(--border-radius-small);
-      cursor: pointer;
-      transition: var(--transition);
-      
-      &:hover,
-      &.is-active {
-        background-color: #fff;
-        background-image: var(--color-gradient-2);
-      }
-        
-      &:hover {
-        transform: scale(1.1);
-      }
-      
-      .c-weather__weeklist-item-dayname {
-        padding: calc(var(--spacing-base) * 3) 0;
-      }
-      
-      .c-weather__weeklist-item-temperature {
-        font-weight: 700;
-      }
-    }
+  .pricing-table tr:nth-child(odd) {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
   }
-  
-  .c-weather__action {
-    .c-weather__action-button {
-      width: 100%;
-      padding: calc(var(--spacing-base) * 5) calc(var(--spacing-base) * 3);
-      outline: 0;
-      border: 0;
-      border-radius: var(--border-radius-big);
-      color: var(--color-light);
-      background-image: var(--color-gradient-1);
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: var(--transition);
-      
-      &:hover {
-        color: var(--color-primary);
-      }
-    }
-  }
-}
+}*/
