@@ -24,32 +24,102 @@
     /*HERO STYLE*/
 
     
-    /* WEATHER STYLE */
-    .weather-title{
-      font-size: 1.2rem;
-    }
-    .weather #current-temp{
-      font-size: 2.5rem;
-      font-weight: 500;  
-    }
-    .hero-title {
-      font-size: 3.5rem;
-    }
-    .current-weather{
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-    .weather .weather-card:nth-child(2){
-      border-right: solid 1px var(--nav-text-color);
-      text-align: center;
-    }
-    .weather .weather-card:last-child{
-      font-size: 1rem;
-    }
     
-    /* WEATHER STYLE */
 
     
     
     /*MAIN STYLE*/
+    
+    
+    /*MAIN STYLE*/
    
+
+
+
+
+
+  .overlay,
+  .toggle-menu { display: none; }
+
+  .navbar,
+  .navbar.active { all: unset; }
+
+  nav ul {
+    display: flex;
+    gap: 4rem;
+  }
+
+  nav ul li a {
+    margin-bottom: 0;
+    font-weight: var(--fw-600);
+  }
+
+  
+
+  /* WEATHER STYLE FOR LARGER VIEWPORTS */ 
+
+  .weather { max-width: 900px; }
+
+  .weather .btn {
+    --width: calc(100% - 40px);
+    --height: 50px;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+  .weather-data{font-size: 1rem;}
+  #weather-table{
+    overflow-x:auto; 
+    display: grid;   
+  }
+  #weather-table th, td {
+    text-align: left;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+  }
+  
+  #weather-table  tr:nth-child(even){background-color: #f2f2f2}
+
+  /* WEATHER STYLE FOR LARGER VIEWPORTS */
+
+
+  /**
+   * rental CAR 
+   */
+
+  .rental-options-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+
+
+  /**
+   * GET START
+   */
+
+  .get-start-list { grid-template-columns: repeat(4, 1fr); }
+
+
+
+  /**
+   * BLOG
+   */
+
+  .blog .has-scrollbar > li {
+    max-width: 340px;
+    scroll-snap-align: center;
+  }
+
+
+
+  /**
+   * FOOTER
+   */
+
+  .footer-brand { width: 33.33%; }
+
+  .footer-text { max-width: 35ch; }
+
+  .footer-list:not(:last-of-type) { width: 16.66%; }
+
+  .footer-list:last-of-type { width: 33.33%; }
+  
 }

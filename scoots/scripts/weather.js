@@ -4,35 +4,25 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#description");
 const humidity = document.querySelector("#humidity");
-const windSpeed= document.querySelector("#wind-speed");
-const feeling = document.querySelector("#feeling");
-const minTemp = document.querySelector("#min-temp");
-const maxTemp = document.querySelector(".max-temp");
-const visibility = document.querySelector("#visibility");
+const windSpeed= document.querySelector("#windSpeed");
+const maxTemp = document.querySelector(".maxTemp");
 
+//Specify the latitude and longitude 
+const lat = 20.4326;
+const lon = -86.9219;
 
-//Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
-const lat = 20.62093580131276;
-const lon = -87.07513690459317;
 //Set the units to imperial: "units=imperial"
 const units = "imperial";
 //Provide your API key: "appid=[enter your key here]"
-const apiKey = "a82bd4620ada83b94d8022e56f26265f";
+const apiKey = "d100c53e022ac740b8e46f1ae5caf79f";
+//Declare a const variable named "weatherUrl" and assign it a valid weatherUrl string as given in the openweathermap api documentation.
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////
-
-//GET CURRENT WEATHER
-
-//Declare a const variable named "url" and assign it a valid URL string as given in the openweathermap api documentation.
-const urlCurrent = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
-
-//Define an asynchronous function named "getCurrentWeather()" that uses a try block to handle errors.
-async function getCurrentWeather(){
+//Define an asynchronous function named "fetchCurrentWeather()" that uses a try block to handle errors.
+async function fetchCurrentWeather(){
     try{
-        //Store the results of the urlCurrent fetch into a variable named "response".
-        const response = await fetch(urlCurrent);
+        //Store the results of the weatherUrl fetch into a variable named "response".
+        const response = await fetch(weatherUrl);
         //If the response is OK, then store the result of response.json() conversion in a variable named "data", 
         if(response.ok){
             const data = await response.json();
@@ -49,15 +39,14 @@ async function getCurrentWeather(){
         console.log(error);
     }
 }
-//invoke the getCurrentWeather() function with a call
-getCurrentWeather();
+//invoke the fetchCurrentWeather() function with a call
+fetchCurrentWeather();
 
-//Assign city name
-cityName.innerHTML = "Conzumel";
-
-//Build the displayCurrentWeather function to output to the given HTML document
-function displayCurrentWeather(data){    
-    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;    
+//Build the function to output to the given HTML document
+function displayCurrentWeather(data){
+    cityName.innerHTML = "Conzumel";
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
+    
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute("src",iconsrc);
     weatherIcon.setAttribute("alt", "Weather Icon");
@@ -66,38 +55,27 @@ function displayCurrentWeather(data){
     let desc = data.weather[0].description;
     captionDesc.textContent = `${desc}`;
 
-    humidity.textContent = `Humidity: ${data.main.humidity}%`; 
-    windSpeed.textContent = `Wind Speed: ${data.wind.speed}mph`;
-    feeling.textContent = `Feels like: ${Math.round(data.main.feels_like)}°F`;
-    minTemp.textContent = `Min. Temperature: ${Math.round(data.main.temp_min)}&deg;F`;
-    maxTemp.textContent = `Max. Temperature: ${Math.round(data.main.temp_max)}&deg;F`;
-    visibility.textContent = `Visibility: ${data.visibility}km`;
+    humidity.textContent = `${data.main.humidity}%`; 
+    windSpeed.textContent = `${data.wind.speed}mph`;
+    maxTemp.textContent = `Max Temperature : ${Math.round(data.main.temp_max)}°F. Make sure you dress up accordingly. `;
+
 } 
 
+//Forecast on next day at 03pm
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
 
-////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-
-//GET HOURLY FORECAST FOR 3 datetimeS
-const datetime = document.querySelector("#datetime");
-const dailyTemp = document.querySelector("#daily-temp");
-const weatherIconDaily = document.querySelector("#weather-icon-daily");
-const captionDescDaily = document.querySelector("#daily-desc");
-//Make api call
-const urlDaily = `https://api.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid={apiKey}`;
-
-//Define an asynchronous function named "getDailyWeather()" that uses a try block to handle errors.
-async function getDailyWeather(){
+//Define an asynchronous function named "fetchForecast()" that uses a try block to handle errors.
+async function fetchForecast(){
     try{
-        //Store the results of the urlCurrent fetch into a variable named "response".
-        const response = await fetch(urlCurrent);
+        //Store the results of the weatherUrl fetch into a variable named "response".
+        const response = await fetch(forecastUrl);
         //If the response is OK, then store the result of response.json() conversion in a variable named "data", 
         if(response.ok){
             const data = await response.json();
             //Output the results to the console for testing
             console.log(data);
             //output to the given HTML document
-            displayDailytWeather(data);
+            displayForecast(data);
         //Else, throw an Error using the response.text().
         }else{
             throw Error(await response.text());
@@ -107,34 +85,32 @@ async function getDailyWeather(){
         console.log(error);
     }
 }
-//invoke the getDailyWeather() function with a call
-getDailyWeather();
+//invoke the fetchForecast() function with a call
+fetchForecast();
 
-//Build the displayDailytWeather function to output to the given HTML document
-function displayDailytWeather(data){
+//Build the function to output to the given HTML document
+function displayForecast(data){
+    `<tr id="weather-data">
+        <td id="datetime">${data.list[0].dt}</td>
+        <td id="daily-temp">80°F</td>
+        <td id="weather-icon-daily"></td>
+        <td id="daily-desc">Clear Sky</td>
+    </tr>`
+    const datetime = document.createElement("div");
+    datetime.textContent = `${data.list[0].dt}`;
+    // cityName.innerHTML = "Conzumel";
+    // currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     
-    for (let i = 0; i <= 23; i++) {  
-        //Get the datetime forecasted
-        datetime.textContent = `${data.list[i].dt}`;  
-        //round the final result of the daily temp     
-        dailyTemp.textContent = `Temperature: ${Math.round(data.list[i].main.temp)}&deg;F`;
-        //Get the icon
-        const iconsrcdaily = `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`;        
-        weatherIconDaily.setAttribute("src",iconsrcdaily);
-        weatherIconDaily.setAttribute("alt", "Weather Icon");
-        weatherIconDaily.setAttribute("loading","lazy" );
-        //Get the description
-        let desc = data.list[i].weather[0].description;
-        captionDescDaily.textContent = `${desc}`;
-        
-        //Append data to the table
-        const dataRow = document.querySelector("#weather-data");
-        
-        dataRow.appendChild(datetime);
-        dataRow.appendChild(dailyTemp);
-        dataRow.appendChild(weatherIconDaily);
-        dataRow.appendChild(captionDescDaily);  
-    }
+    // const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    // weatherIcon.setAttribute("src",iconsrc);
+    // weatherIcon.setAttribute("alt", "Weather Icon");
+    // weatherIcon.setAttribute("loading","lazy" );
     
-  
-}
+    // let desc = data.weather[0].description;
+    // captionDesc.textContent = `${desc}`;
+
+    // humidity.textContent = `${data.main.humidity}%`; 
+    // windSpeed.textContent = `${data.wind.speed}mph`;
+    // maxTemp.textContent = `Max Temperature : ${Math.round(data.main.temp_max)}°F. Make sure you dress up accordingly. `;
+
+} 

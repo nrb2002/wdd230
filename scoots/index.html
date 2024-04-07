@@ -38,17 +38,15 @@
         <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
 </head>
 
-<body>
-  
-  <header> 
-      
+<body>  
+  <header>      
     <div class="container"> 
       <div class="top-navbar">
         <div class="contact-info">
           <span>Phone: +52-85-339-3965</span>
           <span>Email: contact@scoots.mx</span>
         </div>
-        <marquee class="maxTemp">Max Temp: 90°F</marquee>
+        <marquee><span class="maxTemp"></span></marquee>
         <ul class="social-list">
           <li>
             <a href="https://facebook.com" target="_blank" class="social-link"><img src="images/social-icons/facebook-icon-24.png" alt="FB"></a>          
@@ -74,6 +72,7 @@
         <ul>
           <li><a href="./" class="active" data-nav-link>Home</a></li>
           <li><a href="index.html#rental-options" data-nav-link>Rental Options</a></li> 
+          <li><a href="#photo-gallery" data-nav-link>Photo Gallery</a></li>
           <li><a href="contact.html" data-nav-link>Contact Us</a></li>  
         </ul>
       </nav>
@@ -99,29 +98,26 @@
         <div class="hero-banner"></div>
         
         <div class="container">
-          <p class="h2">Welcome on</p>
-          <p class="hero-title h1">Scoots</p> 
-          <small class="h2">Rent for pleasure</small>         
           <!-- Weather Info -->
-          <div class="weather"> 
+          <div class="weather loading">
             <!-- Current weather -->
             <div class="current-weather">
-              <p class="weather-title">Local Weather in Conzumel, Mexico
+              <div class="weather-title">
+                Local Weather on <strong><span id="city"></span></strong>
                 <!-- Include Conzumel and/or Mexican Flag -->
-                <img src="images/mexican-flag.jpg" alt="Mexican Flag" width="100">
-
-              </p>
-              <div class="weather-card">
-                <div id="city" hidden></div>
+                <br><span><img src="images/mexican-flag.jpg" alt="Mexican Flag" width="100"></span>
+              </div>
+              <div>
                 <div id="current-temp"></div>
-                <div id="weather-icon"></div>
-                <div id="description"></div>
-              </div> 
-              <div class="weather-card">
-                <div id="humidity"></div>
-                <div id="wind-speed"></div>
-                <div id="feeling"></div>                
-                <div id="visibility"></div>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" width="70" id="weather-icon">
+                    <div id="description"></div>
+                </div>
+              </div>
+              <div class="weather-data">
+                <br><strong>Humidity: </strong><span id="humidity"></span>
+                <strong>Wind Speed: </strong><span id="windSpeed"></span>
+                <strong>Wind Chill: </strong><span id="windChill">N/A</span>
               </div>
             </div>
             <!-- Current weather -->
@@ -152,17 +148,15 @@
 
           <!-- Call to action -->
           <div>
-            <a href="#rental-options" id="aria-label-txt" class="btn cta-2">View a summary of our unique rental options</a>
+            <a href="#rental-options" id="aria-label-txt" class="btn cta-2">Book now!</a>
           </div>
           <!-- ./ Call to action -->
         </div>
       </section>
       <!-- ./ HERO SECTION  -->
-
       <!-- RENTAL OPTIONS SECTION  -->
-      <section class="section section-content" id="rental-options">
+      <section class="section section-content" id="rental-options">        
         <div class="container">
-
           <div class="title-wrapper">
             <h2 class="h2 section-title">Rental Options</h2>
 
@@ -255,21 +249,17 @@
                 </div>
               </div>
             </li>
-
-           
-
           </ul>
 
         </div>
       </section>
       <!--./ RENTAL OPTIONS SECTION  -->
 
-      <!--  CUSTOMER SERVICE STATEMENT  -->
-      <section class="section section-content" id="customer-statement">
+      <!-- PHOTO GALLERY  -->
+      <section class="section section-content" id="photo-gallery">
         <div class="container">
-
           <div class="title-wrapper">
-            <h2 class="h2 section-title">Customer Service Statement</h2>
+            <h2 class="h2 section-title">Photo Gallery</h2>
 
             <a href="#" class="section-link">
               <span class="top-arrow">Back to Top</span>
@@ -281,18 +271,11 @@
 
         </div>
       </section>
-      <!--./ CUSTOMER SERVICE STATEMENT  -->
+      <!--./ RENTAL OPTIONS SECTION  -->
 
 
   </main>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
 
   <footer class="footer">
     <div class="container">
@@ -382,13 +365,6 @@
     </div>
   </footer>
 
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
   <script src="scripts/main.js"></script>
   <script src="scripts/weather.js"></script>
   <script src="scripts/getdates.js"></script>

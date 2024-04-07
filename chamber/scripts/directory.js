@@ -1,5 +1,5 @@
 //Declare a const variable named "url" that contains the URL string of the JSON resource provided.
-const membersUrl = 'https://nrb2002.github.io/wdd230/chamber/data/members.json';
+const membersUrl = "https://nrb2002.github.io/wdd230/chamber/data/members.json";
 //Declare a const variable name "cards" that selects the HTML div element from the document with an id value of "cards".
 const cards = document.querySelector('.cards');
 

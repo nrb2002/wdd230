@@ -5,152 +5,153 @@
     "businessType":"Rental Services",
     "rentalType":[
         {
-            "scooter":[
-                {   
-                    "make": "Honda",
-                    "model": "Metropolitan",
-                    "description": "49cc",
-                    "numberOfPersons":"1",
-                    "plans":[
+            
+            "vehicleType":"Scooter",
+            "make": "Honda",
+            "model": "Metropolitan",
+            "description": "49cc",
+            "numberOfPersons":"1",
+            "numberOfDoors":"N/A",
+            "plans":[
+                {
+                    "reservation":
                         {
-                            "reservation":
-                                {
-                                    "halfDay":"$20",
-                                    "fullDay":"$30"
-                                }
-                        },
-                        {
-                            "walkIn":
-                                {
-                                    "halfDay":"$25",
-                                    "fullDay":"$35"
-                                }
+                            "halfDay":"$20",
+                            "fullDay":"$30"
                         }
-
-                    ]
                 },
                 {
-                    "make": "Honda",
-                    "model": "Dio",
-                    "description": "110cc",
-                    "numberOfPersons":"2",
-                    "plans":[
+                    "walkIn":
                         {
-                            "reservation":
-                                {
-                                    "halfDay":"$30",
-                                    "fullDay":"$40"
-                                }
-                        },
-                        {
-                            "walkIn":
-                                {
-                                    "halfDay":"$35",
-                                    "fullDay":"$45"
-                                }
+                            "halfDay":"$25",
+                            "fullDay":"$35"
                         }
-                    ]
-                },
-                {
-                    "make": "Honda",
-                    "model": "PCX150",
-                    "description": "149cc",
-                    "numberOfPersons":"2",
-                    "plans":[
-                        {
-                            "reservation":
-                                {
-                                    "halfDay":"$40",
-                                    "fullDay":"$50"
-                                }
-                        },
-                        {
-                            "walkIn":
-                                {
-                                    "halfDay":"$45",
-                                    "fullDay":"$55"
-                                }
-                        }
-                    ]
                 }
-                
+
             ]
         },
         {
-            "atv": [
+            "vehicleType":"Scooter",
+            "make": "Honda",
+            "model": "Dio",
+            "description": "110cc",
+            "numberOfPersons":"2",
+            "numberOfDoors":"N/A",
+            "imageUrl":"../images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
+            "plans":[
                 {
-                    "make": "Honda",
-                    "model": "Pioneer",
-                    "description": "1000",
-                    "numberOfPersons":"4",
-                    "plans":[
+                    "reservation":
                         {
-                            "reservation":
-                                {
-                                    "halfDay":"$50",
-                                    "fullDay":"$70"
-                                }
-                        },
-                        {
-                            "walkIn":
-                                {
-                                    "halfDay":"$60",
-                                    "fullDay":"$80"
-                                }
+                            "halfDay":"$30",
+                            "fullDay":"$40"
                         }
-
-                    ]
+                },
+                {
+                    "walkIn":
+                        {
+                            "halfDay":"$35",
+                            "fullDay":"$45"
+                        }
                 }
             ]
         },
         {
-            "suv": [
+            "vehicleType":"Scooter",
+            "make": "Honda",
+            "model": "PCX150",
+            "description": "149cc",
+            "numberOfPersons":"2",
+            "numberOfDoors":"N/A",
+            "plans":[
                 {
-                    "make": "Jeep",
-                    "model": "Wrangler",
-                    "numberOfDoors":"2",
-                    "numberOfPersons":"4",
-                    "plans":[
+                    "reservation":
                         {
-                            "reservation":
-                                {
-                                    "halfDay":"$60",
-                                    "fullDay":"$85"
-                                }
-                        },
-                        {
-                            "walkIn":
-                                {
-                                    "halfDay":"$70",
-                                    "fullDay":"$90"
-                                }
+                            "halfDay":"$40",
+                            "fullDay":"$50"
                         }
-
-                    ]
                 },
                 {
-                    "make": "Jeep",
-                    "model": "Wrangler",
-                    "numberOfDoors":"4",
-                    "numberOfPersons":"5",
-                    "plans":[
+                    "walkIn":
                         {
-                            "reservation":
-                                {
-                                    "halfDay":"$70",
-                                    "fullDay":"$100"
-                                }
-                        },
-                        {
-                            "walkIn":
-                                {
-                                    "halfDay":"$85",
-                                    "fullDay":"$125"
-                                }
+                            "halfDay":"$45",
+                            "fullDay":"$55"
                         }
+                }
+            ]
+        },
+        {
+            "vehicleType":"ATV",
+            "make": "Honda",
+            "model": "Pioneer",
+            "description": "1000",
+            "numberOfPersons":"4",
+            "numberOfDoors":"4",
+            "plans":[
+                {
+                    "reservation":
+                        {
+                            "halfDay":"$50",
+                            "fullDay":"$70"
+                        }
+                },
+                {
+                    "walkIn":
+                        {
+                            "halfDay":"$60",
+                            "fullDay":"$80"
+                        }
+                }
 
-                    ]
-                }                
+            ]
+        },
+        {
+           "vehicleType":"SUV",
+            "make": "Jeep",
+            "model": "Wrangler",
+            "description":"open air, manuel",
+            "numberOfDoors":"2",
+            "numberOfPersons":"4",
+            "plans":[
+                {
+                    "reservation":
+                        {
+                            "halfDay":"$60",
+                            "fullDay":"$85"
+                        }
+                },
+                {
+                    "walkIn":
+                        {
+                            "halfDay":"$70",
+                            "fullDay":"$90"
+                        }
+                }
+
+            ]
+        },
+        {
+            "vehicleType":"SUV",
+            "make": "Jeep",
+            "model": "Wrangler",
+            "description":"manuel, with A/C",
+            "numberOfDoors":"4",
+            "numberOfPersons":"5",
+            "plans":[
+                {
+                    "reservation":
+                        {
+                            "halfDay":"$70",
+                            "fullDay":"$100"
+                        }
+                },
+                {
+                    "walkIn":
+                        {
+                            "halfDay":"$85",
+                            "fullDay":"$125"
+                        }
+                }
+
             ]
         }
     ]

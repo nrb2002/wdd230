@@ -68,8 +68,11 @@ ion-icon { display: block; }
 
 h1,
 .h1{
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   color: var(--primary-color);
+  font-weight: 800;
+  max-width: 800px;
+  
 }
 
 button,
@@ -93,11 +96,13 @@ html {
   font-size: 1rem;
   line-height: 1.5;
   scroll-behavior: smooth;
+  min-width: 320px;
 }
 
 body {
   background: var(--alice-blue-1);
   overflow-x: hidden;
+  
 }
 
 ::-webkit-scrollbar {
@@ -335,7 +340,7 @@ nav li a:focus,
   align-items: center;
   z-index: 1;
 }
-.hero-innerPage{height: 40vh;}
+.hero-innerPage{height: 30vh;}
 .hero-text {
   position: absolute;
   top: 50%;
@@ -362,10 +367,10 @@ nav li a:focus,
   text-align: left;
   justify-content: center;
   z-index: -1;
-  animation: change 60s infinite ease-in-out;
+  /* animation: change 60s infinite ease-in-out; */
   
 }
-@keyframes change{
+/* @keyframes change{
   0%{
     background-image: url("../images/scooter-city-ride");
   }
@@ -384,7 +389,7 @@ nav li a:focus,
   100%{
     background-image: url("../images/jr-harris-landscape.jpg");
   }
-}
+} */
 /*HERO STYLE*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
 /*  WEATHER STYLE*/
@@ -395,20 +400,24 @@ nav li a:focus,
   border-radius: 15px;
   font-family: var(--paragraph-text-font);
   padding: 2%;
-  width: 100%;
+  margin-top: 40vh;
+  height: 50vh;
+  width: 90vw;
   margin-bottom: 1%;
   opacity: .85 ;
 }
-.weather-title,
+.weather,
 .weather-card{color: var(--accent-2);}
 .weather-title{
-  font-size: 1rem;
+  font-size: .95rem;
   font-weight: 500;
 }
+.weather-data{font-size: .8rem;}
 .current-weather{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 2%;
+  /* padding: 2%;
+  margin: 2%; */
 }
 .weather #current-temp{
   font-size: 2rem;
@@ -438,7 +447,7 @@ nav li a:focus,
   justify-content: space-between;
   align-items: center;
   gap: 10px 15px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   margin-top: 4%;
 }
 
@@ -480,6 +489,7 @@ nav li a:focus,
   aspect-ratio: 3 / 2;
   border-radius: 15px;
   overflow: hidden;
+  margin: 0;
 }
 
 .rental-options-card .card-banner > img {
@@ -575,20 +585,17 @@ nav li a:focus,
   --width: 36px;
   --shadow-2: none;
 }
-
-.rental-options-card .fav-btn ion-icon { font-size: 18px; }
-
-.rental-options-card .fav-btn:is(:hover, :focus) {
+.rental-options-card .fav-btn ion-icon {font-size: 18px;}
+.rental-options-card .fav-btn:is(:hover, :focus){
   --background: var(--lavender-blush);
   --color: var(--red-salsa);
 }
-.section-title { margin-top: 50px; }
+.section-title {margin-top: 50px;}
 
 .get-start-list {
   display: grid;
   gap: 20px;
 }
-
 .get-start-card {
   background: white;
   padding: 20px;
@@ -596,12 +603,10 @@ nav li a:focus,
   border: 1px solid white;
   transition: var(--transition);
 }
-
 .get-start-card:hover {
   background: var(--alice-blue-2);
   box-shadow: var(--shadow-1);
 }
-
 .get-start-card .card-icon {
   background: var(--icon-card-bg, var(--columnia-blue));
   color: var(--icon-card-color, var(--primary-color));
@@ -666,102 +671,76 @@ nav li a:focus,
 
 .get-start-card .card-link:is(:hover, :focus)::before { width: 100%; }
 
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog .section-title { margin-bottom: 30px; }
-
-.blog-card {
-  background: var(--alice-blue-2);
-  border-radius: 15px;
-  border: 1px solid white;
-  box-shadow: var(--shadow-1);
-  overflow: hidden;
+/*  PRICING TABLE STYLE */
+.pricing-table{
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
 }
-
-.blog-card .card-banner {
-  aspect-ratio: 3 / 2;
-  position: relative;
-  overflow: hidden;
-}
-
-.blog-card .card-banner a:first-child { height: 100%; }
-
-.blog-card .card-banner img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.blog-card .card-badge {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  --height: 30px;
-  --width: 92px;
-}
-
-.blog-card .card-content { padding: 20px; }
-
-.blog-card .card-title { margin-bottom: 20px; }
-
-.blog-card .card-title > a { color: inherit; }
-
-.blog-card .card-title > a:is(:hover, :focus) { color: var(--primary-color); }
-
-.blog-card .card-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.blog-card :is(.publish-date, .comments) {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: var(--text-font-size-6);
-  color: var(--independence);
-}
-
-.blog-card :is(.publish-date, .comments) ion-icon {
-  font-size: 15px;
-  --ionicon-stroke-width: 50px;
-}
-
-.blog .has-scrollbar {
-  display: flex;
-  gap: 20px;
-  scroll-snap-type: inline mandatory;
-  overflow-x: auto;
-  padding-bottom: 20px;
-}
-
-.blog .has-scrollbar > li {
-  flex-shrink: 0;
-  max-width: 330px;
-  width: 100%;
-  scroll-snap-align: start;
-}
-
-.has-scrollbar::-webkit-scrollbar-track {
-  background: var(--alice-blue-1);
-  outline: 2px solid var(--primary-color);
-  border-radius: 10px;
-}
-
-.has-scrollbar::-webkit-scrollbar-thumb {
-  border-color: var(--alice-blue-1);
+.pricing-table tr:first-child {
+  border-top: none;
   background: var(--primary-color);
-  border-radius: 10px;
+  color: #fff;
+}
+.pricing-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
 }
 
-.has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 40px); }
+.pricing-table tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+.pricing-table th {
+  display: none;
+}
+
+.pricing-table td {
+  display: block;
+}
+
+.pricing-table td:first-child,
+.pricing-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.pricing-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.pricing-table th,
+.pricing-table td {
+  text-align: left;
+}
 
 
+.pricing-table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.pricing-table tr {
+  border-color: #bfbfbf;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: .5em 1em;
+}
+.pricing-table td:nth-child(3){text-align: left;}
+
+.pricing-table tr:nth-child(2) {
+  border-top: none;
+}
+
+/* ./PRICING TABLE STYLE */
 
 
 
@@ -830,21 +809,8 @@ nav li a:focus,
 
 
 
+/* @media (min-width: 350px) { */
 
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 350px screen
- */
-
-@media (min-width: 350px) {
-
-  /**
-   * rental CAR
-   */
 
   .rental-options-card .card-list { grid-template-columns: 1fr 1fr; }
 
@@ -855,7 +821,7 @@ nav li a:focus,
     padding-inline: 15px;
   }
 
-}
+/* } */
 
 
 
@@ -875,15 +841,7 @@ nav li a:focus,
    * HEADER
    */
 
-  .cta .btn span {
-    display: block;
-    font-weight: 400;
-    padding-inline: 15px;
-  }
 
-  .cta .btn:first-of-type ion-icon { display: none; }
-
-}
 
 
 
@@ -895,28 +853,17 @@ nav li a:focus,
 
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
     --text-size-large: 2.625rem;
 
   }
 
-
-
-  /**
-   * HEADER
-   */
-
-  header .cta { gap: 30px; }
-
+  /* HEADER STYLE */
+  header .cta {gap: 30px;}
   .header-contact {
     display: block;
     text-align: center;
   }
-
   .header-contact .contact-link {
     color: var(--space-cadet);
     font-family: var(--paragraph-text-font);
@@ -930,6 +877,16 @@ nav li a:focus,
     color: var(--independence);
     font-size: var(--text-font-size-7);
   }
+
+  .cta .btn span {
+    display: block;
+    font-weight: 400;
+    padding-inline: 15px;
+  }
+
+  .cta .btn:first-of-type ion-icon { display: none; }
+
+}
 
 
 
@@ -1013,104 +970,4 @@ nav li a:focus,
 
 
 
-  /**
-   * FOOTER
-   */
-
- 
-
-
-
-
-/**
- * responsive for large than 1200px screen
- */
-
-@media (min-width: 1200px) {
-
-
-  .overlay,
-  .toggle-menu { display: none; }
-
-  .navbar,
-  .navbar.active { all: unset; }
-
-  nav ul {
-    display: flex;
-    gap: 4rem;
-  }
-
-  nav ul li a {
-    margin-bottom: 0;
-    font-weight: var(--fw-600);
-  }
-
-  
-
-
-
-  
-
-  .weather { max-width: 900px; }
-
-  .weather .btn {
-    --width: calc(100% - 40px);
-    --height: 50px;
-    margin: 20px;
-    text-transform: uppercase;
-  }
-  #weather-table{
-    overflow-x:auto; 
-    display: grid;   
-  }
-  #weather-table th, td {
-    text-align: left;
-    padding: 2%;
-    margin: 2%;
-    text-align: center;
-  }
-  
-  #weather-table  tr:nth-child(even){background-color: #f2f2f2}
-
-
-
-  /**
-   * rental CAR 
-   */
-
-  .rental-options-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-
-
-  /**
-   * GET START
-   */
-
-  .get-start-list { grid-template-columns: repeat(4, 1fr); }
-
-
-
-  /**
-   * BLOG
-   */
-
-  .blog .has-scrollbar > li {
-    max-width: 340px;
-    scroll-snap-align: center;
-  }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-brand { width: 33.33%; }
-
-  .footer-text { max-width: 35ch; }
-
-  .footer-list:not(:last-of-type) { width: 16.66%; }
-
-  .footer-list:last-of-type { width: 33.33%; }
-  }
 }

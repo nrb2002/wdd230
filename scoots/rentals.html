@@ -39,7 +39,7 @@
 </head>
 
 <body>  
-  <header>       
+  <header>      
     <div class="container"> 
       <div class="top-navbar">
         <div class="contact-info">
@@ -71,17 +71,16 @@
       <nav class="navbar" data-navbar>
         <ul>
           <li><a href="./" data-nav-link>Home</a></li>
-          <li><a href="index.html#rental-options" data-nav-link>Rental Options</a></li>
+          <li><a href="index.html#rental-options" data-nav-link>Rental Options</a></li> 
           <li><a href="index.html#photo-gallery" data-nav-link>Photo Gallery</a></li>
-          <li><a href="rentals.html" class="active" data-nav-link>Princing and Plans</a></li> 
           <li><a href="contact.html" data-nav-link>Contact Us</a></li>  
         </ul>
       </nav>
       <!-- Main navigation bar -->
 
       <div class="cta">
-        <a href="rentals.html" class="btn" aria-labelledby="aria-label-txt">
-          <span id="aria-label-txt">Make a Reservation</span>
+        <a href="rentals.html" class="btn active" aria-labelledby="aria-label-txt">
+          <span id="aria-label-txt">Book Now!</span>
         </a>
         <!-- Toggle Menu -->
         <button class="toggle-menu"  aria-label="Toggle Menu">
@@ -107,7 +106,6 @@
       <!-- PRICING SECTION  -->
       <section class="section section-content">
         <div class="container">
-
           <div class="title-wrapper">
             <h2>Pricing and Plans</h2>
             <a href="#" class="section-link">
@@ -116,8 +114,40 @@
             </a>
           </div>
           <!-- Pricing Table -->
-          <table>
-
+          <table class="pricing-table">
+            <tbody>
+              <tr>
+                <th></th>
+                <th></th>
+                <th colspan="2">Reservation</th>
+                <th colspan="2">Walk-In</th>
+              </tr>
+              <tr>
+                <th>Product Code</th>
+                <th>Vehicle Type</th>
+                <th>Half Day (3hrs)</th>
+                <th>Full Day</th>
+                <th>Half Day (3hrs)</th>
+                <th>Full Day</th>
+              </tr>
+              <tr>
+                <td data-th="Product Code"><strong>S001</strong></td>
+                <td data-th="Vehicle Details">
+                  <img src="images/scoots-scooters/2024-Honda-Metropolitan2.jpg" alt="" width="200">
+                  <small>
+                    Honda Metropolitan Scooter (49cc)
+                    <br>Max Pers.: 1
+                    <br>Doors: N/A
+                  </small>
+                  
+                </td>
+                <td data-th="Reservation Half Day (3hrs)">$20<input type="checkbox" name="s001-res-halfday" id="s001-res-halfday"></td>
+                <td data-th="Reservation Full Day">$30 <input type="checkbox" name="s001-res-fullday" id="s001-res-fullday"></td>
+                <td data-th="Walk-in Half Day (3hrs)">$25 <input type="checkbox" name="s001-wi-halfday" id="s001-wi-halfday"></td>
+                <td data-th="Walk-in Full Day">$35 <input type="checkbox" name="s001-wi-fullday" id="s001-wi-fullday"></td>
+              </tr>
+              
+            </tbody>
           </table>
           
 
@@ -231,8 +261,9 @@
     - custom js link
   -->
   <script src="scripts/main.js"></script>
-  <script src="scripts/weather.js"></script>
+  <!-- <script src="scripts/weather.js"></script> -->
   <script src="scripts/getdates.js"></script>
+  <script src="scripts/pricing.js"></script>
 </body>
 
 </html>
