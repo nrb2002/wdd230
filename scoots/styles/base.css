@@ -436,10 +436,14 @@ nav li a:focus,
 .weather .btn {
   text-transform: uppercase;
 }
-.weather-data{
-  display: flex;
-  gap: 2%;
+
+#weather-table-table{
+  font-size: 1rem;
+  margin: 2%;
 }
+#weather-table-table tr th:first-child,
+#weather-table-table tr td:first-child{display: none;}
+
 /*  WEATHER STYLE*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
 

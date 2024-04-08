@@ -67,19 +67,11 @@
     text-transform: uppercase;
   }
   .weather-data{font-size: 1rem;}
-  #weather-table{
-    overflow-x:auto; 
-    display: grid;   
-  }
-  #weather-table th, td {
-    text-align: left;
-    padding: 2%;
-    margin: 2%;
-    text-align: center;
-  }
   
-  #weather-table  tr:nth-child(even){background-color: #f2f2f2}
-
+  #weather-table th, td {
+    text-align: center;
+  }  
+  
   /* WEATHER STYLE FOR LARGER VIEWPORTS */
 
 

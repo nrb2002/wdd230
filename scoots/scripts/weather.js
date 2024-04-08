@@ -116,7 +116,7 @@ function displayForecast(data){
 
     //Get table data
     forecastTime.innerHTML = data.list[6].dt_txt;
-    forecastTemp.innerHTML = data.list[6].main.temp;
+    forecastTemp.innerHTML = Math.round(data.list[6].main.temp)+"&deg;F";
     forecastMain.innerHTML = data.list[6].weather.main;
     forecastDesc.innerHTML = data.list[6].weather.description;
     
