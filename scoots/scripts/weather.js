@@ -57,11 +57,15 @@ function displayCurrentWeather(data){
 
     humidity.textContent = `${data.main.humidity}%`; 
     windSpeed.textContent = `${data.wind.speed}mph`;
-    maxTemp.textContent = `Max Temperature : ${Math.round(data.main.temp_max)}°F. Make sure you dress up accordingly. `;
-
+    maxTemp.textContent = `Max Temperature : ${Math.round(data.main.temp_max)}°F. Make sure you dress up and plan your outings accordingly. `;
 } 
 
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+
 //Forecast on next day at 03pm
+
+
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
 
 //Define an asynchronous function named "fetchForecast()" that uses a try block to handle errors.
@@ -90,27 +94,49 @@ fetchForecast();
 
 //Build the function to output to the given HTML document
 function displayForecast(data){
-    `<tr id="weather-data">
-        <td id="datetime">${data.list[0].dt}</td>
-        <td id="daily-temp">80°F</td>
-        <td id="weather-icon-daily"></td>
-        <td id="daily-desc">Clear Sky</td>
-    </tr>`
-    const datetime = document.createElement("div");
-    datetime.textContent = `${data.list[0].dt}`;
-    // cityName.innerHTML = "Conzumel";
-    // currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
+    cityName.innerHTML = "Conzumel";
     
-    // const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    // weatherIcon.setAttribute("src",iconsrc);
-    // weatherIcon.setAttribute("alt", "Weather Icon");
-    // weatherIcon.setAttribute("loading","lazy" );
     
-    // let desc = data.weather[0].description;
-    // captionDesc.textContent = `${desc}`;
 
-    // humidity.textContent = `${data.main.humidity}%`; 
-    // windSpeed.textContent = `${data.wind.speed}mph`;
-    // maxTemp.textContent = `Max Temperature : ${Math.round(data.main.temp_max)}°F. Make sure you dress up accordingly. `;
+    `<td id="datetime">${data.list[0].dt_txt}</td>`;
+    `<td id="forecast-temp"></td>`;
+    `<td id="weather-icon-daily"></td>`;
+    `<td id="daily-desc"></td>`;
 
+    console.log(`${data.list[6].dt_txt}`);
+
+    //Create table elements
+    const table = document.querySelector("#weather-table-table");
+    const tr = document.createElement("tr");
+    const forecastTime = document.createElement("td");
+    const forecastTemp = document.createElement("td");
+    const forecastIcon = document.createElement("td");
+    const forecastMain = document.createElement("td");
+    const forecastDesc = document.createElement("td");
+
+    //Get table data
+    forecastTime.innerHTML = data.list[6].dt_txt;
+    forecastTemp.innerHTML = data.list[6].main.temp;
+    forecastMain.innerHTML = data.list[6].weather.main;
+    forecastDesc.innerHTML = data.list[6].weather.description;
+    
+    const icon = document.createElement("img");
+    const iconsrc = `https://openweathermap.org/img/w/${data.list[6].weather[0].icon}.png`;
+    icon.setAttribute("src",iconsrc);
+    icon.setAttribute("alt", "Weather Icon");
+    icon.setAttribute("loading","lazy" );
+    icon.setAttribute("width","50");
+
+    //Append elements
+    forecastIcon.appendChild(icon);
+    
+    tr.appendChild(forecastTime);
+    tr.appendChild(forecastTemp);
+    tr.appendChild(forecastMain);
+    tr.appendChild(forecastIcon);
+    tr.appendChild(forecastDesc);
+    
+    table.appendChild(tr);
+    
+    
 } 

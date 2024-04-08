@@ -416,8 +416,6 @@ nav li a:focus,
 .current-weather{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* padding: 2%;
-  margin: 2%; */
 }
 .weather #current-temp{
   font-size: 2rem;
@@ -437,6 +435,10 @@ nav li a:focus,
 
 .weather .btn {
   text-transform: uppercase;
+}
+.weather-data{
+  display: flex;
+  gap: 2%;
 }
 /*  WEATHER STYLE*/
 /*---------------------------------------------------------------------------------------------------------------------------*/

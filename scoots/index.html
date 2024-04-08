@@ -73,6 +73,7 @@
           <li><a href="./" class="active" data-nav-link>Home</a></li>
           <li><a href="index.html#rental-options" data-nav-link>Rental Options</a></li> 
           <li><a href="#photo-gallery" data-nav-link>Photo Gallery</a></li>
+          <li><a href="rentals.html" data-nav-link>Pricing and Plans</a></li>
           <li><a href="contact.html" data-nav-link>Contact Us</a></li>  
         </ul>
       </nav>
@@ -109,37 +110,32 @@
               </div>
               <div>
                 <div id="current-temp"></div>
+                <div id="tempCelsius"></div>
                 <div class="flex">
                     <img src="https://openweathermap.org/img" loading="lazy" alt="Weather Image" width="70" id="weather-icon">
                     <div id="description"></div>
                 </div>
               </div>
-              <div class="weather-data">
-                <br><strong>Humidity: </strong><span id="humidity"></span>
-                <strong>Wind Speed: </strong><span id="windSpeed"></span>
-                <strong>Wind Chill: </strong><span id="windChill">N/A</span>
+              <div>
+                <div class="weather-data"><strong>Humidity: </strong><span id="humidity"></span></div>
+                <div class="weather-data"><strong>Wind Speed: </strong><span id="windSpeed"></span></div>
+                <div class="weather-data"><strong>Wind Chill: </strong><span id="windChill">N/A</span></div>
               </div>
             </div>
             <!-- Current weather -->
             <hr>
             <!-- Daily Forecast -->
             <div class="weather-forecast">
-              <p class="weather-title">Daily Forecast</p>
+              <h3 class="weather-title">Next Day's Forecast at 03:00 pm</h3>
               <div id="weather-table">
-                <table>                  
-                  <tr>
+                <table id="weather-table-table">                  
+                  <tr hidden>
                     <th>DateTime</th>
                     <th>Temp.</th>
+                    <th>Main</th>
                     <th>Icon</th>
                     <th>Description</th>
                   </tr>
-                  <tr id="weather-data">
-                    <td id="datetime">2024-4-11 15:00</td>
-                    <td id="daily-temp">80°F</td>
-                    <td id="weather-icon-daily"></td>
-                    <td id="daily-desc">Clear Sky</td>
-                  </tr>
-                  
                 </table>
               </div>
             </div>
@@ -148,7 +144,7 @@
 
           <!-- Call to action -->
           <div>
-            <a href="#rental-options" id="aria-label-txt" class="btn cta-2">Book now!</a>
+            <a href="#rental-options" id="aria-label-txt" class="btn cta-2">View a Summary of our Rental Options!</a>
           </div>
           <!-- ./ Call to action -->
         </div>
@@ -158,7 +154,7 @@
       <section class="section section-content" id="rental-options">        
         <div class="container">
           <div class="title-wrapper">
-            <h2 class="h2 section-title">Rental Options</h2>
+            <h2 class="h2 section-title">Summary of our Rental Options</h2>
 
             <a href="#" class="section-link">
               <span class="top-arrow">Back to Top</span>
