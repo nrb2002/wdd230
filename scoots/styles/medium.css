@@ -48,14 +48,14 @@
       border-radius: 20px;
     }
     #weather-table  tr{background-color: #f2f2f2}
-    #weather-table-table tr th:first-child,
-    #weather-table-table tr td:first-child{display: inline-block;}
+    #weather-table-table tr th:nth-child(3),
+    #weather-table-table tr td:nth-child(3){display: inline-block;}
     
     
     /* WEATHER STYLE */
 
     /* MAIN STYLE */
-    .section-title { margin-top: 30px; }
+    .section-title {margin-top: 100px;}
 
     @media (min-width: 768px) {
 

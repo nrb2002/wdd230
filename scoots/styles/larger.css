@@ -22,22 +22,18 @@
     /*TOP NAVBAR STYLE*/
 
     /*HERO STYLE*/
+    .hero-innerPage{height: 70vh;}
+    
+    /*HERO STYLE*/
 
-    
-    
-
-    
-    
-    /*MAIN STYLE*/
     
     
     /*MAIN STYLE*/
-   
-
-
-
-
-
+    .section-title {margin-top: 70px;}
+    
+    
+    /*MAIN STYLE*/
+  
   .overlay,
   .toggle-menu { display: none; }
 
@@ -72,6 +68,9 @@
     text-align: center;
   }  
   
+  #weather-table{
+    height: 6rem;   
+  }
   /* WEATHER STYLE FOR LARGER VIEWPORTS */
 
 
@@ -102,16 +101,10 @@
 
 
 
-  /**
-   * FOOTER
-   */
-
+  /** FOOTER */
   .footer-brand { width: 33.33%; }
-
   .footer-text { max-width: 35ch; }
-
   .footer-list:not(:last-of-type) { width: 16.66%; }
-
   .footer-list:last-of-type { width: 33.33%; }
-  
+  /** FOOTER */
 }

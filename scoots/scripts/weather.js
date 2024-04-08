@@ -63,7 +63,7 @@ function displayCurrentWeather(data){
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
 
-//Forecast on next day at 03pm
+//Forecast on next day, including at 03pm
 
 
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
@@ -94,49 +94,41 @@ fetchForecast();
 
 //Build the function to output to the given HTML document
 function displayForecast(data){
-    cityName.innerHTML = "Conzumel";
-    
-    
-
-    `<td id="datetime">${data.list[0].dt_txt}</td>`;
-    `<td id="forecast-temp"></td>`;
-    `<td id="weather-icon-daily"></td>`;
-    `<td id="daily-desc"></td>`;
-
-    console.log(`${data.list[6].dt_txt}`);
-
-    //Create table elements
+    //console.log(`${data.list[6].dt_txt}`);
+    // //Create table elements
     const table = document.querySelector("#weather-table-table");
-    const tr = document.createElement("tr");
-    const forecastTime = document.createElement("td");
-    const forecastTemp = document.createElement("td");
-    const forecastIcon = document.createElement("td");
-    const forecastMain = document.createElement("td");
-    const forecastDesc = document.createElement("td");
+    
+    for (let i = 0; i < 10; i++){
+        //console.log(i);
+        const tr = document.createElement("tr");
+        const forecastTime = document.createElement("td");
+        const forecastTemp = document.createElement("td");
+        const forecastIcon = document.createElement("td");
+        const forecastMain = document.createElement("td");
+        const forecastDesc = document.createElement("td");
 
-    //Get table data
-    forecastTime.innerHTML = data.list[6].dt_txt;
-    forecastTemp.innerHTML = Math.round(data.list[6].main.temp)+"&deg;F";
-    forecastMain.innerHTML = data.list[6].weather.main;
-    forecastDesc.innerHTML = data.list[6].weather.description;
-    
-    const icon = document.createElement("img");
-    const iconsrc = `https://openweathermap.org/img/w/${data.list[6].weather[0].icon}.png`;
-    icon.setAttribute("src",iconsrc);
-    icon.setAttribute("alt", "Weather Icon");
-    icon.setAttribute("loading","lazy" );
-    icon.setAttribute("width","50");
+        //Get table data
+        forecastTime.innerHTML = data.list[i].dt_txt;
+        forecastTemp.innerHTML = Math.round(data.list[i].main.temp)+"&deg;F";
+        forecastMain.innerHTML = data.list[i].weather.main;
+        forecastDesc.innerHTML = data.list[i].weather.description;
+        
+        const icon = document.createElement("img");
+        const iconsrc = `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`;
+        icon.setAttribute("src",iconsrc);
+        icon.setAttribute("alt", "Weather Icon");
+        icon.setAttribute("loading","lazy" );
+        icon.setAttribute("width","50");
 
-    //Append elements
-    forecastIcon.appendChild(icon);
-    
-    tr.appendChild(forecastTime);
-    tr.appendChild(forecastTemp);
-    tr.appendChild(forecastMain);
-    tr.appendChild(forecastIcon);
-    tr.appendChild(forecastDesc);
-    
-    table.appendChild(tr);
-    
-    
+        //Append elements
+        forecastIcon.appendChild(icon);
+        
+        tr.appendChild(forecastTime);
+        tr.appendChild(forecastTemp);
+        tr.appendChild(forecastMain);
+        tr.appendChild(forecastIcon);
+        tr.appendChild(forecastDesc);
+
+        table.appendChild(tr);
+    }
 } 
