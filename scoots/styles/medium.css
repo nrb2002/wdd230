@@ -2,9 +2,7 @@
     
 
     /*HERO STYLE*/
-    .hero-title {
-        font-size: 2.2rem;
-      }
+    h1, .h1{font-size: 2.5rem;}
     /*  TOP NAVBAR */
     .top-navbar{
       height: 40px;
@@ -14,7 +12,7 @@
      
      /* WEATHER STYLE */
      .weather {
-      margin-top: 48vh;
+      margin-top: 5vh;
       height: 40vh;
       width: 90vw;
     }
@@ -141,4 +139,5 @@
     /*FOOTER STYLE */
   
   
+}
 }
