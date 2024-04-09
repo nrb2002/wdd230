@@ -704,6 +704,7 @@ fieldset{
   padding: 2% 4%;
   border-radius: 10px;
   box-shadow: 3px 5px lightgray;
+  border: solid .5px lightgray;
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=email], select, textarea {
