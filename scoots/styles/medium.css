@@ -40,7 +40,8 @@
     }
     #weather-table{    
       display: grid;
-      width: 100%;   
+      width: 100%; 
+      height: 5rem;  
     }
     #weather-table-table{
       margin: -2% 0 2% 0;
@@ -48,6 +49,9 @@
       border-radius: 20px;
     }
     #weather-table  tr{background-color: #f2f2f2}
+    #weather-table  tr:first-child{
+      background-color: #cfbbbb;
+    }
     #weather-table-table tr th:nth-child(3),
     #weather-table-table tr td:nth-child(3){display: inline-block;}
     

@@ -68,9 +68,6 @@
     text-align: center;
   }  
   
-  #weather-table{
-    height: 6rem;   
-  }
   /* WEATHER STYLE FOR LARGER VIEWPORTS */
 
 
@@ -80,24 +77,6 @@
 
   .rental-options-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-
-
-  /**
-   * GET START
-   */
-
-  .get-start-list { grid-template-columns: repeat(4, 1fr); }
-
-
-
-  /**
-   * BLOG
-   */
-
-  .blog .has-scrollbar > li {
-    max-width: 340px;
-    scroll-snap-align: center;
-  }
 
 
 
