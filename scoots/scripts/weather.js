@@ -57,7 +57,7 @@ function displayCurrentWeather(data){
 
     humidity.textContent = `${data.main.humidity}%`; 
     windSpeed.textContent = `${data.wind.speed}mph`;
-    maxTemp.textContent = `Max Temperature : ${Math.round(data.main.temp_max)}°F. Make sure you dress up and plan your outings accordingly. `;
+    maxTemp.textContent = `${Math.round(data.main.temp_max)}°F.`;
 } 
 
 /////////////////////////////////////////////////////////////////////////////////

@@ -40,14 +40,14 @@
         <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
 </head>
 <body>  
-  <header>      
+  <header>     
     <div class="container"> 
       <div class="top-navbar">
         <div class="contact-info">
           <span>Phone: +52-85-339-3965</span>
           <span>Email: contact@scoots.mx</span>
         </div>
-        <marquee><span class="maxTemp"></span></marquee>
+        <!-- <marquee><span class="maxTemp"></span></marquee> -->
         <ul class="social-list">
           <li>
             <a href="https://facebook.com" target="_blank" class="social-link"><img src="images/social-icons/facebook-icon-24.png" alt="FB"></a>          
@@ -79,7 +79,7 @@
 
       <div class="cta">
         <a href="rentals.html" class="btn" aria-labelledby="aria-label-txt">
-          <span id="aria-label-txt">Book Now!</span>
+          <span class="aria-label-txt">Book Now!</span>
         </a>
         <!-- Toggle Menu -->
         <button class="toggle-menu"  aria-label="Toggle Menu">
@@ -118,6 +118,7 @@
                 <div class="weather-data"><strong>Humidity: </strong><span id="humidity"></span></div>
                 <div class="weather-data"><strong>Wind Speed: </strong><span id="windSpeed"></span></div>
                 <div class="weather-data"><strong>Wind Chill: </strong><span id="windChill">N/A</span></div>
+                <div class="weather-data"><strong>Max Temp.: </strong><span class="maxTemp"></span></div>
               </div>
             </div>
             <!-- Current weather -->
@@ -142,7 +143,7 @@
 
           <!-- Call to action -->
           <div>
-            <a href="#rental-options" id="aria-label-txt" class="btn cta-2">Summary of Our Rental Options</a>
+            <a href="#rental-options" class="aria-label-txt" class="btn cta-2">Rental Options</a>
           </div>
           <!-- ./ Call to action -->
         </div>
