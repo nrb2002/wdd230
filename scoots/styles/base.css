@@ -1,10 +1,15 @@
 :root {
-  --primary-color: #bf1922;
+  --primary-color: #99151B;
   --secondary-color:#38fa8c;
-  --accent-1:#099114;
+  --accent-1:#063C0A;
   --accent-2:#550c10;
   --nav-text-color: #122709;
-  --paragraph-background:#f3dbdc; 
+  --btn-text-color:#FFFFFFFF;
+  --paragraph-background:#F2F2F2;
+  --body-text-color:black;
+  --footer-background: #D1D1D1;
+  --footer-text-color: #303030;
+
   --pale-purple-pantone: hsl(262, 63%, 92%);
   --medium-sea-green: hsl(152, 63%, 43%);
   --lavender-blush: hsl(336, 35%, 92%);
@@ -15,8 +20,7 @@
   --alice-blue-1: hsl(216, 38%, 95%);
   --alice-blue-2: hsl(216, 75%, 97%);
   --alice-blue-3: hsl(216, 38%, 95%);
-  --alice-blue-4: hsl(217, 33%, 92%);
-  --independence: hsl(219, 21%, 39%);
+  
   --deep-cerise: #e5a3c5;
   --eerie-black: hsl(210, 11%, 15%);
   --space-cadet: hsl(240, 22%, 25%);
@@ -71,7 +75,6 @@ h1,
   font-size: 2rem;
   color: var(--primary-color);
   font-weight: 800;
-  max-width: 800px;
   margin-top: 250px;
 }
 
@@ -133,7 +136,7 @@ button, a { transition: var(--transition); }
 .btn {
   position: relative;
   background: var(--primary-color);
-  color: var(--color, white);
+  color: var(--btn-text-color, white);
   min-width: var(--width, 40px);
   min-height: var(--height, 40px);
   max-width: 400px;
@@ -188,7 +191,7 @@ h3,
 /*  TOP NAVBAR */
 .top-navbar{
   display: flex;
-  background-color: var(--alice-blue-1);
+  background-color: var(--paragraph-background);
   top: 0;
   height: 35px;
   padding: .5%;
@@ -256,14 +259,14 @@ header .container {
   font-size: 1.2rem;
 }
 .user-btn {
-  --color: var(--independence);
+  --color: var(--footer-text-color);
   --background: white;
   --shadow-2: var(--shadow-1);
   box-shadow: var(--shadow-1);
 }
 
 .toggle-menu span {
-  background: var(--independence);
+  background: var(--footer-text-color);
   width: 22px;
   height: 2px;
   border-radius: 2px;
@@ -347,18 +350,15 @@ nav li a:focus,
 .hero-innerPage{height: 40vh;}
 .hero-text {
   position: absolute;
-  color: var(--independence);
+  color: var(--footer-text-color);
   line-height: 1.8;
   margin-bottom: 20px;
 }
 .hero-title {
   margin-bottom: 15px;
   font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 5rem;
-  color: var(--secondary-color);
 }
 .hero-banner {
   display: block;
@@ -488,7 +488,7 @@ nav li a:focus,
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--independence);
+  color: var(--body-text-color);
   font-size: var(--text-font-size-6);
 }
 
@@ -583,7 +583,7 @@ nav li a:focus,
 }
 
 .rental-options-card .card-item-text {
-  color: var(--independence);
+  color: var(--body-text-color);
   font-size: var(--text-font-size-6);
 }
 
@@ -746,8 +746,8 @@ iframe{
 
 /* FOOTER STYLE */
 .footer {
-  background: var(--alice-blue-4);
-  color: var(--independence);
+  background: var(--footer-background);
+  color: var(--footer-text-color);
 }
 
 .footer a { color: inherit; }
@@ -874,7 +874,7 @@ iframe{
   .header-contact .contact-link:is(:hover, :focus) { color: var(--primary-color); }
 
   .header-contact .contact-time {
-    color: var(--independence);
+    color: var(--footer-text-color);
     font-size: var(--text-font-size-7);
   }
 
