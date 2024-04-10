@@ -4,13 +4,14 @@
     "lastUpdate":"2024-4-10",
     "rentals":[
         {
-            
+            "code":"S001",
             "vehicle":"Scooter",
             "make": "Honda",
             "model": "Metropolitan",
-            "description": "49cc",
-            "persons":"1",
+            "desc": "49cc",
+            "pers":"1",
             "doors":"N/A",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
             "plans":[
                 {
                     "reservation":
@@ -30,11 +31,12 @@
             ]
         },
         {
+            "code":"S002",
             "vehicle":"Scooter",
             "make": "Honda",
             "model": "Dio",
-            "description": "110cc",
-            "persons":"2",
+            "desc": "110cc",
+            "pers":"2",
             "doors":"N/A",
             "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
             "plans":[
@@ -55,12 +57,14 @@
             ]
         },
         {
+            "code":"S003",
             "vehicle":"Scooter",
             "make": "Honda",
             "model": "PCX150",
-            "description": "149cc",
-            "persons":"2",
+            "desc": "149cc",
+            "pers":"2",
             "doors":"N/A",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
             "plans":[
                 {
                     "reservation":
@@ -79,12 +83,14 @@
             ]
         },
         {
+            "code":"ATV001",
             "vehicle":"ATV",
             "make": "Honda",
             "model": "Pioneer",
-            "description": "1000",
-            "persons":"4",
+            "desc": "1000",
+            "pers":"4",
             "doors":"4",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
             "plans":[
                 {
                     "reservation":
@@ -104,12 +110,14 @@
             ]
         },
         {
-           "vehicle":"SUV",
+            "code":"SUV001",
+            "vehicle":"SUV",
             "make": "Jeep",
             "model": "Wrangler",
-            "description":"open air, manuel",
+            "desc":"open air, manuel",
             "doors":"2",
-            "persons":"4",
+            "pers":"4",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
             "plans":[
                 {
                     "reservation":
@@ -129,12 +137,14 @@
             ]
         },
         {
+            "code":"SUV002",
             "vehicle":"SUV",
             "make": "Jeep",
             "model": "Wrangler",
-            "description":"manuel, with A/C",
+            "desc":"manuel, with A/C",
             "doors":"4",
-            "persons":"5",
+            "pers":"5",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
             "plans":[
                 {
                     "reservation":
