@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Pricing and Plans - Scoots</title>
+    <title>Rentals - Scoots</title>
 
-        <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu Scoots Site">
-        <meta name="author" content="Baron Tshibasu">
+    <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu Scoots Site">
+    <meta name="author" content="Baron Tshibasu">
 
-        <!--Open Graph Meta Tags for social media sharing-->
+    <!--Open Graph Meta Tags for social media sharing-->
 
-        <meta property="og:title" content="WDD230 - Scoots Final Project">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://nrb2002.github.io/wdd230/scoots/images/conzumel-beach.webp">
-        <meta property="og:url" content="https://nrb2002.github.io/wdd230/scoots/">
-        <meta property="og:description" content="WDD 230 - Web Frontend Development Baron Tshibasu Scoots Course Final Project">
-        <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="WDD230 - Scoots Final Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nrb2002.github.io/wdd230/scoots/images/conzumel-beach.webp">
+    <meta property="og:url" content="https://nrb2002.github.io/wdd230/scoots/">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development Baron Tshibasu Scoots Course Final Project">
+    <meta name="twitter:card" content="summary_large_image">
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;1,300;1,400&family=Rosarivo:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;1,300;1,400&family=Rosarivo:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <link rel="stylesheet" href="styles/slideshow.css">
-        <link rel="stylesheet" href="styles/mode-switch.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <link rel="stylesheet" href="styles/mode-switch.css">
 
-        <!-- Weather widget stylesheet -->
-        <link rel="stylesheet" href="styles/weather.css">
+    <!-- Weather widget stylesheet -->
+    <link rel="stylesheet" href="styles/weather.css">
 
-        <link rel="icon" type="image/x-icon" href="images/logo/favicon.png">
-        <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
-</head>
-<body>  
-  <header>      
+    <link rel="icon" type="image/x-icon" href="images/logo/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
+  </head>
+  <body>  
+    <header>      
     <div class="container"> 
       <div class="top-navbar">
         <div class="contact-info">
@@ -67,8 +67,8 @@
       <nav class="navbar" data-navbar>
         <ul>
           <li><a href="./" data-nav-link>Home</a></li>
-          <li><a href="index.html#rental-options" data-nav-link>Rental Options</a></li>
-          <li><a href="rentals.html" class="active" data-nav-link>Pricing and Plans</a></li>
+          <li><a href="index.html#rental-options" data-nav-link>Featured Options</a></li>
+          <li><a href="rentals.html" class="active" data-nav-link>Rentals</a></li>
           <li><a href="contact.html" data-nav-link>Contact Us</a></li>  
         </ul>
       </nav>
@@ -106,7 +106,7 @@
         <h2>Pricing and Plans</h2>
         <!-- Pricing Table -->
         <table class="pricing-table">
-          <tbody>
+          <tbody id="pricingBody">
             <tr>
               <th></th>
               <th></th>
@@ -114,17 +114,17 @@
               <th colspan="2">Walk-In</th>
             </tr>
             <tr>
-              <th>Product Code</th>
+              <th>Code</th>
               <th>Vehicle Type</th>
               <th>Half Day (3hrs)</th>
               <th>Full Day</th>
               <th>Half Day (3hrs)</th>
               <th>Full Day</th>
             </tr>
-            <tr>
-              <td data-th="Product Code"><strong>S001</strong></td>
+            <!-- <tr>
+              <td data-th="Product Code">S001</td>
               <td data-th="Vehicle Details">
-                <img src="images/scoots-scooters/2024-Honda-Metropolitan2.jpg" alt="" width="200">
+                <img src="images/scoots-scooters/2024-Honda-Metropolitan2.jpg" alt="" width="150">
                 <small>
                   Honda Metropolitan Scooter (49cc)
                   <br>Max Pers.: 1
@@ -132,11 +132,11 @@
                 </small>
                 
               </td>
-              <td data-th="Reservation Half Day (3hrs)">$20<input type="checkbox" name="s001-res-halfday" id="s001-res-halfday"></td>
-              <td data-th="Reservation Full Day">$30 <input type="checkbox" name="s001-res-fullday" id="s001-res-fullday"></td>
-              <td data-th="Walk-in Half Day (3hrs)">$25 <input type="checkbox" name="s001-wi-halfday" id="s001-wi-halfday"></td>
-              <td data-th="Walk-in Full Day">$35 <input type="checkbox" name="s001-wi-fullday" id="s001-wi-fullday"></td>
-            </tr>
+              <td data-th="Reservation Half Day (3hrs)">$20</td>
+              <td data-th="Reservation Full Day">$30</td>
+              <td data-th="Walk-in Half Day (3hrs)">$25</td>
+              <td data-th="Walk-in Full Day">$35</td>
+            </tr> -->
             
           </tbody>
         </table>
@@ -234,8 +234,9 @@
   </footer>
 
   <script src="scripts/main.js"></script>
-  <script src="scripts/weather.js"></script>
+  <!-- <script src="scripts/weather.js"></script> -->
   <script src="scripts/getdates.js"></script>
+  <script src="scripts/pricing.js"></script>
 </body>
 
 </html>

@@ -52,22 +52,19 @@
 
   
 
-  /* WEATHER STYLE FOR LARGER VIEWPORTS */ 
+  /* WEATHER STYLE FOR LARGER VIEWPORTS */
 
   .weather { max-width: 900px; }
-
   .weather .btn {
     --width: calc(100% - 40px);
     --height: 50px;
     margin: 20px;
     text-transform: uppercase;
   }
-  .weather-data{font-size: 1rem;}
-  
+  .weather-data{font-size: 1rem;}  
   #weather-table th, td {
     text-align: center;
   }  
-  
   /* WEATHER STYLE FOR LARGER VIEWPORTS */
 
 
