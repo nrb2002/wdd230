@@ -93,72 +93,102 @@
     <!-- HERO SECTION  -->
     <section class="hero-innerPage">
       <div class="hero-banner"></div>      
-      <div class="container"><h1>Contact Us</h1></div>
+      <div class="container"><h1>Reservations</h1></div>
     </section>
     <!-- ./ HERO SECTION  -->
-    <!-- CONTACT FORM SECTION -->
+    <!-- PAYMENT FORM SECTION -->
     <section class="section section-content">
       <div class="container">
-        <h2>Leave us a message.</h2>
-        <small><strong><em>We will get back to you as soon as possible.</em></strong></small>
+        <h2>Make a reservation.</h2>
+        <small><strong><em>Your wishes and prefernces are our priority.</em></strong></small>
         <div class="form-wrapper">
           <form class="contact-form" action="confirmation.html" method="get">
-            <fieldset>
-              <legend class="h3">Contact Form</legend>
-              <label><strong>First Name *</strong>
-                <input type="text" id="firstname" name="firstname" placeholder="Please enter your firstname" required>
-              </label>          
-              <label><strong>Last Name</strong> (optional)
-                <input type="text" id="lastname" name="lastname" placeholder="Please enter your lastname">
-              </label>  
-              <label><strong>Email Address *</strong>
-                <input type="email" id="email" name="email" placeholder="example@domain.com">
-              </label>
-              <label for="subject"><strong>Subject *</strong>
-                <textarea id="subject" name="subject" placeholder="Please type your message here. "></textarea>
-              </label>
-            </fieldset>
-            <input type="submit" class="btn" value="Send Message">         
-          
-          <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. 
-              You must use JavaScript to set the value of this field. -->
-              <!-- 🚑 Hint: What property do you need to use to set the value of that hidden input element? -->
-          <label><input type="date" name="currentDate" id="currentDate" hidden></label>
+              <div class="basicInfo">
+                  <fieldset>
+                      <legend>Member's Information</legend>
+                  
+                      <!-- The applicant's first name, text type, required, name, and id. -->
+                      <label>Fistname* <input type="text" id="firstname" name="firstname" placeholder="Your firstname" title="Please enter your legal Firstname" required></label>
+                      <!-- The applicant's last name, text type, required, name, and id. -->
+                      <label>Lastname* <input type="text" id="lastname" name="lastname" placeholder="Your lastname" title="Please enter your legal Lastname" required></label>
+                      <!-- The applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression. -->
+                      <label>Position* <input type="text" id="position" name="position" pattern="[a-zA-Z\-\s]{7,}" placeholder="Min: 7 characters. No special characters allowed. " title="Please enter your position or title within your organization" required></label>
+                      <!-- An contact email address, email type, required, name, id, and placeholder which contains an example email input. -->
+                      <label>Email* <input type="email" id="email" name="email" placeholder="someone@domain.com" title="Please enter your email address" required></label>
+                      <!-- A mobile phone number, telephone type, required, name, and id. -->
+                      <label>Phone* <input type="text" id="phone" name="phone" placeholder="XXX - XXXX - XXX  " title="Please enter your phone number" required></label>
+                  </fieldset>
+                  
+                  <fieldset>
+                      <legend>Business Information</legend>
+                  
+                      <!-- The business/organization's name, text type, required, name, and id. -->
+                      <label>Business Name* <input type="text" id="business" name="business" placeholder="Name of company or organization" title="Please enter your business or organization's name" required></label>
+                      <!-- A business/organization's description, text area, name, and id. -->
+                      <label>Business Description (optional) <textarea name="businessDesc" id="businessDesc" placeholder="Type of business, product(s), or sector of activity. Max:300 words. " title="Please describe your organization's type of business or sector of activity." maxlength="300" cols="30" rows="10"></textarea></label>
+                  </fieldset>
+              </div>
+              <div class="membership">
+                  <fieldset>
+                      <legend>Membership Level</legend>
+                      <!-- A membership level selection using an appropriate form field of your choosing to allow the user to select a membership level.  -->
+                      <p>There are four membership levels:</p>
+                          <ul>
+                              <li>NP Membership is for non profit organizations and there is no fee.</li>
+                              <li>Bronze Membership</li>
+                              <li>Silver Membership</li>
+                              <li>Gold Membership</li>
+                          </ul>
+                      
+                      <small>These membership levels have increasing costs as well as increased benefits per level. 
+                          Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.
+                      </small>
+                      <label>
+                          <select name="membership" id="membership">
+                              <option value="">Pick a membership level</option>
+                              <option value="NP">NP</option>
+                              <option value="Bronze">Bronze</option>
+                              <option value="Silver">Silver</option>
+                              <option value="Gold">Gold</option>
+                          </select>
+                      </label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Rental Services and Agreements</legend>
+                    <ul>
+                      <li>A $50 security deposit is required to confirm reservations.</li>
+                      <li>A valid drivers license is required in hand at the time of rental.</li>
+                      <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                      <li>Fuel charge is not included. </li>
+                      <li>Unlimited mileage.</li>
+                      <li>Liability insurance is included.</li>
+                      <li>Damage insurance is available for purchase.</li>
+                      <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                      <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                      <li>Rentals may be returned to either physical location.</li>                      
+                    </ul>
+                  </fieldset>
+                  <fieldset>
+                    <label>
+                      <div><input type="checkbox"></div>
+                      <div>I have read and understood the rental and services agreement.</div>
+                  <!-- A form submission button with type submit that is properly labeled in the content area of the button. -->
+                  <input type="submit" class="btn" id="register" name="register" value="Confirm Order">
+                </label>
+              </fieldset>
+                 
+              </div>
+              
+              <!-- An input element of type (hidden) with a name and id. This field contains the current date/time in millisecond format Date.now(), which records the date and time that the form was loaded by the user. 
+                  You must use JavaScript to set the value of this field. -->
+                  <!-- 🚑 Hint: What property do you need to use to set the value of that hidden input element? -->
+              <label><input type="date" name="currentDate" id="currentDate" hidden></label>
         </form>
       </div>
-      <br><hr>
       </div>
     </section>
-    <!-- CONTACT FORM SECTION -->
+    <!-- PAYMENT FORM SECTION -->
 
-    <!-- CONTACT INFO SECTION  -->
-    <section class="section section-content">
-      <div class="container">
-        <h2>Contact Information</h2>
-          <div>
-              <p><strong>Phone number: </strong>+52-853393965</p>
-              <p><strong>Email address: </strong>contact@scoots.mx</p>
-              <p><strong>Physical Addresses: </strong>
-                  <ol>
-                      <li>Playa del Carmen-Cozumel, el Centro de Cozumel</li>
-                      <li>Puerta Maya</li>
-                  </ol>
-                  <br>
-                  <em>Feel free to locate us on maps.</em> <br>
-                  <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21137.822912131807!2d-86.94404708589383!3d20.51956639162723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2scd!4v1712615391047!5m2!1sen!2scd" width="600" height="" style="border:0;" allowfullscreen="y" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-                  </div>
-              </p>
-          </div>
-          <div>
-
-          </div>
-              
-        
-
-      </div>
-    </section>
-    <!--./ CONTACT INFO SECTION  -->
   </main>
   <footer class="footer">
     <div class="container">

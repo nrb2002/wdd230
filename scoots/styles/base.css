@@ -135,6 +135,13 @@ button, a { transition: var(--transition); }
   font-weight: 600;
   overflow: hidden;
 }
+.checkout{
+  background-color: var(--secondary-color);
+  color: var(--accent-1);
+  padding: 1rem;
+  margin: 1% 0 0 5%;
+  border: black;
+}
 
 .btn ion-icon {
   font-size: 22px;
