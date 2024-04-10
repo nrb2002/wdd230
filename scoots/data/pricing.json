@@ -1,17 +1,16 @@
 {
-    "companyName":"Scoots",
-    "documentTitle":"Pricing and Plans",
-    "lastUpdate":"2024-4-4",
-    "businessType":"Rental Services",
-    "rentalType":[
+    "name":"Scoots",
+    "title":"Rentals",
+    "lastUpdate":"2024-4-10",
+    "rentals":[
         {
             
-            "vehicleType":"Scooter",
+            "vehicle":"Scooter",
             "make": "Honda",
             "model": "Metropolitan",
             "description": "49cc",
-            "numberOfPersons":"1",
-            "numberOfDoors":"N/A",
+            "persons":"1",
+            "doors":"N/A",
             "plans":[
                 {
                     "reservation":
@@ -31,13 +30,13 @@
             ]
         },
         {
-            "vehicleType":"Scooter",
+            "vehicle":"Scooter",
             "make": "Honda",
             "model": "Dio",
             "description": "110cc",
-            "numberOfPersons":"2",
-            "numberOfDoors":"N/A",
-            "imageUrl":"../images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
+            "persons":"2",
+            "doors":"N/A",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
             "plans":[
                 {
                     "reservation":
@@ -56,12 +55,12 @@
             ]
         },
         {
-            "vehicleType":"Scooter",
+            "vehicle":"Scooter",
             "make": "Honda",
             "model": "PCX150",
             "description": "149cc",
-            "numberOfPersons":"2",
-            "numberOfDoors":"N/A",
+            "persons":"2",
+            "doors":"N/A",
             "plans":[
                 {
                     "reservation":
@@ -80,12 +79,12 @@
             ]
         },
         {
-            "vehicleType":"ATV",
+            "vehicle":"ATV",
             "make": "Honda",
             "model": "Pioneer",
             "description": "1000",
-            "numberOfPersons":"4",
-            "numberOfDoors":"4",
+            "persons":"4",
+            "doors":"4",
             "plans":[
                 {
                     "reservation":
@@ -105,12 +104,12 @@
             ]
         },
         {
-           "vehicleType":"SUV",
+           "vehicle":"SUV",
             "make": "Jeep",
             "model": "Wrangler",
             "description":"open air, manuel",
-            "numberOfDoors":"2",
-            "numberOfPersons":"4",
+            "doors":"2",
+            "persons":"4",
             "plans":[
                 {
                     "reservation":
@@ -130,12 +129,12 @@
             ]
         },
         {
-            "vehicleType":"SUV",
+            "vehicle":"SUV",
             "make": "Jeep",
             "model": "Wrangler",
             "description":"manuel, with A/C",
-            "numberOfDoors":"4",
-            "numberOfPersons":"5",
+            "doors":"4",
+            "persons":"5",
             "plans":[
                 {
                     "reservation":
