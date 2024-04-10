@@ -48,7 +48,8 @@ function displayRentals(data){
 
         const img = document.createElement("img");
         img.setAttribute("src", rental.imageUrl);
-        img.setAttribute("width", "150");
+        img.setAttribute("width", "200");
+        img.setAttribute("width", "100");
 
         const small = document.createElement("small");
         small.style.lineHeight = ".5rem"; 
@@ -69,11 +70,55 @@ function displayRentals(data){
         vehicle.appendChild(img);
         vehicle.appendChild(small);
 
+        //Testing to get the plans
+        rental.plans.forEach(plan =>{            
+            console.log(plan);
+        });
+
+        const resHalf = document.createElement("td");
+        const resFull = document.createElement("td");
+        const wiHalf = document.createElement("td");
+        const wiFull = document.createElement("td");
+
+        const cart = "Add to cart";
+        const btnCart = document.createElement("button");
+        btnCart.classList.add("btn");
+        btnCart.textContent = cart;
+        btnCart.style.margin = "4rem auto";
+        btnCart.style.padding = ".5rem";
+        resHalf.appendChild(btnCart);
+
+        const btnCart2 = document.createElement("button");
+        btnCart2.classList.add("btn");
+        btnCart2.textContent = cart;
+        btnCart2.style.margin = "4rem auto";
+        btnCart2.style.padding = ".5rem";
+        resFull.appendChild(btnCart2);
+
+        const btnCart3 = document.createElement("button");
+        btnCart3.classList.add("btn");
+        btnCart3.textContent = cart;
+        btnCart3.style.margin = "4rem auto";
+        btnCart3.style.padding = ".5rem";
+        wiHalf.appendChild(btnCart3);
+
+        const btnCart4 = document.createElement("button");
+        btnCart4.classList.add("btn");
+        btnCart4.textContent = cart;
+        btnCart4.style.margin = "4rem auto";
+        btnCart4.style.padding = ".5rem";
+        wiFull.appendChild(btnCart4);
+
+
         //Append table data
         const tbody = document.querySelector("#pricingBody");
         const tr = document.createElement("tr");
         tr.appendChild(code);
         tr.appendChild(vehicle);
+        tr.appendChild(resHalf);
+        tr.appendChild(resFull);
+        tr.appendChild(wiHalf);
+        tr.appendChild(wiFull);
         tbody.appendChild(tr);
 
 
