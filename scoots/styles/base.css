@@ -62,7 +62,7 @@ h1,
   font-size: 2rem;
   color: var(--primary-color);
   font-weight: 800;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 button,
@@ -360,7 +360,7 @@ nav li a:focus,
   overflow: hidden;
   width: 100%;
   position: relative;
-  background: url("../images/scooter-city-ride.jpg") no-repeat;
+  background: url("../images/hero/banner-large-scooter-city-ride.webp") no-repeat;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -368,26 +368,26 @@ nav li a:focus,
   text-align: left;
   justify-content: center;
   z-index: -1;
-  animation: change 60s infinite ease-in-out;  
+  animation: 60s infinite alternate change;  
 }
 @keyframes change{
   0%{
-    background-image: url("../images/scooter-city-ride");
+    background-image: url("../images/hero/banner-large-scooter-city-ride.webp");
   }
   20%{
-    background-image: url("../images/scoots-hero-conzumel.jpg");
+    background-image: url("../images/hero/banner-large-scoots-hero-conzumel.webp");
   }
   40%{
-    background-image: url("../images/cozumel-braden-collum.jpg");
+    background-image: url("../images/hero/banner-large-cozumel-braden-collum.webp");
   }
   60%{
-    background-image: url("../images/cozumel-jakob-owens-portrait.jpg");
+    background-image: url("../images/hero/cozumel-jakob-owens-portrait.webp");
   }
   80%{
-    background-image: url("../images/cozumel-conor-luddy-landscape.jpg");
+    background-image: url("../images/hero/banner-large-cozumel-conor-luddy-landscape.webp");
   }
   100%{
-    background-image: url("../images/jr-harris-landscape.jpg");
+    background-image: url("../images/hero/banner-large-jr-harris-landscape.webp");
   }
 }
 
@@ -396,7 +396,7 @@ nav li a:focus,
   
 }
 .hero-innerPage .hero-banner{
-  background: url("../images/cozumel-braden-collum-landscape.jpg") no-repeat;
+  background: url("../images/cozumel-braden-collum-landscape.webp") no-repeat;
 }
 /*HERO STYLE*/
 /*---------------------------------------------------------------------------------------------------------------------------*/

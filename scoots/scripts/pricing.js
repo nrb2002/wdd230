@@ -52,7 +52,7 @@ function displayRentals(data){
         img.setAttribute("width", "100");
 
         const small = document.createElement("small");
-        small.style.lineHeight = ".5rem"; 
+        small.style.lineHeight = "1rem"; 
 
         const p1 = document.createElement("p");
         p1.textContent = `${rental.make} ${rental.model} ${rental.vehicle} (${rental.desc})`;
@@ -70,45 +70,34 @@ function displayRentals(data){
         vehicle.appendChild(img);
         vehicle.appendChild(small);
 
-        //Testing to get the plans
-        rental.plans.forEach(plan =>{            
-            console.log(plan);
-        });
-
         const resHalf = document.createElement("td");
         const resFull = document.createElement("td");
         const wiHalf = document.createElement("td");
         const wiFull = document.createElement("td");
 
-        const cart = "Add to cart";
-        const btnCart = document.createElement("button");
-        btnCart.classList.add("btn");
-        btnCart.textContent = cart;
-        btnCart.style.margin = "4rem auto";
-        btnCart.style.padding = ".5rem";
-        resHalf.appendChild(btnCart);
+        const option = document.createElement("input");
+        option.setAttribute("type", "checkbox");
+        option.style.margin = "4rem auto";
+        option.style.padding = ".5rem";
+        resHalf.appendChild(option);
 
-        const btnCart2 = document.createElement("button");
-        btnCart2.classList.add("btn");
-        btnCart2.textContent = cart;
-        btnCart2.style.margin = "4rem auto";
-        btnCart2.style.padding = ".5rem";
-        resFull.appendChild(btnCart2);
+        const option2 = document.createElement("input");
+        option2.setAttribute("type", "checkbox");
+        option2.style.margin = "4rem auto";
+        option2.style.padding = ".5rem";
+        resFull.appendChild(option2);
 
-        const btnCart3 = document.createElement("button");
-        btnCart3.classList.add("btn");
-        btnCart3.textContent = cart;
-        btnCart3.style.margin = "4rem auto";
-        btnCart3.style.padding = ".5rem";
-        wiHalf.appendChild(btnCart3);
+        const option3 = document.createElement("input")
+        option3.setAttribute("type", "checkbox");
+        option3.style.margin = "4rem auto";
+        option3.style.padding = ".5rem";
+        wiHalf.appendChild(option3);
 
-        const btnCart4 = document.createElement("button");
-        btnCart4.classList.add("btn");
-        btnCart4.textContent = cart;
-        btnCart4.style.margin = "4rem auto";
-        btnCart4.style.padding = ".5rem";
-        wiFull.appendChild(btnCart4);
-
+        const option4 = document.createElement("input");
+        option4.setAttribute("type", "checkbox");
+        option4.style.margin = "4rem auto";
+        option4.style.padding = ".5rem";
+        wiFull.appendChild(option4);
 
         //Append table data
         const tbody = document.querySelector("#pricingBody");
