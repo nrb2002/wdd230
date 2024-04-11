@@ -360,7 +360,7 @@ nav li a:focus,
   overflow: hidden;
   width: 100%;
   position: relative;
-  background: url("../images/hero/banner-large-scooter-city-ride.webp") no-repeat;
+  background: url("https://nrb2002.github.io/wdd230/scoots/images/hero/banner-large-scooter-city-ride.webp") no-repeat;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -372,22 +372,22 @@ nav li a:focus,
 }
 @keyframes change{
   0%{
-    background-image: url("../images/hero/banner-large-scooter-city-ride.webp");
+    background-image: url("https://nrb2002.github.io/wdd230/scoots/images/hero/banner-large-scooter-city-ride.webp");
   }
   20%{
-    background-image: url("../images/hero/banner-large-scoots-hero-conzumel.webp");
+    background-image: url("https://nrb2002.github.io/wdd230/scoots/images/hero/banner-large-scoots-hero-conzumel.webp");
   }
   40%{
-    background-image: url("../images/hero/banner-large-cozumel-braden-collum.webp");
+    background-image: url("https://nrb2002.github.io/wdd230/scoots/images/hero/banner-large-cozumel-braden-collum.webp");
   }
   60%{
-    background-image: url("../images/hero/cozumel-jakob-owens-portrait.webp");
+    background-image: url("https://nrb2002.github.io/wdd230/scoots/images/hero/cozumel-jakob-owens-portrait.webp");
   }
   80%{
-    background-image: url("../images/hero/banner-large-cozumel-conor-luddy-landscape.webp");
+    background-image: url("https://nrb2002.github.io/wdd230/scoots/images/hero/banner-large-cozumel-conor-luddy-landscape.webp");
   }
   100%{
-    background-image: url("../images/hero/banner-large-jr-harris-landscape.webp");
+    background-image: url("https://nrb2002.github.io/wdd230/scoots/images/hero/banner-large-jr-harris-landscape.webp");
   }
 }
 
@@ -395,8 +395,8 @@ nav li a:focus,
   margin: -20px 0 2%;
   
 }
-.hero-innerPage .hero-banner{
-  background: url("../images/cozumel-braden-collum-landscape.webp") no-repeat;
+.hero-innerPage{
+  background: url("https://nrb2002.github.io/wdd230/scoots/images/cozumel-braden-collum-landscape.webp") no-repeat;
 }
 /*HERO STYLE*/
 /*---------------------------------------------------------------------------------------------------------------------------*/
