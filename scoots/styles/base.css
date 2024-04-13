@@ -37,9 +37,7 @@
 
   --shadow-1: 3px 3px 9px #a5a5bb33;
   --shadow-2: 3px 3px 9px #36aaf74d;
-
 }
-
 *{
   padding: 0;
   box-sizing: border-box;
@@ -95,7 +93,7 @@ body {
 }
 hr{
   box-shadow: 5px 5px var(--secondary-color);
-  height: 5px;
+  height: 2px;
   width: 70%;
 }
 
