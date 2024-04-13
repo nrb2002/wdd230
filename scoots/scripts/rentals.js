@@ -36,7 +36,7 @@ function displayRentals(data){
     //For testing purposes only
 
     data.rentals.forEach(rental => {
-        console.log(rental.model); //test
+        //console.log(rental.model); //test
 
         //Generate product code
         const code = document.createElement("td");        
@@ -111,9 +111,14 @@ function displayRentals(data){
         tbody.appendChild(tr);
 
 
-    //     rental.plans.forEach(plan => {
-    //         console.log(plan[0].halfDay);//test
-    //     });
+        // console.log(rental.plans[0].reservation[0]);
+        // console.log(rental.plans[0].reservation[1]);
+
+        rental.plans.forEach(plan => {
+            plan.reservation[0];
+                
+            
+        });
     });
 
 } 
