@@ -32,8 +32,6 @@ fetchRentals();
 function displayRentals(data){
 
     data.rentals.forEach(rental => {
-        //console.log(rental.model); //test
-
         //Generate product code
         const code = document.createElement("td");        
         code.textContent = rental.code;
@@ -73,10 +71,10 @@ function displayRentals(data){
         const wiFull = document.createElement("td");
 
         //Test
-        console.log(rental.plans[0].reservation.halfDay);
-        console.log(rental.plans[0].reservation.fullDay);
-        console.log(rental.plans[1].walkIn.halfDay);
-        console.log(rental.plans[1].walkIn.fullDay);
+        // console.log(rental.plans[0].reservation.halfDay);
+        // console.log(rental.plans[0].reservation.fullDay);
+        // console.log(rental.plans[1].walkIn.halfDay);
+        // console.log(rental.plans[1].walkIn.fullDay);
 
         //Get Price for a half-day reservation
         const label = document.createElement("label");
@@ -128,13 +126,6 @@ function displayRentals(data){
         tr.appendChild(wiHalf);
         tr.appendChild(wiFull);
         tbody.appendChild(tr);
-
-
-        
-        
-
-        
-
     });
 
 } 
