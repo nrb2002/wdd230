@@ -14,12 +14,12 @@
             "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/2024-Honda-Metropolitan2.jpg",
             "plans":[
                 {
-                    "reservation":[
+                    "reservation":
                         {
                             "halfDay":"$20",                        
                             "fullDay":"$30"
                         }
-                    ]
+                    
                 },
                 {
                     "walkIn":

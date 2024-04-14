@@ -30,10 +30,6 @@ fetchRentals();
 
 //Build the function to output to the given HTML document
 function displayRentals(data){
-    //For testing purposes only
-    //let companyName = data.name;
-    //console.log(companyName);
-    //For testing purposes only
 
     data.rentals.forEach(rental => {
         //console.log(rental.model); //test
@@ -43,6 +39,7 @@ function displayRentals(data){
         code.textContent = rental.code;
         code.setAttribute("data-th", "Product Code");
 
+        //Get vehicle details
         const vehicle = document.createElement("td");
         vehicle.setAttribute("data-th", "Vehicle Details");
 
@@ -115,10 +112,25 @@ function displayRentals(data){
         // console.log(rental.plans[0].reservation[1]);
 
         // rental.plans.forEach(plan => {
-        //     plan.reservation[0];
-                
-            
+        //     plan.reservation.forEach(length =>{
+        //         console.log(length.halfDay);
+        //         console.log(length.fullDay);
+        //     });
+        //     plan.walkIn.forEach(length =>{
+        //         console.log(length.halfDay);
+        //         console.log(length.fullDay);
+        //     });
+              
         // });
+
+        rental.plans.forEach(plan => {
+            console.log(plan.reservation[0].halfDay);
+            console.log(plan.reservation[0].fullDay);
+            console.log(plan.walkIn[0].halfDay);
+            console.log(plan.walkIn[0].fullDay);
+        });
+
+
     });
 
 } 
