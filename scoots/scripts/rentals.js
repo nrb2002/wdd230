@@ -2,7 +2,7 @@
 console.log("Bonjour!");
 
 //Declare url of data source
-const rentalsUrl = "../data/rentals.json";
+const rentalsUrl = "https://nrb2002.github.io/wdd230/scoots/data/rentals.json";
 
 //Define an asynchronous function named "fetchRentals()" that uses a try block to handle errors.
 async function fetchRentals(){
