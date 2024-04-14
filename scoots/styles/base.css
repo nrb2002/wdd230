@@ -48,6 +48,8 @@ li { list-style: none; }
 a { text-decoration: none; }
 
 a,
+img,
+span,
 label,
 input,
 button,
@@ -58,7 +60,7 @@ h1,
   font-size: 2rem;
   color: var(--primary-color);
   font-weight: 800;
-  margin-top: 150px;
+  margin-top: 20vh;
 }
 
 button,
@@ -138,9 +140,6 @@ button, a { transition: var(--transition); }
   margin: 1% 0 0 5%;
   border: black;
 }
-.checkout::after{
-  
-}
 
 .btn ion-icon {
   font-size: 22px;
@@ -158,10 +157,7 @@ button, a { transition: var(--transition); }
 }
 
 .btn:is(:hover, :focus) { box-shadow: var(--shadow-2); }
-
 .btn:is(:hover, :focus)::before { opacity: 1; }
-
-
 
 h2,
 .h2,
@@ -789,8 +785,6 @@ iframe{
   border-radius: 15px 15px 0 0;
   padding: 20px;
 }
-
-
 .copyright { 
   font-size: var(--text-font-size-6); 
   display: grid;
@@ -806,165 +800,9 @@ iframe{
 
 
 
-/* @media (min-width: 350px) { */
 
 
-  .rental-options-card .card-list { grid-template-columns: 1fr 1fr; }
 
-  .rental-options-card .card-price { margin-right: auto; }
 
-  .rental-options-card .btn:last-child {
-    min-width: max-content;
-    padding-inline: 15px;
-  }
 
-/* } */
 
-
-
-
-
-/**
- * responsive for large than 580px screen
- */
-
-@media (min-width: 580px) {
-
- 
-
-
-
-  /**
-   * HEADER
-   */
-
-
-
-
-
-
-
-/**
- * responsive for large than 768px screen
- */
-
-@media (min-width: 768px) {
-
-  :root {
-    --text-size-large: 2.625rem;
-
-  }
-
-  /* HEADER STYLE */
-  header .cta {gap: 30px;}
-  .header-contact {
-    display: block;
-    text-align: center;
-  }
-  .header-contact .contact-link {
-    color: var(--space-cadet);
-    font-family: var(--paragraph-text-font);
-    font-size: var(--text-font-size-5);
-    line-height: 1.3;
-  }
-
-  .header-contact .contact-link:is(:hover, :focus) { color: var(--primary-color); }
-
-  .header-contact .contact-time {
-    color: var(--footer-text-color);
-    font-size: var(--text-font-size-7);
-  }
-
-  .cta .btn span {
-    display: block;
-    font-weight: 400;
-    padding-inline: 15px;
-  }
-
-  .cta .btn:first-of-type ion-icon { display: none; }
-}
-
-
-
-
-  /**
-   * HERO
-   */
-
-  
-
-  .input-wrapper:not(:last-of-type) {
-    border-bottom: none;
-    border-right: 1px solid hsla(0, 0%, 0%, 0.08);
-  }
-
-  .input-label {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  
-
-
-
-  /**
-   * rental CAR
-   */
-
-  .rental-options-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-
-
-  /**
-   * GET START
-   */
-
-  .get-start-list { grid-template-columns: 1fr 1fr; }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-brand { width: 100%; }
-
-  .footer-text { max-width: 400px; }
-
-  .footer-bottom {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 30px;
-    box-shadow: var(--shadow-1);
-  }
-
-  .social-list { margin-bottom: 0; }
-
-}
-
-
-
-
-
-/**
- * responsive for large than 992px screen
- */
-
-@media (min-width: 992px) {
-
-
-
-  /**
-   * BLOG
-   */
-
-  .blog .has-scrollbar { padding-bottom: 50px; }
-
-  .blog .has-scrollbar > li { max-width: 450px; }
-
-
-
-}

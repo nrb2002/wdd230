@@ -69,15 +69,7 @@
   }  
   /* WEATHER STYLE FOR LARGER VIEWPORTS */
 
-
-  /**
-   * rental CAR 
-   */
-
   .rental-options-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-
-
 
   /** FOOTER */
   .footer-brand { width: 33.33%; }

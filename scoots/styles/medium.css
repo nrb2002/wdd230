@@ -1,143 +1,134 @@
 @media (min-width: 768px){
-    
+  :root {--text-size-large: 2.625rem;}
 
-    /*HERO STYLE*/
-    h1, .h1{font-size: 2.5rem;}
+  /*HERO STYLE*/
+  h1, .h1{font-size: 2.5rem;}
+  /*  TOP NAVBAR */
+  .top-navbar{
+    height: 40px;
+  }
+
     /*  TOP NAVBAR */
-    .top-navbar{
-      height: 40px;
-    }
-
-     /*  TOP NAVBAR */
-     
-     /* WEATHER STYLE */
-     .weather {
-      margin-top: 5vh;
-      height: 40vh;
-      width: 90vw;
-    }
-    .weather-title{
-      font-size: 1.2rem;
-    }
-    .weather #current-temp{
-      font-size: 2.5rem;
-      font-weight: 500;  
-    }
-    .hero-title {
-      font-size: 3.5rem;
-    }
-    .current-weather{
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-    .weather .weather-card:nth-child(2){
-      border-right: solid 1px var(--nav-text-color);
-      text-align: center;
-    }
-    .weather .weather-card:last-child{
-      font-size: 1rem;
-    }
-    #weather-table{    
-      display: grid;
-      width: 100%; 
-      height: 5rem;  
-    }
-    #weather-table-table{
-      margin: -2% 0 2% 0;
-      padding: 20px;
-      border-radius: 20px;
-    }
-    #weather-table  tr{background-color: #f2f2f2}
-    #weather-table  tr:first-child{
-      background-color: #cfbbbb;
-    }
-    #weather-table-table tr th:nth-child(3),
-    #weather-table-table tr td:nth-child(3){display: inline-block;}
-    
     
     /* WEATHER STYLE */
+    .weather {
+    margin-top: 5vh;
+    height: 40vh;
+    width: 90vw;
+  }
+  .weather-title{
+    font-size: 1.2rem;
+  }
+  .weather #current-temp{
+    font-size: 2.5rem;
+    font-weight: 500;  
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .current-weather{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .weather .weather-card:nth-child(2){
+    border-right: solid 1px var(--nav-text-color);
+    text-align: center;
+  }
+  .weather .weather-card:last-child{
+    font-size: 1rem;
+  }
+  #weather-table{    
+    display: grid;
+    width: 100%; 
+    height: 5rem;  
+  }
+  #weather-table-table{
+    margin: -2% 0 2% 0;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  #weather-table  tr{background-color: #f2f2f2}
+  #weather-table  tr:first-child{
+    background-color: #cfbbbb;
+  }
+  #weather-table-table tr th:nth-child(3),
+  #weather-table-table tr td:nth-child(3){display: inline-block;}
 
-    /* MAIN STYLE */
-    .section-title {margin-top: 100px;}
+  /* WEATHER STYLE */
 
-    @media (min-width: 768px) {
+  /* MAIN STYLE */
+  .section-title {margin-top: 100px;}
 
-      :root {
-        --text-size-large: 2.625rem;
-    
-      }
-    
-      /* HEADER STYLE */
-      header .cta {gap: 30px;}
-      .header-contact {
-        display: block;
-        text-align: center;
-      }
-      .header-contact .contact-link {
-        color: var(--space-cadet);
-        font-family: var(--paragraph-text-font);
-        font-size: var(--text-font-size-5);
-        line-height: 1.3;
-      }
-    
-      .header-contact .contact-link:is(:hover, :focus) { color: var(--primary-color); }
-    
-      .header-contact .contact-time {
-        color: var(--independence);
-        font-size: var(--text-font-size-7);
-      }
-    
-      .cta .btn span {
-        display: block;
-        font-weight: 400;
-        padding-inline: 15px;
-      }
-    
-      .cta .btn:first-of-type ion-icon { display: none; }
-    
-    
+  /* HEADER STYLE */
+  header .cta {gap: 30px;}
+  .header-contact {
+    display: block;
+    text-align: center;
+  }
+  .header-contact .contact-link {
+    color: var(--space-cadet);
+    font-family: var(--paragraph-text-font);
+    font-size: var(--text-font-size-5);
+    line-height: 1.3;
+  }
 
-     /* MAIN STYLE */
-    .copyright { 
-      grid-template-columns: repeat(6, 1fr);
-      margin: 0 auto;
-      gap: 2%;
-    }
+  .header-contact .contact-link:is(:hover, :focus) { color: var(--primary-color); }
 
-    /* PRICING TABLE STYLE */
-    
-    .pricing-table tr:hover:not(:first-child) {
-      background-color: #f1d9d9;
-    }
-    .pricing-table td:before {
-      display: none;
-    }
-    .pricing-table td:nth-child(3),
-    .pricing-table td:nth-child(4),
-    .pricing-table td:nth-child(5),
-    .pricing-table td:nth-child(6){text-align: center;}
+  .header-contact .contact-time {
+    color: var(--independence);
+    font-size: var(--text-font-size-7);
+  }
 
-    .pricing-table th,
-    .pricing-table td {
-      display: table-cell;
-      padding: .25em .5em;
-    }
-    .pricing-table th:first-child,
-    .pricing-table td:first-child {
-      padding-left: 0;
-    }
-    .pricing-table th:last-child,
-    .pricing-table td:last-child {
-      padding-right: 0;
-    }
-    .pricing-table th,
-    .pricing-table td {
-      padding: 1em !important;
-    }
-    /* PRICING TABLE STYLE */
-    /*FOOTER STYLE*/
+  .cta .btn span {
+    display: block;
+    font-weight: 400;
+    padding-inline: 15px;
+  }
 
-    /*FOOTER STYLE */
+  .cta .btn:first-of-type ion-icon { display: none; }
   
+  /* END OF MAIN STYLE */
   
+  /* PRICING TABLE STYLE */
+  
+  .pricing-table tr:hover:not(:first-child) {
+    background-color: #f1d9d9;
+  }
+  .pricing-table td:before {
+    display: none;
+  }
+  .pricing-table td:nth-child(3),
+  .pricing-table td:nth-child(4),
+  .pricing-table td:nth-child(5),
+  .pricing-table td:nth-child(6){text-align: center;}
+
+  .pricing-table th,
+  .pricing-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .pricing-table th:first-child,
+  .pricing-table td:first-child {
+    padding-left: 0;
+  }
+  .pricing-table th:last-child,
+  .pricing-table td:last-child {
+    padding-right: 0;
+  }
+  .pricing-table th,
+  .pricing-table td {
+    padding: 1em !important;
+  }
+  /* END PRICING TABLE STYLE */
+  
+  /*FOOTER STYLE*/
+  .copyright { 
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    gap: 2%;
+  }
+
+  /*FOOTER STYLE */
+    
 }
-}
+
+
