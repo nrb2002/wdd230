@@ -72,28 +72,50 @@ function displayRentals(data){
         const wiHalf = document.createElement("td");
         const wiFull = document.createElement("td");
 
+        //Test
+        console.log(rental.plans[0].reservation.halfDay);
+        console.log(rental.plans[0].reservation.fullDay);
+        console.log(rental.plans[1].walkIn.halfDay);
+        console.log(rental.plans[1].walkIn.fullDay);
+
+        //Get Price for a half-day reservation
+        const label = document.createElement("label");
+        label.textContent = rental.plans[0].reservation.halfDay;
         const option = document.createElement("input");
         option.setAttribute("type", "checkbox");
         option.style.margin = "4rem auto";
         option.style.padding = ".5rem";
+        resHalf.appendChild(label);
         resHalf.appendChild(option);
 
+        //Get Price for a fullday reservation
+        const label2 = document.createElement("label");
+        label2.textContent = rental.plans[0].reservation.fullDay;
         const option2 = document.createElement("input");
         option2.setAttribute("type", "checkbox");
         option2.style.margin = "4rem auto";
         option2.style.padding = ".5rem";
+        resFull.appendChild(label2);
         resFull.appendChild(option2);
 
-        const option3 = document.createElement("input")
+        //Get Price for a half-day walkIn
+        const label3 = document.createElement("label");
+        label3.textContent = rental.plans[1].walkIn.halfDay;
+        const option3 = document.createElement("input");
         option3.setAttribute("type", "checkbox");
         option3.style.margin = "4rem auto";
         option3.style.padding = ".5rem";
+        wiHalf.appendChild(label3);
         wiHalf.appendChild(option3);
 
+        //Get Price for a fullday walkIn
+        const label4 = document.createElement("label");
+        label4.textContent = rental.plans[1].walkIn.fullDay;
         const option4 = document.createElement("input");
         option4.setAttribute("type", "checkbox");
         option4.style.margin = "4rem auto";
         option4.style.padding = ".5rem";
+        wiFull.appendChild(label4);
         wiFull.appendChild(option4);
 
         //Append table data
@@ -108,26 +130,10 @@ function displayRentals(data){
         tbody.appendChild(tr);
 
 
-        // console.log(rental.plans[0].reservation[0]);
-        // console.log(rental.plans[0].reservation[1]);
+        
+        
 
-        // rental.plans.forEach(plan => {
-        //     plan.reservation.forEach(length =>{
-        //         console.log(length.halfDay);
-        //         console.log(length.fullDay);
-        //     });
-        //     plan.walkIn.forEach(length =>{
-        //         console.log(length.halfDay);
-        //         console.log(length.fullDay);
-        //     });
-              
-        // });
-
-        rental.plans.forEach(plan => {
-            console.log(plan.reservation);
-            console.log(plan.walkIn);
-        });
-
+        
 
     });
 
