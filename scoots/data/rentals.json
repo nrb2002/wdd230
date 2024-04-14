@@ -16,9 +16,7 @@
                 {
                     "reservation":[
                         {
-                            "halfDay":"$20"
-                        },
-                        {
+                            "halfDay":"$20",                        
                             "fullDay":"$30"
                         }
                     ]

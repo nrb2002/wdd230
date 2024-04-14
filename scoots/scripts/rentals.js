@@ -2,7 +2,7 @@
 console.log("Bonjour!");
 
 //Declare url of data source
-const rentalsUrl = "https://nrb2002.github.io/wdd230/scoots/data/pricing.json";
+const rentalsUrl = "https://nrb2002.github.io/wdd230/scoots/data/rentals.json";
 
 //Define an asynchronous function named "fetchRentals()" that uses a try block to handle errors.
 async function fetchRentals(){
@@ -114,11 +114,11 @@ function displayRentals(data){
         // console.log(rental.plans[0].reservation[0]);
         // console.log(rental.plans[0].reservation[1]);
 
-        rental.plans.forEach(plan => {
-            plan.reservation[0];
+        // rental.plans.forEach(plan => {
+        //     plan.reservation[0];
                 
             
-        });
+        // });
     });
 
 } 
