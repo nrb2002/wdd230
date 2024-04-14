@@ -124,10 +124,8 @@ function displayRentals(data){
         // });
 
         rental.plans.forEach(plan => {
-            console.log(plan.reservation[0].halfDay);
-            console.log(plan.reservation[0].fullDay);
-            console.log(plan.walkIn[0].halfDay);
-            console.log(plan.walkIn[0].fullDay);
+            console.log(plan.reservation);
+            console.log(plan.walkIn);
         });
 
 
