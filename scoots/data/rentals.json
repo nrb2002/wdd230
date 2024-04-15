@@ -11,7 +11,7 @@
             "desc": "49cc",
             "pers":"1",
             "doors":"N/A",
-            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/2024-Honda-Metropolitan2.jpg",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/2024-Honda-Metropolitan2.webp",
             "plans":[
                 {
                     "reservation":
@@ -37,7 +37,7 @@
             "desc": "110cc",
             "pers":"2",
             "doors":"N/A",
-            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.jpg",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-scooters/new-honda-dio-110-in-sports-red.webp",
             "plans":[
                 {
                     "reservation":
@@ -89,7 +89,7 @@
             "desc": "1000",
             "pers":"4",
             "doors":"4",
-            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-atv/2022-honda-pioneer-1000-6-deluxe-crew-debuts-you-can-have-five-passengers-in-it-196440_1.jpg",
+            "imageUrl":"https://nrb2002.github.io/wdd230/scoots/images/scoots-atv/2022-honda-pioneer-1000-6-deluxe-five-passengers.webp",
             "plans":[
                 {
                     "reservation":

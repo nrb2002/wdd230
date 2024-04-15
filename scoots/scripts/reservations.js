@@ -16,21 +16,21 @@ window.onclick = function(e) {
   console.log(activeCreditCard)
   if (e.target.tagName === 'LI' && activeCreditCard){
     if (e.target.innerHTML === 'Master Card') {
-      document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png';
+      document.getElementById('credit-card-image').src = 'https://nrb2002.github.io/wdd230/scoots/images/MasterCard_Logo.svg.webp';
           activeCreditCard.classList.remove('visible');
       activeCreditCard = null;
       e.target.innerHTML = document.getElementById('current-card').innerHTML;
       document.getElementById('current-card').innerHTML = 'Master Card';
     }
     else if (e.target.innerHTML === 'American Express') {
-         document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png';
+         document.getElementById('credit-card-image').src = 'https://nrb2002.github.io/wdd230/scoots/images/amex-icon-6902.webp';
           activeCreditCard.classList.remove('visible');
       activeCreditCard = null;
       e.target.innerHTML = document.getElementById('current-card').innerHTML;
       document.getElementById('current-card').innerHTML = 'American Express';      
     }
     else if (e.target.innerHTML === 'Visa') {
-         document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png';
+         document.getElementById('credit-card-image').src = 'https://nrb2002.github.io/wdd230/scoots/images/visa_logo.webp';
           activeCreditCard.classList.remove('visible');
       activeCreditCard = null;
       e.target.innerHTML = document.getElementById('current-card').innerHTML;

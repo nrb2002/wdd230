@@ -684,18 +684,16 @@ section { padding-block: 10px; }
 .pricing-table tr:nth-child(2) {
   border-top: none;
 }
-
 /* ./PRICING TABLE STYLE */
 
 /* PAYMENT PAGE STYLE */
-
 .dropdown-select.visible {
   display:block;
 }
 .dropdown {
   position:relative;
 }
-ul li {
+.dropdown-select ul li {
   list-style:none;
   padding-left:10px;
   cursor:pointer;
@@ -820,6 +818,7 @@ ul li:hover {
   margin-left:auto;
   margin-right:auto;
 }
+
 .credit-info {
   background:var(--accent-1);
   height:auto;
@@ -840,9 +839,12 @@ ul li:hover {
   padding-right:30px;
   padding-bottom:100px;
   border-radius:0px;
+  position:relative;
+}
+.window,
+.credit-info{  
   border-top-right-radius:30px;
   border-bottom-right-radius:30px;
-  position:relative;
 }
 .dropdown-btn {
   background:rgba(255,255,255,0.1);
