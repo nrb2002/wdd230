@@ -9,17 +9,7 @@
   --body-text-color:black;
   --footer-background: #D1D1D1;
   --footer-text-color: #303030;
-
-
-  --pale-purple-pantone: hsl(262, 63%, 92%);
-  --medium-sea-green: hsl(152, 63%, 43%);
-  --lavender-blush: hsl(336, 35%, 92%);
-  --columbia-blue: hsl(204, 92%, 90%);
-  --alice-blue-1: hsl(216, 38%, 95%);
-  --alice-blue-2: hsl(216, 75%, 97%);
-  --alice-blue-3: hsl(216, 38%, 95%);  
   
-
   --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
 
   --paragraph-text-font: 'Nunito', sans-serif;
